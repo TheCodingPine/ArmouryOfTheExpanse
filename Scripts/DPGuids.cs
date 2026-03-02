@@ -24,7 +24,27 @@ public static class DPAssetsManager
                 { DPAsset.Runeblade,
                     new DPGuids(DPGuids.RunebladeAsset(), DPGuids.RunebladeIcon()) },
                 { DPAsset.Runeblade_On,
-                    new DPGuids(DPGuids.Runeblade_OnAsset(), DPGuids.Runeblade_OnIcon()) }
+                    new DPGuids(DPGuids.Runeblade_OnAsset(), DPGuids.Runeblade_OnIcon()) },
+                { DPAsset.Lascannon_Black,
+                    new DPGuids(DPGuids.Lascannon_BlackAsset(), DPGuids.Lascannon_BlackIcon()) },
+                { DPAsset.Lascannon_Blue,
+                    new DPGuids(DPGuids.Lascannon_BlueAsset(), DPGuids.Lascannon_BlueIcon()) },
+                { DPAsset.Lascannon_Green,
+                    new DPGuids(DPGuids.Lascannon_GreenAsset(), DPGuids.Lascannon_GreenIcon()) },
+                { DPAsset.Lascannon_Red,
+                    new DPGuids(DPGuids.Lascannon_RedAsset(), DPGuids.Lascannon_RedIcon()) },
+                { DPAsset.BoltSniper_SM,
+                    new DPGuids(DPGuids.Boltsniper_AstartesAsset(), DPGuids.Boltsniper_AstartesIcon()) },
+                { DPAsset.BoltSniper_HM,
+                    new DPGuids(DPGuids.Boltsniper_HumanAsset(), DPGuids.Boltsniper_HumanIcon()) },
+                { DPAsset.Plasmacannon_Black,
+                    new DPGuids(DPGuids.Plasmacannon_BlackAsset(), DPGuids.Plasmacannon_BlackIcon()) },
+                { DPAsset.Plasmacannon_Green,
+                    new DPGuids(DPGuids.Plasmacannon_GreenAsset(), DPGuids.Plasmacannon_GreenIcon()) },
+                { DPAsset.Plasmacannon_Red,
+                    new DPGuids(DPGuids.Plasmacannon_RedAsset(), DPGuids.Plasmacannon_RedIcon()) },
+                { DPAsset.Plasmacannon_Yellow,
+                    new DPGuids(DPGuids.Plasmacannon_YellowAsset(), DPGuids.Plasmacannon_YellowIcon()) }
         };
 
     /// <summary> both asset and icon  </summary>
@@ -93,6 +113,7 @@ public enum DPAsset
     //Ranged
     //Sniper
     BoltSniper_SM,
+    BoltSniper_HM,
     //Lascannon
     Lascannon_Black,
     Lascannon_Blue,
@@ -162,7 +183,35 @@ public class DPGuids
     internal static UnityEngine.Sprite SunbladeIcon() => IconFetcher("b2ac51880aa94818800129089eae2135");
     internal static GameObject SunbladeAsset() => ModelFetcher("b2ac51880aa94818800129089eae2135");
 
+    internal static UnityEngine.Sprite Lascannon_BlueIcon() => IconFetcher("6feb09acb59d4c03aeb8970c7cb49a8f");
+    internal static GameObject Lascannon_BlueAsset() => ModelFetcher("6feb09acb59d4c03aeb8970c7cb49a8f");
 
+    internal static UnityEngine.Sprite Lascannon_BlackIcon() => IconFetcher("d4168d1e9bdc40ec99ffc03f1f5bf86c");
+    internal static GameObject Lascannon_BlackAsset() => ModelFetcher("d4168d1e9bdc40ec99ffc03f1f5bf86c");
+
+    internal static UnityEngine.Sprite Lascannon_GreenIcon() => IconFetcher("2b34d77a1cdb4309b3b28c2c89622e14");
+    internal static GameObject Lascannon_GreenAsset() => ModelFetcher("2b34d77a1cdb4309b3b28c2c89622e14");
+
+    internal static UnityEngine.Sprite Lascannon_RedIcon() => IconFetcher("5aec63a3c36d4059838b3419d32ef565");
+    internal static GameObject Lascannon_RedAsset() => ModelFetcher("5aec63a3c36d4059838b3419d32ef565");
+
+    internal static UnityEngine.Sprite Boltsniper_AstartesIcon() => IconFetcher("9128160802b84f5da717b53d2fd2619a");
+    internal static GameObject Boltsniper_AstartesAsset() => ModelFetcher("9128160802b84f5da717b53d2fd2619a");
+
+    internal static UnityEngine.Sprite Boltsniper_HumanIcon() => IconFetcher("edf93f4d8723472594a37e73629d8daf");
+    internal static GameObject Boltsniper_HumanAsset() => ModelFetcher("edf93f4d8723472594a37e73629d8daf");
+
+    internal static UnityEngine.Sprite Plasmacannon_YellowIcon() => IconFetcher("53130ace69e942c38961d21262d87012");
+    internal static GameObject Plasmacannon_YellowAsset() => ModelFetcher("53130ace69e942c38961d21262d87012");
+
+    internal static UnityEngine.Sprite Plasmacannon_RedIcon() => IconFetcher("76108157e1724810b869c2e7924ee17b");
+    internal static GameObject Plasmacannon_RedAsset() => ModelFetcher("76108157e1724810b869c2e7924ee17b");
+
+    internal static UnityEngine.Sprite Plasmacannon_GreenIcon() => IconFetcher("599dab57850748c28df8aafd1386016a");
+    internal static GameObject Plasmacannon_GreenAsset() => ModelFetcher("599dab57850748c28df8aafd1386016a");
+
+    internal static UnityEngine.Sprite Plasmacannon_BlackIcon() => IconFetcher("f2245fbf2eeb4166a099d41f775bd5c2");
+    internal static GameObject Plasmacannon_BlackAsset() => ModelFetcher("f2245fbf2eeb4166a099d41f775bd5c2");
 
     private static GameObject ModelFetcher(string guid)
     {
