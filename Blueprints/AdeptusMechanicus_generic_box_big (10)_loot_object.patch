@@ -1,0 +1,32 @@
+{
+  "Items": [
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "m_Item": "!bp_68cf5d05a72844859ec3ed459927669a",
+        "Diversity": 0,
+        "Count": 1,
+        "m_ReputationPointsToUnlock": 0
+      },
+      "InsertAfterTarget": {
+        "m_Item": "!bp_6b85b79132e140a7a52d9fe32d8f5c36",
+        "Count": 1,
+        "m_ReputationPointsToUnlock": 0
+      }
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "m_Item": "!bp_67a1c173845f40e8b1414c6ea938e140",
+        "Diversity": 0,
+        "Count": 1,
+        "m_ReputationPointsToUnlock": 0
+      },
+      "InsertAfterTarget": {
+        "m_Item": "!bp_68cf5d05a72844859ec3ed459927669a",
+        "Count": 1,
+        "m_ReputationPointsToUnlock": 0
+      }
+    }
+  ]
+}

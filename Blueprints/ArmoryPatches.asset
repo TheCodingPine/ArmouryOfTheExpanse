@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80fe07f61edc4914ac44891e22e1fdf7, type: 3}
+  m_Name: ArmoryPatches
+  m_EditorClassIdentifier: 
+  Entries:
+  - Guid: 83755154cd8a442a825473d18139d7e3
+    Filename: AdeptusMechanicus_generic_box_big (10)_loot_object.patch
+    PatchType: 2
+  - Guid: e037705132d64dccb79b308ff7c3ed92
+    Filename: Drukhari_PrisonBottom02.patch
+    PatchType: 2
+  - Guid: e97cce5217b14650bed57b2e141a3061
+    Filename: AdeptusMechanicus_CommonLoot (1).patch
+    PatchType: 2
+  - Guid: 5a43451000e54d0c98b1680e8bfb81e7
+    Filename: AdeptusMechanicus_GoodLoot03.patch
+    PatchType: 2
+  - Guid: 2aeb7e1206244b9eb5aa2fe47b8e2ba6
+    Filename: AdeptusMechanicus_LootChest_RebelStash.patch
+    PatchType: 2
+  - Guid: 784206a20050475aae687d6cc52e41cc
+    Filename: ImperiumMilitary_LootChest1.patch
+    PatchType: 2
+  - Guid: ef120bd921684e76b547b195b0c4c0a0
+    Filename: Cue_0008.patch
+    PatchType: 2

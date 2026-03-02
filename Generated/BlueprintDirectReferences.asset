@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1202703938, guid: faf1e6e97fbc1d343ace363ace29f244, type: 3}
+  m_Name: BlueprintDirectReferences
+  m_EditorClassIdentifier: 
+  m_Entries:
+  - AssetId: 31280ebd0d667424ab05798c9c999ade
+    FileId: 5516857871474235138
+    Asset: {fileID: 5516857871474235138, guid: 31280ebd0d667424ab05798c9c999ade, type: 3}
+  - AssetId: f34d5eebf76feeb48b252f68ecac46c5
+    FileId: 5970069659029330219
+    Asset: {fileID: 5970069659029330219, guid: f34d5eebf76feeb48b252f68ecac46c5, type: 3}
+  - AssetId: 80107784968f476458bea1437252e6b4
+    FileId: 7469910589573095578
+    Asset: {fileID: 7469910589573095578, guid: 80107784968f476458bea1437252e6b4, type: 3}
+  - AssetId: d69da59e8da854746a18115ef313e810
+    FileId: 21300000
+    Asset: {fileID: 21300000, guid: d69da59e8da854746a18115ef313e810, type: 3}
+  - AssetId: a6458b885c4a14545a703a62c4eb08c5
+    FileId: 21300000
+    Asset: {fileID: 21300000, guid: a6458b885c4a14545a703a62c4eb08c5, type: 3}
+  - AssetId: a9ef3ee51ae5b99499f886eeba2d24a5
+    FileId: 8279999729567313388
+    Asset: {fileID: 8279999729567313388, guid: a9ef3ee51ae5b99499f886eeba2d24a5, type: 3}
+  - AssetId: 7b0701531a40b5448b6de46cb43cdd45
+    FileId: 21300000
+    Asset: {fileID: 21300000, guid: 7b0701531a40b5448b6de46cb43cdd45, type: 3}
+  - AssetId: 79c812075bb0f904fa6891f9d9223f5c
+    FileId: 7319637655764902760
+    Asset: {fileID: 7319637655764902760, guid: 79c812075bb0f904fa6891f9d9223f5c, type: 3}

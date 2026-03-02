@@ -1,0 +1,24 @@
+{
+"OnShow": {
+      "Actions": [
+        {        
+	  "PatchType": "Prepend",
+"NewElement": {
+
+          "$type": "1f1c883ef085c5c4b877eeb4c5da318c, AddItemToPlayer",
+          "name": "$AddItemToPlayer$19d7bf3da23741b29a2f3b20a41fde88",
+          "m_ItemToGive": "!bp_4b697b99238849e6a18a0b9ce9e1a0f8",
+          "Silent": false,
+          "Quantity": 1,
+          "Identify": false,
+          "Equip": false,
+          "EquipOn": null,
+          "PreferredWeaponSet": 0,
+          "m_Hand": "Any",
+          "ForceEquip": false,
+          "ErrorIfDidNotEquip": true
+}
+        }
+      ]
+    }
+}

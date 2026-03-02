@@ -1,0 +1,21 @@
+{
+    "name": "ArmouryOfTheExpanse",
+    "rootNamespace": "",
+    "references": [
+        "GUID:0842738f9f1c4af4d950e7cf076d1a7c",
+        "GUID:c5ecc461727906345a35491a0440694f",
+        "GUID:8e9905e1b1a54cf4b9ff7b2b7b592380",
+        "GUID:7b358220a3884d23b418841b21c32544",
+        "GUID:a5990d4668b04740b98825bc9dd66da8",
+        "GUID:0a1caa393f2ad3648a1f039f782b1ccb"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

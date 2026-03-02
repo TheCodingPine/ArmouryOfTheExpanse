@@ -1,0 +1,19 @@
+{
+  "Author": "Unknown",
+  "Items": [
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "m_Item": "!bp_040ada7657ca4bd9ac2b5ed49fd28f97",
+        "Diversity": 0,
+        "Count": 1,
+        "m_ReputationPointsToUnlock": 0
+      },
+      "InsertAfterTarget": {
+        "m_Item": "!bp_1b30a8c8be6a4586a23f2b1341bc1da6",
+        "Count": 1,
+        "m_ReputationPointsToUnlock": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "AssetId": "00049a82202a40a28c0f3b42734f74a7",
+  "Data": {
+    "$type": "b3be5ca3c50947c4bbf339bd29a95405, BlueprintAbilityVisualFXSettings",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [],
+    "Author": "Unknown",
+    "Comment": "",
+    "m_Projectiles": [
+      "!bp_826edeaee7c24d47b8f36a3d986ff30d"
+    ],
+    "m_ProjectileOriginType": "CasterWeapon",
+    "m_ProjectileOrigin": "!bp_502467bbbcc0471285a4ab6936a285d8",
+    "m_ProjectileTarget": null,
+    "m_UseRandomLocatorInGroup": false,
+    "Recoil": "Low",
+    "AnimationEvents": [
+      {
+        "m_Event": "Cast",
+        "m_Target": "CasterWeapon",
+        "m_Settings": {
+          "UseRandomVisualFX": false,
+          "FXs": [
+            {
+              "Prefab": {
+                "AssetId": "df8517186de029449abda45c0d8ad40e"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "MechanicalEvents": [
+      {
+        "m_Event": "StarUseAbilityCommand",
+        "m_Target": "CasterWeapon",
+        "m_OverrideTargetOrientationSource": true,
+        "m_Settings": {
+          "UseRandomVisualFX": false,
+          "FXs": [
+            {
+              "Prefab": {
+                "AssetId": "d57c93895a87b9a40b197ea757bd3c5a"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "Meta": {
+    "ShadowDeleted": false
+  }
+}
