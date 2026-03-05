@@ -34,3 +34,6 @@ MonoBehaviour:
   - Guid: ef120bd921684e76b547b195b0c4c0a0
     Filename: Cue_0008.patch
     PatchType: 2
+  - Guid: ae395f7430ba42a48307f277adb03f0f
+    Filename: ImperiumMilitary_DLC2_CH4CyberEaglePatternProtocol.patch
+    PatchType: 2

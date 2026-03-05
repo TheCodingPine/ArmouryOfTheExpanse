@@ -1,15 +1,8 @@
-using HarmonyLib;
 using Kingmaker.Blueprints;
-using Kingmaker.Blueprints.Items.Weapons;
 using Kingmaker.Modding;
-using Kingmaker.UnitLogic.Abilities.Blueprints;
-using Kingmaker.UnitLogic.Buffs.Blueprints;
-using Kingmaker.UnitLogic.Progression.Features;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEngine;
 using UnityModManagerNet;
-using static Kingmaker.Utility.BugContext;
 
 namespace ArmouryOfTheExpanse
 {
