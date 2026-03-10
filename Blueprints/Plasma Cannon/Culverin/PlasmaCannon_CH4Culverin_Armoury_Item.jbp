@@ -1,13 +1,34 @@
 {
-  "AssetId": "d8a45ba1f0b7478d91eb3a1998e00729",
+  "AssetId": "f43775fe14454b31bed48e5d26e44077",
   "Data": {
     "$type": "c00f723cccf2d314198c42a572c631fd, BlueprintItemWeapon",
     "PrototypeLink": "e4570c06ba5c4dd9bb0734d85ad81ce4",
     "m_Overrides": [
+      "WeaponAbilities.Ability2.Type",
+      "WeaponAbilities.Ability2.Mode",
+      "WeaponAbilities.Ability2.m_Ability",
+      "WeaponAbilities.Ability2.m_FXSettings",
+      "RateOfFire",
       "WarhammerDamage",
       "WarhammerMaxDamage",
-      "$AddStringToFactName$50944bd8-cc3f-4df5-9bbf-237851a2d6b8",
-      "m_Rarity"
+      "WarhammerPenetration",
+      "m_DisplayName",
+      "WarhammerMaxAmmo",
+      "WeaponAbilities.Ability1.AP",
+      "AdditionalHitChance",
+      "WarhammerRecoil",
+      "$AddFactToEquipmentWielder$71f062f4-cefb-444b-a4f4-9ce98b48272b",
+      "$PropertyCalculatorComponent$9e79c054-b25d-4509-8106-bffb255e3dc0",
+      "$UIPropertiesComponent$d6800554-4e29-421f-9aa1-69781d200471",
+      "m_Description",
+      "WeaponAbilities.Ability4.Mode",
+      "WeaponAbilities.Ability4.m_Ability",
+      "WeaponAbilities.Ability4.m_FXSettings",
+      "WeaponAbilities.Ability4.AP",
+      "m_FlavorText",
+      "$AddStringToFactName$68e3978a-1bd7-47c3-84dc-95c7cd9400b1",
+      "m_Rarity",
+      "m_Origin"
     ],
     "Components": [
       {
@@ -68,8 +89,19 @@
         "m_Fact": "!bp_adf766ad17194a3080f20cd93be25392"
       },
       {
+        "$type": "65221a9a6133bd0408b019b86642d97e, AddFactToEquipmentWielder",
+        "name": "$AddFactToEquipmentWielder$71f062f4-cefb-444b-a4f4-9ce98b48272b",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "m_Fact": "!bp_758380d0311746b582f5d87e2a5c8de5"
+      },
+      {
         "$type": "c8cf2b4638d44ca29565527b0d0b90c2, AddStringToFactName",
-        "name": "$AddStringToFactName$50944bd8-cc3f-4df5-9bbf-237851a2d6b8",
+        "name": "$AddStringToFactName$68e3978a-1bd7-47c3-84dc-95c7cd9400b1",
         "m_Flags": 0,
         "PrototypeLink": {
           "guid": "bd1ffcfed2fe48ad9ad2d447a85e55bd",
@@ -79,10 +111,10 @@
           "m_AdditionalString"
         ],
         "m_AdditionalString": {
-          "m_Key": "a29285f7-1d7b-4ba2-ad22-c1ff3580ce8b",
-          "m_OwnerString": "3b1cdbdec35f4d249c5d0eaf57778046#$AddStringToFactName$d39b1fd3-750e-482d-856f-b518293d1fd0",
+          "m_Key": "8d00cc4d-d20f-4ef5-81da-e4ef61c351b1",
+          "m_OwnerString": "f43775fe14454b31bed48e5d26e44077#$AddStringToFactName$68e3978a-1bd7-47c3-84dc-95c7cd9400b1",
           "m_OwnerPropertyPath": "m_AdditionalString",
-          "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\Imperial PowerSword\\PowerSwordCH02_Armoury1_Item_m_AdditionalString_1.json",
+          "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\Plasma Cannon\\PlasmaCannon_CH4Starstorm_Armoury_Item_m_AdditionalString.json",
           "Shared": null
         },
         "JunctionType": "BeforeFirstSquareBrackets"
@@ -91,25 +123,25 @@
     "Author": "Unknown",
     "Comment": "",
     "m_DisplayName": {
-      "m_Key": "3b9bc3f0-7dd9-4d30-bab0-daf1945e805e",
-      "m_OwnerString": "e4570c06ba5c4dd9bb0734d85ad81ce4",
+      "m_Key": "ab160003-a638-406d-8f9d-0fb59055b625",
+      "m_OwnerString": "f43775fe14454b31bed48e5d26e44077",
       "m_OwnerPropertyPath": "m_DisplayName",
-      "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\Plasma Cannon\\PlasmaCannon_CH2Armoury_Item_m_DisplayName.json",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\Plasma Cannon\\PlasmaCannon_CH4Starstorm_Armoury_Item_m_DisplayName.json",
       "Shared": null
     },
     "m_Description": {
-      "m_Key": "",
-      "m_OwnerString": "",
-      "m_OwnerPropertyPath": "",
-      "m_JsonPath": "",
+      "m_Key": "a7b43f41-ebef-46d7-91bc-bac9f382d51b",
+      "m_OwnerString": "f43775fe14454b31bed48e5d26e44077",
+      "m_OwnerPropertyPath": "m_Description",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\Plasma Cannon\\PlasmaCannon_CH4Starstorm_Armoury_Item_m_Description.json",
       "Shared": null
     },
     "m_Icon": null,
     "m_FlavorText": {
-      "m_Key": "",
-      "m_OwnerString": "",
-      "m_OwnerPropertyPath": "",
-      "m_JsonPath": "",
+      "m_Key": "8eb9049e-3301-47f0-8f4f-6559010bd62f",
+      "m_OwnerString": "f43775fe14454b31bed48e5d26e44077",
+      "m_OwnerPropertyPath": "m_FlavorText",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\Plasma Cannon\\PlasmaCannon_CH4Starstorm_Armoury_Item_m_FlavorText.json",
       "Shared": null
     },
     "m_NonIdentifiedNameText": {
@@ -128,8 +160,8 @@
     },
     "m_NotStackable": false,
     "m_Weight": 0.0,
-    "m_Origin": "RangedWeaponry",
-    "m_Rarity": "Pattern",
+    "m_Origin": "Tech",
+    "m_Rarity": "Unique",
     "m_Tag": "None",
     "m_IsNotable": false,
     "m_ProfitFactorCost": 0.0,
@@ -178,19 +210,19 @@
     "m_OnHitActions": null,
     "AbilityContainer": {
       "Ability1": {
-        "Type": "AOE",
+        "Type": "SingleShot",
         "Mode": "Default",
         "m_Ability": "!bp_f71f49187b664e69b0f3c99a9371214b",
         "m_FXSettings": "!bp_38d85e7224d744149e5d859fbfb08218",
         "OnHitOverrideType": "None",
         "m_OnHitActions": null,
-        "AP": 2
+        "AP": 1
       },
       "Ability2": {
-        "Type": "AOE",
+        "Type": "Burst",
         "Mode": "Any",
-        "m_Ability": "!bp_080de86158704ab99f759045c8a5fbeb",
-        "m_FXSettings": "!bp_effe16819ac3426cbedaba9337e95ead",
+        "m_Ability": "!bp_91c9deb4deb444719be97afae9d2e119",
+        "m_FXSettings": "!bp_9f7600840d6c407988603f89bcf46b20",
         "OnHitOverrideType": "None",
         "m_OnHitActions": null,
         "AP": 3
@@ -206,12 +238,12 @@
       },
       "Ability4": {
         "Type": "None",
-        "Mode": "Default",
-        "m_Ability": null,
-        "m_FXSettings": null,
+        "Mode": "Any",
+        "m_Ability": "!bp_1cdd00b349324e7f958a8cb1dfcde2fe",
+        "m_FXSettings": "!bp_9f7600840d6c407988603f89bcf46b20",
         "OnHitOverrideType": "None",
         "m_OnHitActions": null,
-        "AP": 0
+        "AP": 3
       },
       "Ability5": {
         "Type": "None",
@@ -254,15 +286,15 @@
       "Shared": null
     },
     "IsTwoHanded": true,
-    "WarhammerDamage": 12,
-    "WarhammerMaxDamage": 16,
-    "WarhammerPenetration": 40,
+    "WarhammerDamage": 2,
+    "WarhammerMaxDamage": 5,
+    "WarhammerPenetration": 60,
     "DodgePenetration": 0,
     "AdditionalHitChance": 0,
-    "WarhammerRecoil": 0,
+    "WarhammerRecoil": 45,
     "WarhammerMaxDistance": 8,
-    "WarhammerMaxAmmo": 4,
-    "RateOfFire": 0,
+    "WarhammerMaxAmmo": 65,
+    "RateOfFire": 2,
     "m_Enchantments": [],
     "m_DamageType": {
       "Type": "Energy"

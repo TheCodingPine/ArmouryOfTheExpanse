@@ -1,0 +1,446 @@
+{
+  "AssetId": "758380d0311746b582f5d87e2a5c8de5",
+  "Data": {
+    "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "28fa403fa7a94a2f9ea361583e66cdb4, WarhammerWeaponStatsModifierInitiator",
+        "name": "$WarhammerWeaponStatsModifierInitiator$d7d80f46-0ce4-4cf4-9e2d-e69f81e0c05a",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "BoolAnd",
+            "TargetType": "RuleInitiator",
+            "TargetEvaluator": {
+              "$type": "56703b87cc0c36347937d201cc076a6d, CasterUnit",
+              "name": "$CasterUnit$17513fe8af0e4e68bd8d751545f5c588"
+            },
+            "FailSilentlyIfNoTarget": false,
+            "Getters": [
+              {
+                "$type": "3584620744644ad6932525e79c8ca8e6, CheckAbilityWeaponIsSourceOfFactGetter",
+                "name": "$CheckAbilityWeaponIsSourceOfFactGetter$1cc775f1-cd5e-44db-b0d0-e0f41a1b0b82",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": false,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                }
+              }
+            ]
+          }
+        },
+        "Descriptor": "None",
+        "Damage": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false,
+          "ModifierType": "ValAdd"
+        },
+        "DamageMin": {
+          "ValueType": "Simple",
+          "Value": 5,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "PsyRating",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false
+        },
+        "DamageMax": {
+          "ValueType": "ContextProperty",
+          "Value": 5,
+          "ValueRank": "Default",
+          "ValueShared": "DurationSecond",
+          "Property": "PsyRating",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false
+        },
+        "Penetration": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false,
+          "ModifierType": "ValAdd"
+        },
+        "Recoil": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false,
+          "ModifierType": "ValAdd"
+        },
+        "AdditionalHitChance": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false,
+          "ModifierType": "ValAdd"
+        },
+        "DodgePenetration": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false,
+          "ModifierType": "ValAdd"
+        },
+        "MaxDistance": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false,
+          "ModifierType": "ValAdd"
+        },
+        "RateOfFire": {
+          "ValueType": "CasterNamedProperty",
+          "Value": 15,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Duration1",
+          "Enabled": true,
+          "ModifierType": "ValAdd"
+        },
+        "OverpenetrationFactor": {
+          "ValueType": "Simple",
+          "Value": 90,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false,
+          "ModifierType": "ValAdd"
+        }
+      },
+      {
+        "$type": "6ebdb034bf2f486b932f9342e175ec6d, AbilityLifecycleTriggerCaster",
+        "name": "$AbilityLifecycleTriggerCaster$2486a84e-0c5b-4d6d-9e0e-c102ad698f32",
+        "m_Flags": "Disabled",
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Condition": {
+          "Operation": "And",
+          "TargetType": "CurrentEntity",
+          "TargetEvaluator": null,
+          "FailSilentlyIfNoTarget": false,
+          "Getters": [
+            {
+              "$type": "76fa6ff8c9162f9489df4de07a55750c, CheckAbilityAttackTypeGetter",
+              "name": "$CheckAbilityAttackTypeGetter$294138ec-2b52-498a-9b51-b56bad0ecd48",
+              "Settings": {
+                "Progression": "AsIs",
+                "m_CustomProgression": [],
+                "m_StartLevel": 0,
+                "m_StepLevel": 0,
+                "Negate": false,
+                "Limit": "None",
+                "Min": 0,
+                "Max": 0
+              },
+              "Type": "SingleShot"
+            },
+            {
+              "$type": "3584620744644ad6932525e79c8ca8e6, CheckAbilityWeaponIsSourceOfFactGetter",
+              "name": "$CheckAbilityWeaponIsSourceOfFactGetter$1d8ae608bf8e45059095db41e143cca0",
+              "Settings": {
+                "Progression": "AsIs",
+                "m_CustomProgression": [],
+                "m_StartLevel": 0,
+                "m_StepLevel": 0,
+                "Negate": false,
+                "Limit": "None",
+                "Min": 0,
+                "Max": 0
+              }
+            }
+          ]
+        },
+        "StartActions": {
+          "Actions": [
+            {
+              "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
+              "name": "$ContextActionApplyBuff$a372499f-cf0c-4edf-86be-770ab183c1f6",
+              "m_Buff": "!bp_afd13352c2e24c4d870178776a5d367f",
+              "BuffEndCondition": "CombatEnd",
+              "Permanent": true,
+              "DurationValue": {
+                "BonusValue": {
+                  "ValueType": "Simple",
+                  "Value": 0,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null,
+                  "PropertyName": "Value1"
+                },
+                "RoundsValue": {
+                  "ValueType": "Simple",
+                  "Value": 0,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null,
+                  "PropertyName": "Value1"
+                }
+              },
+              "ToCaster": false,
+              "AsChild": false,
+              "SameDuration": false,
+              "Ranks": {
+                "ValueType": "Simple",
+                "Value": 0,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "None",
+                "m_CustomProperty": null,
+                "PropertyName": "Value1"
+              },
+              "ActionsOnApply": {
+                "Actions": []
+              },
+              "ActionsOnImmune": {
+                "Actions": []
+              },
+              "AddFactSource": false
+            }
+          ]
+        },
+        "EndActions": {
+          "Actions": [
+            {
+              "$type": "23ddfb172c2d3c144ab007dec380d712, ContextActionRemoveBuff",
+              "name": "$ContextActionRemoveBuff$665b8a38-54d1-4386-93e1-9c006d76435f",
+              "m_Buff": "!bp_afd13352c2e24c4d870178776a5d367f",
+              "RemoveRank": false,
+              "RemoveSeveralRanks": false,
+              "RankNumber": {
+                "ValueType": "Simple",
+                "Value": 0,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "None",
+                "m_CustomProperty": null,
+                "PropertyName": "Value1"
+              },
+              "m_CasterRanksRemovalPolicy": "Default",
+              "ToCaster": false
+            }
+          ]
+        },
+        "m_Facts": [],
+        "m_FactsToCheckOnOwner": []
+      },
+      {
+        "$type": "f9bf4ae9ccd847689d5cdf2e86bc51ca, PropertyCalculatorComponent",
+        "name": "$PropertyCalculatorComponent$14cc5512-39cc-414c-851d-6b725e2f050d",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Name": "Value1",
+        "SaveToContext": "No",
+        "Value": {
+          "Operation": "Sum",
+          "TargetType": "ContextCaster",
+          "TargetEvaluator": null,
+          "FailSilentlyIfNoTarget": false,
+          "Getters": [
+            {
+              "$type": "88a988badcc84ea8847e21626bee82e5, PropertyCalculatorGetter",
+              "name": "$PropertyCalculatorGetter$0a6e379d695c48c6a40ee379a0fce7d3",
+              "Settings": {
+                "Progression": "RandomUpTo",
+                "m_CustomProgression": [],
+                "m_StartLevel": 0,
+                "m_StepLevel": 0,
+                "Negate": false,
+                "Limit": "MinMax",
+                "Min": 1,
+                "Max": 65
+              },
+              "Value": {
+                "Operation": "Sum",
+                "TargetType": "ContextCaster",
+                "TargetEvaluator": null,
+                "FailSilentlyIfNoTarget": false,
+                "Getters": [
+                  {
+                    "$type": "fd03f97ef3d1416d9a95f874454886d9, SimplePropertyGetter",
+                    "name": "$SimplePropertyGetter$4dd52c4d6f8542a09514da1bbc8f2076",
+                    "Settings": {
+                      "Progression": "MultiplyByModifier",
+                      "m_CustomProgression": [],
+                      "m_StartLevel": 0,
+                      "m_StepLevel": 3,
+                      "Negate": false,
+                      "Limit": "None",
+                      "Min": 0,
+                      "Max": 60
+                    },
+                    "Property": "IntelligenceBonus"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "$type": "95e248f24866439681c312b1bff0693c, UIPropertiesComponent",
+        "name": "$UIPropertiesComponent$e8505eac-84ef-4bbf-913f-89986fbce05c",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Properties": [
+          {
+            "NameType": "Damage",
+            "m_Name": {
+              "m_Key": "",
+              "m_OwnerString": "",
+              "m_OwnerPropertyPath": "",
+              "m_JsonPath": "",
+              "Shared": null
+            },
+            "Description": {
+              "m_Key": "c9f68eff-acbb-4667-89ac-89658bf62d1d",
+              "m_OwnerString": "f43775fe14454b31bed48e5d26e44077#$UIPropertiesComponent$d6800554-4e29-421f-9aa1-69781d200471",
+              "m_OwnerPropertyPath": "Properties.Array.data[0].Description",
+              "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\Plasma Cannon\\PlasmaCannon_CH4Starstorm_Armoury_Item_Properties.Array.data[0].Description.json",
+              "Shared": null
+            },
+            "m_DescriptionFact": "!bp_758380d0311746b582f5d87e2a5c8de5",
+            "m_LinkProperty": true,
+            "m_PropertyName": "Duration1",
+            "m_PropertySource": "!bp_758380d0311746b582f5d87e2a5c8de5",
+            "m_LinkKey": "rot"
+          }
+        ]
+      },
+      {
+        "$type": "f9bf4ae9ccd847689d5cdf2e86bc51ca, PropertyCalculatorComponent",
+        "name": "$PropertyCalculatorComponent$954b7484-2643-4d07-b3bf-dbe28cdcadbf",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Name": "Duration1",
+        "SaveToContext": "No",
+        "Value": {
+          "Operation": "Sum",
+          "TargetType": "ContextCaster",
+          "TargetEvaluator": null,
+          "FailSilentlyIfNoTarget": false,
+          "Getters": [
+            {
+              "$type": "fd03f97ef3d1416d9a95f874454886d9, SimplePropertyGetter",
+              "name": "$SimplePropertyGetter$52091ad0-54c1-475b-b319-6d0cc15025c9",
+              "Settings": {
+                "Progression": "MultiplyByModifier",
+                "m_CustomProgression": [],
+                "m_StartLevel": 0,
+                "m_StepLevel": 3,
+                "Negate": false,
+                "Limit": "None",
+                "Min": 0,
+                "Max": 0
+              },
+              "Property": "IntelligenceBonus"
+            }
+          ]
+        }
+      }
+    ],
+    "Author": "Unknown",
+    "Comment": "3 to 3 + intbonus x3 additional",
+    "m_DisplayName": {
+      "m_Key": "54a90c80-c3c7-410c-a633-f8a0fd297bd3",
+      "m_OwnerString": "758380d0311746b582f5d87e2a5c8de5",
+      "m_OwnerPropertyPath": "m_DisplayName",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\Plasma Cannon\\Starstorm_Fact_m_DisplayName.json",
+      "Shared": null
+    },
+    "m_Description": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "m_Icon": null,
+    "m_AllowNonContextActions": false,
+    "HideInUI": false,
+    "HideInCharacterSheetAndLevelUp": false,
+    "HideNotAvailibleInUI": false,
+    "Ranks": 1,
+    "Prerequisites": {
+      "Composition": "And",
+      "List": []
+    },
+    "FeatureTypes": [],
+    "TalentIconInfo": {
+      "AllGroups": 0,
+      "MainGroup": 0
+    },
+    "m_Acronym": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "ShowInDialogue": false,
+    "IsStarshipFeature": false
+  },
+  "Meta": {
+    "ShadowDeleted": false
+  }
+}

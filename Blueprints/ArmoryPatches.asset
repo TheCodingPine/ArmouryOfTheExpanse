@@ -37,3 +37,18 @@ MonoBehaviour:
   - Guid: ae395f7430ba42a48307f277adb03f0f
     Filename: ImperiumMilitary_DLC2_CH4CyberEaglePatternProtocol.patch
     PatchType: 2
+  - Guid: 874ddeeeac2046ac8c1ec1577201fa92
+    Filename: Forest_LootGoodLoot#2.patch
+    PatchType: 2
+  - Guid: c989a5cb1e5a4d05b8037f9f0961738a
+    Filename: AdeptusMechanicus_LockedWallSafe.patch
+    PatchType: 2
+  - Guid: dc1f1bd19fef4fb88afd40260d3e568b
+    Filename: TaintedStreetsCultistLeader00.patch
+    PatchType: 2
+  - Guid: 2afd1f846cae424281a7c73ee38cfbbb
+    Filename: DaringHeirGuttedShip_HiddenGoodLoot.patch
+    PatchType: 2
+  - Guid: d8af15619c57441987d5cbf4c2a62ed3
+    Filename: AdeptusMechanicus_ClosedLittleRoomChest.patch
+    PatchType: 2

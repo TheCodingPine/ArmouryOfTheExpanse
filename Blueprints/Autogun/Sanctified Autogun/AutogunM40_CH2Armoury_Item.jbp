@@ -1,40 +1,43 @@
 {
-  "AssetId": "d8a45ba1f0b7478d91eb3a1998e00729",
+  "AssetId": "afc0ae6458644dec9e9e672674495611",
   "Data": {
     "$type": "c00f723cccf2d314198c42a572c631fd, BlueprintItemWeapon",
-    "PrototypeLink": "e4570c06ba5c4dd9bb0734d85ad81ce4",
+    "PrototypeLink": "ff30bc4470f5496c8d29818da6c6931e",
     "m_Overrides": [
+      "m_DisplayName",
+      "m_CargoVolumePercent",
+      "m_ForcedRampColorPresetIndex",
+      "Category",
+      "WarhammerMaxDistance",
+      "CanBeUsedInGame",
+      "m_Rarity",
+      "RateOfFire",
+      "WarhammerPenetration",
+      "m_VisualParameters.m_WeaponModel",
+      "m_Icon",
+      "WeaponAbilities.Ability3.m_FXSettings",
+      "$AddFactToEquipmentWielder$0f5d910c-bff1-409f-a245-2d80aa7606d5",
+      "$ReapplyFactsFromItem$bb2380d1-c99c-4a1c-9f74-f0a78da7239f",
+      "$OverrideOverpenetrationFactor$6b0a8b7f-146d-45a1-b67c-3c005bcef97f",
+      "Author",
+      "m_Description",
+      "$AdditionalDescriptionComponent$35996e1f-952e-4700-b6d3-c61b644b022f",
+      "$AddFactToEquipmentWielder$881103db-5332-4166-b0fb-9c4ce4c3c715",
       "WarhammerDamage",
-      "WarhammerMaxDamage",
-      "$AddStringToFactName$50944bd8-cc3f-4df5-9bbf-237851a2d6b8",
-      "m_Rarity"
+      "WarhammerMaxDamage"
     ],
     "Components": [
       {
-        "$type": "6dfdda28c94860241a112b404538e2a7, EquipmentRestrictionStat",
-        "name": "$EquipmentRestrictionStat$e44133fa-d538-47ea-b8ec-fcbaff2accb6",
-        "m_Flags": 0,
-        "PrototypeLink": {
-          "guid": "e4570c06ba5c4dd9bb0734d85ad81ce4",
-          "name": "$EquipmentRestrictionStat$e44133fa-d538-47ea-b8ec-fcbaff2accb6"
-        },
-        "m_Overrides": [],
-        "Stat": "WarhammerStrength",
-        "MinValue": 55,
-        "m_ChangeRestrictionStatIfHasFact": true,
-        "m_Fact": "!bp_26376b596c474d67849613617ced7b04",
-        "m_SubtractionValue": 25
-      },
-      {
         "$type": "d7b23547716f4a949471625ff6c66fb2, EquipmentRestrictionHasFacts",
-        "name": "$EquipmentRestrictionHasFacts$78882ab2-1160-4515-a2a7-3d0441d70c5a",
+        "name": "$EquipmentRestrictionHasFacts$d60ed3b5-0343-4db9-bfd8-96412ccbe763",
         "m_Flags": 0,
         "PrototypeLink": {
-          "guid": "e4570c06ba5c4dd9bb0734d85ad81ce4",
-          "name": "$EquipmentRestrictionHasFacts$78882ab2-1160-4515-a2a7-3d0441d70c5a"
+          "guid": "ff30bc4470f5496c8d29818da6c6931e",
+          "name": "$EquipmentRestrictionHasFacts$d60ed3b5-0343-4db9-bfd8-96412ccbe763"
         },
         "m_Overrides": [],
         "m_Facts": [
+          "!bp_950565a69d144391897cdc0024747755",
           "!bp_c7a53b43ac5f4f11a1aef612dd3f4f71",
           "!bp_590cb5c394ee4b5eb213121c96063dec"
         ],
@@ -42,69 +45,76 @@
         "All": false
       },
       {
-        "$type": "d7b23547716f4a949471625ff6c66fb2, EquipmentRestrictionHasFacts",
-        "name": "$EquipmentRestrictionHasFacts$f5c200e4-852f-4a10-a92b-ff840cf5238e",
+        "$type": "65221a9a6133bd0408b019b86642d97e, AddFactToEquipmentWielder",
+        "name": "$AddFactToEquipmentWielder$f0e84e33-a822-4223-825e-77a796cf1deb",
         "m_Flags": 0,
         "PrototypeLink": {
-          "guid": "e4570c06ba5c4dd9bb0734d85ad81ce4",
-          "name": "$EquipmentRestrictionHasFacts$f5c200e4-852f-4a10-a92b-ff840cf5238e"
+          "guid": "ff30bc4470f5496c8d29818da6c6931e",
+          "name": "$AddFactToEquipmentWielder$f0e84e33-a822-4223-825e-77a796cf1deb"
         },
         "m_Overrides": [],
-        "m_Facts": [
-          "!bp_dddb6710ce25490e98608a2c07fbfc51"
-        ],
-        "m_Inverted": false,
-        "All": false
+        "m_Fact": "!bp_3af882215424458592fc0884ef0c82c4"
+      },
+      {
+        "$type": "ee483046b4df4eda8e96cd762bbdf594, ReapplyFactsFromItem",
+        "name": "$ReapplyFactsFromItem$80d2f4bc-d0ad-4e6c-8fd5-329d43c27b2b",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "ff30bc4470f5496c8d29818da6c6931e",
+          "name": "$ReapplyFactsFromItem$80d2f4bc-d0ad-4e6c-8fd5-329d43c27b2b"
+        },
+        "m_Overrides": [],
+        "Version": 1
+      },
+      {
+        "$type": "3c5267edd045432ab5bd6dbe606d4da3, AdditionalDescriptionComponent",
+        "name": "$AdditionalDescriptionComponent$35996e1f-952e-4700-b6d3-c61b644b022f",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "AdditionalDescription": {
+          "m_Key": "07a9d667-144d-414c-acd6-8f742ff0f695",
+          "m_OwnerString": "afc0ae6458644dec9e9e672674495611#$AdditionalDescriptionComponent$35996e1f-952e-4700-b6d3-c61b644b022f",
+          "m_OwnerPropertyPath": "AdditionalDescription",
+          "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\ImperialAutogun\\AutogunM40Black_Item1_AdditionalDescription.json",
+          "Shared": null
+        }
       },
       {
         "$type": "65221a9a6133bd0408b019b86642d97e, AddFactToEquipmentWielder",
-        "name": "$AddFactToEquipmentWielder$44b0d6d2-28b3-4f63-8da4-0ed62de41a6b",
+        "name": "$AddFactToEquipmentWielder$881103db-5332-4166-b0fb-9c4ce4c3c715",
         "m_Flags": 0,
         "PrototypeLink": {
-          "guid": "e4570c06ba5c4dd9bb0734d85ad81ce4",
-          "name": "$AddFactToEquipmentWielder$44b0d6d2-28b3-4f63-8da4-0ed62de41a6b"
+          "guid": "",
+          "name": ""
         },
         "m_Overrides": [],
-        "m_Fact": "!bp_adf766ad17194a3080f20cd93be25392"
-      },
-      {
-        "$type": "c8cf2b4638d44ca29565527b0d0b90c2, AddStringToFactName",
-        "name": "$AddStringToFactName$50944bd8-cc3f-4df5-9bbf-237851a2d6b8",
-        "m_Flags": 0,
-        "PrototypeLink": {
-          "guid": "bd1ffcfed2fe48ad9ad2d447a85e55bd",
-          "name": "$AddStringToFactName$d39b1fd3-750e-482d-856f-b518293d1fd0"
-        },
-        "m_Overrides": [
-          "m_AdditionalString"
-        ],
-        "m_AdditionalString": {
-          "m_Key": "a29285f7-1d7b-4ba2-ad22-c1ff3580ce8b",
-          "m_OwnerString": "3b1cdbdec35f4d249c5d0eaf57778046#$AddStringToFactName$d39b1fd3-750e-482d-856f-b518293d1fd0",
-          "m_OwnerPropertyPath": "m_AdditionalString",
-          "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\Imperial PowerSword\\PowerSwordCH02_Armoury1_Item_m_AdditionalString_1.json",
-          "Shared": null
-        },
-        "JunctionType": "BeforeFirstSquareBrackets"
+        "m_Fact": "!bp_92ec94ac4ba3421dbbfde07ed4ece4a7"
       }
     ],
     "Author": "Unknown",
     "Comment": "",
     "m_DisplayName": {
-      "m_Key": "3b9bc3f0-7dd9-4d30-bab0-daf1945e805e",
-      "m_OwnerString": "e4570c06ba5c4dd9bb0734d85ad81ce4",
+      "m_Key": "597feb31-07b9-43c2-9cbb-18627c408100",
+      "m_OwnerString": "afc0ae6458644dec9e9e672674495611",
       "m_OwnerPropertyPath": "m_DisplayName",
-      "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\Plasma Cannon\\PlasmaCannon_CH2Armoury_Item_m_DisplayName.json",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\ImperialAutogun\\AutogunM40Black_Item1_m_DisplayName.json",
       "Shared": null
     },
     "m_Description": {
-      "m_Key": "",
-      "m_OwnerString": "",
-      "m_OwnerPropertyPath": "",
-      "m_JsonPath": "",
+      "m_Key": "69dbe3b2-1186-4a91-bb2c-bf0d97fd3e1e",
+      "m_OwnerString": "afc0ae6458644dec9e9e672674495611",
+      "m_OwnerPropertyPath": "m_Description",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\ImperialAutogun\\AutogunM40Black_Item1_m_Description.json",
       "Shared": null
     },
-    "m_Icon": null,
+    "m_Icon": {
+      "guid": "70d3520afdb98e54a947c1d5cfbb7da7",
+      "fileid": 21300000
+    },
     "m_FlavorText": {
       "m_Key": "",
       "m_OwnerString": "",
@@ -129,11 +139,11 @@
     "m_NotStackable": false,
     "m_Weight": 0.0,
     "m_Origin": "RangedWeaponry",
-    "m_Rarity": "Pattern",
+    "m_Rarity": "Unique",
     "m_Tag": "None",
     "m_IsNotable": false,
     "m_ProfitFactorCost": 0.0,
-    "m_CargoVolumePercent": 35,
+    "m_CargoVolumePercent": 15,
     "m_InventoryPutSound": "UI_INV_Rifle_Put_Play",
     "m_InventoryTakeSound": "UI_INV_Rifle_Take_Play",
     "ToCargoAutomatically": false,
@@ -145,22 +155,25 @@
     "IsUnlootable": false,
     "m_EquipmentEntity": null,
     "m_EquipmentEntityAlternatives": [],
-    "m_ForcedRampColorPresetIndex": -1,
+    "m_ForcedRampColorPresetIndex": 0,
     "m_VisualParameters": {
-      "m_WeaponAnimationStyle": "HeavyOnHip",
+      "m_WeaponAnimationStyle": "Assault",
       "m_SpecialAnimation": "None",
-      "m_BurstAnimationDelay": 0.0,
-      "m_WeaponModel": null,
+      "m_BurstAnimationDelay": -0.15,
+      "m_WeaponModel": {
+        "guid": "31280ebd0d667424ab05798c9c999ade",
+        "fileid": 5516857871474235138
+      },
       "m_WeaponBeltModelOverride": null,
       "m_WeaponSheathModelOverride": null,
-      "m_SoundSize": "Medium",
+      "m_SoundSize": "None",
       "m_SoundType": "None",
       "m_SoundSizeSwitch": {
         "Value": "",
         "Group": ""
       },
       "m_SoundTypeSwitch": {
-        "Value": "Plasma",
+        "Value": "Bullet",
         "Group": "ProjectileType"
       },
       "m_MuffledTypeSwitch": {
@@ -178,31 +191,31 @@
     "m_OnHitActions": null,
     "AbilityContainer": {
       "Ability1": {
-        "Type": "AOE",
+        "Type": "SingleShot",
         "Mode": "Default",
-        "m_Ability": "!bp_f71f49187b664e69b0f3c99a9371214b",
-        "m_FXSettings": "!bp_38d85e7224d744149e5d859fbfb08218",
+        "m_Ability": "!bp_a489b6d823ef4b86b431aa1d42e385c7",
+        "m_FXSettings": "!bp_38a747f2fafc4789ae7610c3b562bdbe",
+        "OnHitOverrideType": "None",
+        "m_OnHitActions": null,
+        "AP": 1
+      },
+      "Ability2": {
+        "Type": "Burst",
+        "Mode": "Default",
+        "m_Ability": "!bp_1cdd00b349324e7f958a8cb1dfcde2fe",
+        "m_FXSettings": "!bp_38a747f2fafc4789ae7610c3b562bdbe",
         "OnHitOverrideType": "None",
         "m_OnHitActions": null,
         "AP": 2
       },
-      "Ability2": {
-        "Type": "AOE",
-        "Mode": "Any",
-        "m_Ability": "!bp_080de86158704ab99f759045c8a5fbeb",
-        "m_FXSettings": "!bp_effe16819ac3426cbedaba9337e95ead",
-        "OnHitOverrideType": "None",
-        "m_OnHitActions": null,
-        "AP": 3
-      },
       "Ability3": {
         "Type": "Reload",
-        "Mode": "Default",
+        "Mode": "Any",
         "m_Ability": "!bp_98f4a31b68e446ad9c63411c7b349146",
-        "m_FXSettings": null,
+        "m_FXSettings": "!bp_38a747f2fafc4789ae7610c3b562bdbe",
         "OnHitOverrideType": "None",
         "m_OnHitActions": null,
-        "AP": 4
+        "AP": 2
       },
       "Ability4": {
         "Type": "None",
@@ -225,12 +238,12 @@
     },
     "m_AttackOfOpportunityAbility": null,
     "m_AttackOfOpportunityAbilityFXSettings": null,
-    "Category": "Heavy",
-    "Family": "Plasma",
+    "Category": "Basic",
+    "Family": "Solid",
     "Classification": "None",
     "m_HoldingType": "TwoHanded",
     "m_Range": "Ranged",
-    "m_Heaviness": "Heavy",
+    "m_Heaviness": "NotHeavy",
     "CanBeUsedInGame": true,
     "m_TypeNameText": {
       "m_Key": "",
@@ -254,18 +267,18 @@
       "Shared": null
     },
     "IsTwoHanded": true,
-    "WarhammerDamage": 12,
-    "WarhammerMaxDamage": 16,
-    "WarhammerPenetration": 40,
+    "WarhammerDamage": 8,
+    "WarhammerMaxDamage": 12,
+    "WarhammerPenetration": 5,
     "DodgePenetration": 0,
     "AdditionalHitChance": 0,
-    "WarhammerRecoil": 0,
-    "WarhammerMaxDistance": 8,
-    "WarhammerMaxAmmo": 4,
-    "RateOfFire": 0,
+    "WarhammerRecoil": 15,
+    "WarhammerMaxDistance": 24,
+    "WarhammerMaxAmmo": 24,
+    "RateOfFire": 7,
     "m_Enchantments": [],
     "m_DamageType": {
-      "Type": "Energy"
+      "Type": "Piercing"
     },
     "m_IsNatural": false,
     "m_DamageStatBonusFactor": "One"

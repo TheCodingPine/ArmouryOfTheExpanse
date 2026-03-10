@@ -1,7 +1,10 @@
 using ArmouryOfTheExpanse;
 using HarmonyLib;
 using Kingmaker.Blueprints;
+using Kingmaker.Blueprints.Items.Ecnchantments;
 using Kingmaker.Blueprints.Items.Weapons;
+using Kingmaker.View;
+using Kingmaker.Visual.Particles;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -92,6 +95,20 @@ public static class DPAssetsManager
         var model = AccessTools.FieldRefAccess<WeaponVisualParameters, GameObject>("m_WeaponModel");
         model(visualParams(item)) = _guids[newVisual].asset;
     }
+
+
+    //private static void VFXColorizer()
+    //{
+    //    BlueprintWeaponEnchantment ench = new BlueprintWeaponEnchantment();
+    //        //copy of an existing jbp's enchantment on ench
+    //    FxFadeOut var = ench.WeaponFxPrefab.GetComponent<FxFadeOut>();
+    //    Renderer.Instantiate(var);
+    //    Material mat = var.GetComponent<Material>();
+    //    Object.Instantiate(mat);
+    //    mat.color = Color.red;
+    //}
+
+
 }
 
 

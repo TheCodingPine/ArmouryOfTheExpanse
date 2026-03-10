@@ -1,0 +1,77 @@
+{
+  "AssetId": "afd13352c2e24c4d870178776a5d367f",
+  "Data": {
+    "$type": "618a7e0d54149064ab3ffa5d9057362c, BlueprintBuff",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "05fab0d4998390a4cbf88da0ab1e4123, AddMechanicsFeature",
+        "name": "$AddMechanicsFeature$096498a6-b8b7-45b4-b8ea-e87526be5e25",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "m_Feature": "AutoHit",
+        "m_Restrictions": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": []
+          }
+        }
+      }
+    ],
+    "Author": "Unknown",
+    "Comment": "",
+    "m_DisplayName": {
+      "m_Key": "53c8dca0-ba33-45dc-91ae-a7d74453afc0",
+      "m_OwnerString": "afd13352c2e24c4d870178776a5d367f",
+      "m_OwnerPropertyPath": "m_DisplayName",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\ImperialAutogun\\BlessedAutogun_Buff_m_DisplayName.json",
+      "Shared": null
+    },
+    "m_Description": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "m_Icon": null,
+    "m_AllowNonContextActions": false,
+    "m_Flags": "HiddenInUi, NeedsNoVisual",
+    "m_SoundTypeSwitch": {
+      "Value": "",
+      "Group": ""
+    },
+    "m_MuffledTypeSwitch": {
+      "Value": "",
+      "Group": ""
+    },
+    "Stacking": "Replace",
+    "ProlongWhenRankAdded": false,
+    "PriorityProperty": "Value1",
+    "Initiative": "ByCaster",
+    "Ranks": 0,
+    "FxOnStart": {
+      "AssetId": ""
+    },
+    "FxOnRemove": {
+      "AssetId": ""
+    },
+    "m_FXSettings": null,
+    "ResourceAssetIds": [],
+    "PlayOnlyFirstHitSound": false,
+    "m_priorityInUI": 0,
+    "m_AbilityGroups": [],
+    "m_Cyclical": false
+  },
+  "Meta": {
+    "ShadowDeleted": false
+  }
+}

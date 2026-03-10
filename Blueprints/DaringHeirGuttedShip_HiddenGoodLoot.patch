@@ -1,0 +1,18 @@
+{
+  "Items": [
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "m_Item": "!bp_afc0ae6458644dec9e9e672674495611",
+        "Diversity": 0,
+        "Count": 1,
+        "m_ReputationPointsToUnlock": 0
+      },
+      "InsertAfterTarget": {
+        "m_Item": "!bp_318af825b43544878072523c0a579e07",
+        "Count": 1,
+        "m_ReputationPointsToUnlock": 0
+      }
+    }
+  ]
+}
