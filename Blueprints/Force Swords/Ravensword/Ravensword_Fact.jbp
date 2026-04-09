@@ -219,7 +219,7 @@
     "m_Icon": null,
     "m_AllowNonContextActions": false,
     "HideInUI": false,
-    "HideInCharacterSheetAndLevelUp": false,
+    "HideInCharacterSheetAndLevelUp": true,
     "HideNotAvailibleInUI": false,
     "Ranks": 1,
     "Prerequisites": {

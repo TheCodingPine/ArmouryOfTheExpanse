@@ -7,7 +7,8 @@
       "WarhammerDamage",
       "WarhammerMaxDamage",
       "$AddStringToFactName$50944bd8-cc3f-4df5-9bbf-237851a2d6b8",
-      "m_Rarity"
+      "m_Rarity",
+      "WeaponAbilities.Ability2.m_Ability"
     ],
     "Components": [
       {
@@ -79,10 +80,10 @@
           "m_AdditionalString"
         ],
         "m_AdditionalString": {
-          "m_Key": "a29285f7-1d7b-4ba2-ad22-c1ff3580ce8b",
-          "m_OwnerString": "3b1cdbdec35f4d249c5d0eaf57778046#$AddStringToFactName$d39b1fd3-750e-482d-856f-b518293d1fd0",
+          "m_Key": "30eb73f5-0a6c-4bbe-bd30-189cf02bb279",
+          "m_OwnerString": "d8a45ba1f0b7478d91eb3a1998e00729#$AddStringToFactName$50944bd8-cc3f-4df5-9bbf-237851a2d6b8",
           "m_OwnerPropertyPath": "m_AdditionalString",
-          "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\Imperial PowerSword\\PowerSwordCH02_Armoury1_Item_m_AdditionalString_1.json",
+          "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\Plasma Cannon\\PlasmaCannon_CH2Armoury_Item_m_AdditionalString.json",
           "Shared": null
         },
         "JunctionType": "BeforeFirstSquareBrackets"
@@ -178,7 +179,7 @@
     "m_OnHitActions": null,
     "AbilityContainer": {
       "Ability1": {
-        "Type": "AOE",
+        "Type": "SingleShot",
         "Mode": "Default",
         "m_Ability": "!bp_f71f49187b664e69b0f3c99a9371214b",
         "m_FXSettings": "!bp_38d85e7224d744149e5d859fbfb08218",
@@ -254,8 +255,8 @@
       "Shared": null
     },
     "IsTwoHanded": true,
-    "WarhammerDamage": 12,
-    "WarhammerMaxDamage": 16,
+    "WarhammerDamage": 13,
+    "WarhammerMaxDamage": 18,
     "WarhammerPenetration": 40,
     "DodgePenetration": 0,
     "AdditionalHitChance": 0,

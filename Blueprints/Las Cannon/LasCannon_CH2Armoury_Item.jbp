@@ -1,0 +1,252 @@
+{
+  "AssetId": "857411fca50b4d33a3953bf87abd3c97",
+  "Data": {
+    "$type": "c00f723cccf2d314198c42a572c631fd, BlueprintItemWeapon",
+    "PrototypeLink": "40d8a98cd786488c87103c97cbdb8631",
+    "m_Overrides": [
+      "WarhammerDamage",
+      "WarhammerMaxDamage",
+      "m_Rarity",
+      "$AddStringToFactName$8c9ddaa6-aa82-42cd-aa42-dce18be84d40"
+    ],
+    "Components": [
+      {
+        "$type": "6dfdda28c94860241a112b404538e2a7, EquipmentRestrictionStat",
+        "name": "$EquipmentRestrictionStat$e44133fa-d538-47ea-b8ec-fcbaff2accb6",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "40d8a98cd786488c87103c97cbdb8631",
+          "name": "$EquipmentRestrictionStat$e44133fa-d538-47ea-b8ec-fcbaff2accb6"
+        },
+        "m_Overrides": [],
+        "Stat": "WarhammerStrength",
+        "MinValue": 60,
+        "m_ChangeRestrictionStatIfHasFact": true,
+        "m_Fact": "!bp_26376b596c474d67849613617ced7b04",
+        "m_SubtractionValue": 25
+      },
+      {
+        "$type": "d7b23547716f4a949471625ff6c66fb2, EquipmentRestrictionHasFacts",
+        "name": "$EquipmentRestrictionHasFacts$78882ab2-1160-4515-a2a7-3d0441d70c5a",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "40d8a98cd786488c87103c97cbdb8631",
+          "name": "$EquipmentRestrictionHasFacts$78882ab2-1160-4515-a2a7-3d0441d70c5a"
+        },
+        "m_Overrides": [],
+        "m_Facts": [
+          "!bp_c7a53b43ac5f4f11a1aef612dd3f4f71",
+          "!bp_590cb5c394ee4b5eb213121c96063dec"
+        ],
+        "m_Inverted": true,
+        "All": false
+      },
+      {
+        "$type": "65221a9a6133bd0408b019b86642d97e, AddFactToEquipmentWielder",
+        "name": "$AddFactToEquipmentWielder$205092aa-485e-4443-852a-24756b7819a2",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "40d8a98cd786488c87103c97cbdb8631",
+          "name": "$AddFactToEquipmentWielder$205092aa-485e-4443-852a-24756b7819a2"
+        },
+        "m_Overrides": [],
+        "m_Fact": "!bp_da524d7394384325bc8aff143dd83e63"
+      },
+      {
+        "$type": "65221a9a6133bd0408b019b86642d97e, AddFactToEquipmentWielder",
+        "name": "$AddFactToEquipmentWielder$8bce1281-68bb-4f9c-8bd0-cf6ff5f00047",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "40d8a98cd786488c87103c97cbdb8631",
+          "name": "$AddFactToEquipmentWielder$8bce1281-68bb-4f9c-8bd0-cf6ff5f00047"
+        },
+        "m_Overrides": [],
+        "m_Fact": "!bp_7712185d9ea049609fda2784a6ca75ce"
+      }
+    ],
+    "Author": "Unknown",
+    "Comment": "",
+    "m_DisplayName": {
+      "m_Key": "61dc7ccb-ff07-4d5b-8a61-6feb1b4cdc25",
+      "m_OwnerString": "40d8a98cd786488c87103c97cbdb8631",
+      "m_OwnerPropertyPath": "m_DisplayName",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\Las Cannon\\LasCannon_CH1Armoury_Item_m_DisplayName.json",
+      "Shared": null
+    },
+    "m_Description": {
+      "m_Key": "75822758-2e56-4093-af33-579999df338b",
+      "m_OwnerString": "40d8a98cd786488c87103c97cbdb8631",
+      "m_OwnerPropertyPath": "m_Description",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\Las Cannon\\LasCannon_CH1Armoury_Item_m_Description.json",
+      "Shared": null
+    },
+    "m_Icon": null,
+    "m_FlavorText": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "m_NonIdentifiedNameText": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "m_NonIdentifiedDescriptionText": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "m_NotStackable": false,
+    "m_Weight": 0.0,
+    "m_Origin": "RangedWeaponry",
+    "m_Rarity": "Pattern",
+    "m_Tag": "None",
+    "m_IsNotable": false,
+    "m_ProfitFactorCost": 0.0,
+    "m_CargoVolumePercent": 35,
+    "m_InventoryPutSound": "UI_INV_Rifle_Put_Play",
+    "m_InventoryTakeSound": "UI_INV_Rifle_Take_Play",
+    "ToCargoAutomatically": false,
+    "ItemLevel": 0,
+    "SpendCharges": false,
+    "Charges": 1,
+    "RestoreChargesAfterCombat": false,
+    "IsNonRemovable": false,
+    "IsUnlootable": false,
+    "m_EquipmentEntity": null,
+    "m_EquipmentEntityAlternatives": [],
+    "m_ForcedRampColorPresetIndex": -1,
+    "m_VisualParameters": {
+      "m_WeaponAnimationStyle": "HeavyOnHip",
+      "m_SpecialAnimation": "None",
+      "m_BurstAnimationDelay": 0.0,
+      "m_WeaponModel": null,
+      "m_WeaponBeltModelOverride": null,
+      "m_WeaponSheathModelOverride": null,
+      "m_SoundSize": "Large",
+      "m_SoundType": "None",
+      "m_SoundSizeSwitch": {
+        "Value": "",
+        "Group": ""
+      },
+      "m_SoundTypeSwitch": {
+        "Value": "Plasma",
+        "Group": "ProjectileType"
+      },
+      "m_MuffledTypeSwitch": {
+        "Value": "",
+        "Group": ""
+      },
+      "m_MissSoundType": "None",
+      "m_EquipSound": "Foley_WP_R_2HAssault_EquipGeneric_Play",
+      "m_UnequipSound": "Foley_WP_R_2HAssault_UnEquipGeneric_Play",
+      "m_OutOfAmmoSound": "",
+      "m_InventoryEquipSound": "UI_INV_Rifle_Equip_Play",
+      "m_InventoryPutSound": "UI_INV_Rifle_Put_Play",
+      "m_InventoryTakeSound": "UI_INV_Rifle_Take_Play"
+    },
+    "m_OnHitActions": null,
+    "AbilityContainer": {
+      "Ability1": {
+        "Type": "SingleShot",
+        "Mode": "Default",
+        "m_Ability": "!bp_a489b6d823ef4b86b431aa1d42e385c7",
+        "m_FXSettings": "!bp_6cd13d0464794ec0b1f8746d0a475b96",
+        "OnHitOverrideType": "None",
+        "m_OnHitActions": null,
+        "AP": 1
+      },
+      "Ability2": {
+        "Type": "SingleShot",
+        "Mode": "Default",
+        "m_Ability": "!bp_4e20851db1714699b1297d698a3f2dc0",
+        "m_FXSettings": "!bp_6cd13d0464794ec0b1f8746d0a475b96",
+        "OnHitOverrideType": "None",
+        "m_OnHitActions": null,
+        "AP": 2
+      },
+      "Ability3": {
+        "Type": "Reload",
+        "Mode": "Default",
+        "m_Ability": "!bp_98f4a31b68e446ad9c63411c7b349146",
+        "m_FXSettings": null,
+        "OnHitOverrideType": "None",
+        "m_OnHitActions": null,
+        "AP": 4
+      },
+      "Ability4": {
+        "Type": "None",
+        "Mode": "Default",
+        "m_Ability": null,
+        "m_FXSettings": null,
+        "OnHitOverrideType": "None",
+        "m_OnHitActions": null,
+        "AP": 0
+      },
+      "Ability5": {
+        "Type": "None",
+        "Mode": "Default",
+        "m_Ability": null,
+        "m_FXSettings": null,
+        "OnHitOverrideType": "None",
+        "m_OnHitActions": null,
+        "AP": 0
+      }
+    },
+    "m_AttackOfOpportunityAbility": null,
+    "m_AttackOfOpportunityAbilityFXSettings": null,
+    "Category": "Heavy",
+    "Family": "Laser",
+    "Classification": "None",
+    "m_HoldingType": "TwoHanded",
+    "m_Range": "Ranged",
+    "m_Heaviness": "Heavy",
+    "CanBeUsedInGame": true,
+    "m_TypeNameText": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "m_DefaultNameText": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "m_DescriptionText": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "IsTwoHanded": true,
+    "WarhammerDamage": 22,
+    "WarhammerMaxDamage": 28,
+    "WarhammerPenetration": 15,
+    "DodgePenetration": 15,
+    "AdditionalHitChance": 25,
+    "WarhammerRecoil": 0,
+    "WarhammerMaxDistance": 24,
+    "WarhammerMaxAmmo": 8,
+    "RateOfFire": 1,
+    "m_Enchantments": [],
+    "m_DamageType": {
+      "Type": "Energy"
+    },
+    "m_IsNatural": false,
+    "m_DamageStatBonusFactor": "One"
+  },
+  "Meta": {
+    "ShadowDeleted": false
+  }
+}

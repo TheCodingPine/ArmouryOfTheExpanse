@@ -21,7 +21,8 @@
       "WarhammerMaxAmmo",
       "WeaponAbilities.Ability3.AP",
       "$AdditionalDescriptionComponent$82513de8-2ae3-426f-b0d9-5c82778b629b",
-      "RateOfFire"
+      "RateOfFire",
+      "$EquipmentRestrictionStat$f869c98f-14cd-42c8-9a14-d89f8c7ba0de"
     ],
     "Components": [
       {
@@ -95,21 +96,6 @@
         "All": false
       },
       {
-        "$type": "6dfdda28c94860241a112b404538e2a7, EquipmentRestrictionStat",
-        "name": "$EquipmentRestrictionStat$1540e680-b88b-44d1-bfbd-59a295453640",
-        "m_Flags": 0,
-        "PrototypeLink": {
-          "guid": "",
-          "name": ""
-        },
-        "m_Overrides": [],
-        "Stat": "WarhammerIntelligence",
-        "MinValue": 60,
-        "m_ChangeRestrictionStatIfHasFact": false,
-        "m_Fact": null,
-        "m_SubtractionValue": 0
-      },
-      {
         "$type": "65221a9a6133bd0408b019b86642d97e, AddFactToEquipmentWielder",
         "name": "$AddFactToEquipmentWielder$de268ddc-9e8f-4a89-baff-653f891c4a07",
         "m_Flags": 0,
@@ -136,6 +122,21 @@
           "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\Tau Plasma\\TauPlasmaRIfleCH4_Melting_AdditionalDescription.json",
           "Shared": null
         }
+      },
+      {
+        "$type": "6dfdda28c94860241a112b404538e2a7, EquipmentRestrictionStat",
+        "name": "$EquipmentRestrictionStat$f869c98f-14cd-42c8-9a14-d89f8c7ba0de",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Stat": "WarhammerIntelligence",
+        "MinValue": 55,
+        "m_ChangeRestrictionStatIfHasFact": true,
+        "m_Fact": "!bp_e34ed1a566df4d14a4027dd4cd695233",
+        "m_SubtractionValue": 35
       }
     ],
     "Author": "Unknown",

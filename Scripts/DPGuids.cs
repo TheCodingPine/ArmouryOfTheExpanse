@@ -1,9 +1,14 @@
 using ArmouryOfTheExpanse;
+using Epic.OnlineServices.Ecom;
 using HarmonyLib;
 using Kingmaker.Blueprints;
 using Kingmaker.Blueprints.Items.Ecnchantments;
 using Kingmaker.Blueprints.Items.Weapons;
+using Kingmaker.ResourceLinks;
+using Kingmaker.UnitLogic.Abilities.Blueprints;
+using Kingmaker.UnitLogic.Abilities.Visual.Blueprints;
 using Kingmaker.View;
+using Kingmaker.Visual.CharacterSystem;
 using Kingmaker.Visual.Particles;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,6 +23,8 @@ public static class DPAssetsManager
         {
                 { DPAsset.DarktideA,
                     new DPGuids(DPGuids.DarktideAAsset(), DPGuids.DarktideAIcon()) },
+                { DPAsset.Angelic,
+                    new DPGuids(DPGuids.AngelicAsset(), DPGuids.AngelicIcon()) },
                 { DPAsset.Aquila,
                     new DPGuids(DPGuids.AquilaAsset(), DPGuids.AquilaIcon()) },
                 { DPAsset.Holy,
@@ -47,7 +54,9 @@ public static class DPAssetsManager
                 { DPAsset.Plasmacannon_Red,
                     new DPGuids(DPGuids.Plasmacannon_RedAsset(), DPGuids.Plasmacannon_RedIcon()) },
                 { DPAsset.Plasmacannon_Yellow,
-                    new DPGuids(DPGuids.Plasmacannon_YellowAsset(), DPGuids.Plasmacannon_YellowIcon()) }
+                    new DPGuids(DPGuids.Plasmacannon_YellowAsset(), DPGuids.Plasmacannon_YellowIcon()) },
+                { DPAsset.Autocannon_Green,
+                    new DPGuids(DPGuids.Autocannon_GreenAsset(), DPGuids.Autocannon_GreenIcon()) }
         };
 
     /// <summary> both asset and icon  </summary>
@@ -56,7 +65,7 @@ public static class DPAssetsManager
 
     public static void Apply()
     {
-        Main.log.Log($"Armoury of the Expanse - DPAssetsManager.Apply() started switching assets");
+        Main.log.Log($"Begin assets switching:");
 
         List<ArmouryElement> catalogue = ArmouryCatalogue.Get();
 
@@ -68,32 +77,74 @@ public static class DPAssetsManager
                 if (item != null)
                 {
                     AssetsSwitching(item, catalogueItem.NewVisual);
-                    Main.log.Log($"Armoury of the Expanse - jbp {catalogueItem.Guid} is now a {catalogueItem.NewVisual}");
+                    Main.log.Log($" - jbp {catalogueItem.Guid} is now a {catalogueItem.NewVisual}");
                 }
                 else
                 {
-                    Main.log.Log($"[ERROR] Armoury of the Expanse - jbp {catalogueItem.Guid} not found, can't switch to {catalogueItem.NewVisual}");
+                    Main.log.Log($"[ERROR] jbp {catalogueItem.Guid} not found, can't switch to {catalogueItem.NewVisual}");
                 }
 
             }
             catch (System.Exception)
             {
-                Main.log.Log($"[ERROR] Armoury of the Expanse - jbp {catalogueItem.Guid} crashed while switching to {catalogueItem.NewVisual}");
+                Main.log.Log($"[ERROR] jbp {catalogueItem.Guid} crashed while switching to {catalogueItem.NewVisual}");
                 throw;
             }
 
         }
+
+        ApplyBigLaserVFX();
+
+        ////VFX test
+        //var laser = ResourcesLibrary.TryGetBlueprint<BlueprintItemWeapon>("40d8a98cd786488c87103c97cbdb8631");
+        //Main.log.Log($"Got laser weapon");
+        //BlueprintProjectile projectile = laser.WeaponAbilities.Ability2.FXSettings.VisualFXSettings.Projectiles[0];
+        //Main.log.Log($"Got the projectile");
+
+        //ProjectileView test = projectile.GetComponent<ProjectileView>();
+        //test.ReloadFromInstanceID();
+        //Texture2D primary = new Texture2D(1, 1);
+        //primary.SetPixel(1, 1, Color.red);
+        //projectile.View.LoadAsset();
     }
 
     private static void AssetsSwitching(BlueprintItemWeapon item, DPAsset newVisual)
     {
-        var sprite = AccessTools.FieldRefAccess<BlueprintItemWeapon, UnityEngine.Sprite>("m_Icon");
-        sprite(item) = _guids[newVisual].icon;
+        try
+        {
+            var sprite = AccessTools.FieldRefAccess<BlueprintItemWeapon, UnityEngine.Sprite>("m_Icon");
 
-        //access the private asset guid
-        var visualParams = AccessTools.FieldRefAccess<BlueprintItemWeapon, WeaponVisualParameters>("m_VisualParameters");
-        var model = AccessTools.FieldRefAccess<WeaponVisualParameters, GameObject>("m_WeaponModel");
-        model(visualParams(item)) = _guids[newVisual].asset;
+            sprite(item) = _guids[newVisual].icon ?? sprite(item);
+
+            //access the private asset guid
+            var visualParams = AccessTools.FieldRefAccess<BlueprintItemWeapon, WeaponVisualParameters>("m_VisualParameters");
+            var model = AccessTools.FieldRefAccess<WeaponVisualParameters, GameObject>("m_WeaponModel");
+            model(visualParams(item)) = _guids[newVisual].asset ?? model(visualParams(item));
+        }
+        catch (System.Exception)
+        {
+            Main.log.Log($"[ERROR] {newVisual} have no references");
+            throw;
+        }
+    }
+
+
+    private static void ApplyBigLaserVFX()
+    {
+        try
+        {
+            var bigLaser = ResourcesLibrary.TryGetBlueprint<BlueprintAbilityFXSettings>("78e14970df814b71b714f9bd82764abc");
+            var targetLaser = ResourcesLibrary.TryGetBlueprint<BlueprintAbilityFXSettings>("6cd13d0464794ec0b1f8746d0a475b96");
+            var VisualFXSettings = AccessTools.FieldRefAccess<BlueprintAbilityFXSettings, BlueprintAbilityVisualFXSettings.Reference>("m_VisualFXSettings");
+            VisualFXSettings(targetLaser) = VisualFXSettings(bigLaser) ?? VisualFXSettings(targetLaser);
+            Main.log.Log($"Switched BigLaser VFX from DP");
+
+        }
+        catch (System.Exception)
+        {
+            Main.log.Log($"[ERROR] BigLaser projectile switching failed");
+            throw;
+        }
     }
 
 
@@ -112,12 +163,12 @@ public static class DPAssetsManager
 }
 
 
-
 public enum DPAsset
 {
     //Powerswords
     //1Handed
     DarktideA,
+    Angelic,
     //Forceswords
     //1Handed
     Aquila,
@@ -141,6 +192,8 @@ public enum DPAsset
     Plasmacannon_Yellow,
     Plasmacannon_Green,
     Plasmacannon_Red,
+    //Autocannon
+    Autocannon_Green
 }
 
 /// <summary>holding model id and icon id
@@ -230,20 +283,27 @@ public class DPGuids
     internal static UnityEngine.Sprite Plasmacannon_BlackIcon() => IconFetcher("f2245fbf2eeb4166a099d41f775bd5c2");
     internal static GameObject Plasmacannon_BlackAsset() => ModelFetcher("f2245fbf2eeb4166a099d41f775bd5c2");
 
+    internal static UnityEngine.Sprite Autocannon_GreenIcon() => IconFetcher("ff9036159320461f99c9929c34857342");
+    internal static GameObject Autocannon_GreenAsset() => ModelFetcher("ff9036159320461f99c9929c34857342");
+
+    internal static UnityEngine.Sprite AngelicIcon() => IconFetcher("0840082384904430a87009f6a42c6196");
+    internal static GameObject AngelicAsset() => ModelFetcher("0840082384904430a87009f6a42c6196");
+
     private static GameObject ModelFetcher(string guid)
     {
         try
         {
+            Main.log.Log($" - Loading jbp {guid} model");
             var runeblade = ResourcesLibrary.TryGetBlueprint<BlueprintItemWeapon>(guid);
-            //access the private asset guid
             var visualParams = AccessTools.FieldRefAccess<BlueprintItemWeapon, WeaponVisualParameters>("m_VisualParameters");
             var model = AccessTools.FieldRefAccess<WeaponVisualParameters, GameObject>("m_WeaponModel");
             return model(visualParams(runeblade));
         }
         catch (System.Exception)
         {
-            Main.log.Log($"[ERROR] Armoury of the Expanse - jbp {guid} : model not found");
-            throw;
+            Main.log.Log($"[ERROR] jbp {guid} model not found, applying empty gameobject");
+            Main.log.Log($"[FIX] Can't find the blueprint or load the new weapon model: update DPAssetPack and MicroPatches to the latest version");
+            return new GameObject();
         }
     }  
 
@@ -251,6 +311,7 @@ public class DPGuids
     {
         try
         {
+            Main.log.Log($" - Loading jbp {guid} icon");
             var runeblade = ResourcesLibrary.TryGetBlueprint<BlueprintItemWeapon>(guid);
             //access the private asset guid
             var sprite = AccessTools.FieldRefAccess<BlueprintItemWeapon, UnityEngine.Sprite>("m_Icon");
@@ -258,8 +319,11 @@ public class DPGuids
         }
         catch (System.Exception)
         {
-            Main.log.Log($"[ERROR] Armoury of the Expanse - jbp {guid} : icon not found");
-            throw;
+            //failed to fetch DP's blueprint - update Assetpack?
+            Main.log.Log($"[ERROR] jbp {guid} icon not found, applying a fallback");
+            var runeblade = ResourcesLibrary.TryGetBlueprint<BlueprintItemWeapon>("4d4a35e52d564c7ea5462c1c70237aa9"); //swordbasetemplate
+            var sprite = AccessTools.FieldRefAccess<BlueprintItemWeapon, UnityEngine.Sprite>("m_Icon");
+            return sprite(runeblade);
         }
     }
 

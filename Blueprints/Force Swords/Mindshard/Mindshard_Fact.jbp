@@ -184,6 +184,75 @@
         "ModifierDescriptor": "None",
         "ModifyEvenDirectDamage": false,
         "ModifyEvenDamageOverTime": false
+      },
+      {
+        "$type": "95e248f24866439681c312b1bff0693c, UIPropertiesComponent",
+        "name": "$UIPropertiesComponent$0b6f0f06-6e98-4a7d-b543-9f8302279638",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Properties": [
+          {
+            "NameType": "Damage",
+            "m_Name": {
+              "m_Key": "",
+              "m_OwnerString": "",
+              "m_OwnerPropertyPath": "",
+              "m_JsonPath": "",
+              "Shared": null
+            },
+            "Description": {
+              "m_Key": "77161301-9492-4af8-ba88-c74b558fee09",
+              "m_OwnerString": "2f7eca58a1264dfcba5df56c54b75f08#$UIPropertiesComponent$0b6f0f06-6e98-4a7d-b543-9f8302279638",
+              "m_OwnerPropertyPath": "Properties.Array.data[0].Description",
+              "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\Imperial ForceSword\\Mindshard_Fact_Properties.Array.data[0].Description.json",
+              "Shared": null
+            },
+            "m_DescriptionFact": "!bp_2f7eca58a1264dfcba5df56c54b75f08",
+            "m_LinkProperty": true,
+            "m_PropertyName": "Value1",
+            "m_PropertySource": "!bp_2f7eca58a1264dfcba5df56c54b75f08",
+            "m_LinkKey": "bonuse"
+          }
+        ]
+      },
+      {
+        "$type": "f9bf4ae9ccd847689d5cdf2e86bc51ca, PropertyCalculatorComponent",
+        "name": "$PropertyCalculatorComponent$51479b7a-c52c-491f-9c4f-307b48d34581",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Name": "Value1",
+        "SaveToContext": "No",
+        "Value": {
+          "Operation": "Sum",
+          "TargetType": "CurrentEntity",
+          "TargetEvaluator": null,
+          "FailSilentlyIfNoTarget": false,
+          "Getters": [
+            {
+              "$type": "fd03f97ef3d1416d9a95f874454886d9, SimplePropertyGetter",
+              "name": "$SimplePropertyGetter$80a8f592d2654f8fb2c2171c6192e915",
+              "Settings": {
+                "Progression": "AsIs",
+                "m_CustomProgression": [],
+                "m_StartLevel": 0,
+                "m_StepLevel": 0,
+                "Negate": false,
+                "Limit": "None",
+                "Min": 0,
+                "Max": 0
+              },
+              "Property": "WeaponSkillBonus"
+            }
+          ]
+        }
       }
     ],
     "Author": "Unknown",

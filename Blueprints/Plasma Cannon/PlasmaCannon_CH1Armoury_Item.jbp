@@ -163,7 +163,7 @@
     "m_OnHitActions": null,
     "AbilityContainer": {
       "Ability1": {
-        "Type": "AOE",
+        "Type": "SingleShot",
         "Mode": "Default",
         "m_Ability": "!bp_f71f49187b664e69b0f3c99a9371214b",
         "m_FXSettings": "!bp_38d85e7224d744149e5d859fbfb08218",
@@ -246,7 +246,7 @@
     "AdditionalHitChance": 0,
     "WarhammerRecoil": 0,
     "WarhammerMaxDistance": 8,
-    "WarhammerMaxAmmo": 4,
+    "WarhammerMaxAmmo": 8,
     "RateOfFire": 0,
     "m_Enchantments": [],
     "m_DamageType": {

@@ -52,3 +52,30 @@ MonoBehaviour:
   - Guid: d8af15619c57441987d5cbf4c2a62ed3
     Filename: AdeptusMechanicus_ClosedLittleRoomChest.patch
     PatchType: 2
+  - Guid: eccd177967a04c96b85ae8505fd8b0a4
+    Filename: Loot_Uniq_Locked  - InquisitionArsenal.patch
+    PatchType: 2
+  - Guid: 717d3067af334797a146a1f4d1649d35
+    Filename: AdeptusMechanicus_SecretRoomChest.patch
+    PatchType: 2
+  - Guid: 19b0d16a16154dcdb645c05ca609007c
+    Filename: ImperiumMilitary_PoorLootBig (10).patch
+    PatchType: 2
+  - Guid: c7eb3d98427f43969b9180bc4a3c77ca
+    Filename: Starport_GoodLoot04.patch
+    PatchType: 2
+  - Guid: ba4813c84de24a8ba24e12dc3ee71847
+    Filename: Loot_Uniq - puzzle.patch
+    PatchType: 2
+  - Guid: e0c8b78831474d98be0d97cf84ca1ec2
+    Filename: ImperiumMilitary_Bottom03.patch
+    PatchType: 2
+  - Guid: e033ac7506c54842b31e8a8072c38039
+    Filename: ImperiumMilitary_GoodLoot_Safe.patch
+    PatchType: 2
+  - Guid: 105703506a05484abfcfb5fe4618f438
+    Filename: AdeptusMechanicus_TrashLoot_Hide.patch
+    PatchType: 2
+  - Guid: 99cc3c8ef7004d71917aaec7db877332
+    Filename: FootfallAlmostDeadChordaAgent.patch
+    PatchType: 2

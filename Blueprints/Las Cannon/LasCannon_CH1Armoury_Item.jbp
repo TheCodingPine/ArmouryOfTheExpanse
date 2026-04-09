@@ -25,7 +25,7 @@
         },
         "m_Overrides": [],
         "Stat": "WarhammerStrength",
-        "MinValue": 55,
+        "MinValue": 60,
         "m_ChangeRestrictionStatIfHasFact": true,
         "m_Fact": "!bp_26376b596c474d67849613617ced7b04",
         "m_SubtractionValue": 25
@@ -45,22 +45,44 @@
         ],
         "m_Inverted": true,
         "All": false
+      },
+      {
+        "$type": "65221a9a6133bd0408b019b86642d97e, AddFactToEquipmentWielder",
+        "name": "$AddFactToEquipmentWielder$205092aa-485e-4443-852a-24756b7819a2",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "m_Fact": "!bp_da524d7394384325bc8aff143dd83e63"
+      },
+      {
+        "$type": "65221a9a6133bd0408b019b86642d97e, AddFactToEquipmentWielder",
+        "name": "$AddFactToEquipmentWielder$8bce1281-68bb-4f9c-8bd0-cf6ff5f00047",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "m_Fact": "!bp_7712185d9ea049609fda2784a6ca75ce"
       }
     ],
     "Author": "Unknown",
     "Comment": "",
     "m_DisplayName": {
-      "m_Key": "",
-      "m_OwnerString": "",
-      "m_OwnerPropertyPath": "",
-      "m_JsonPath": "",
+      "m_Key": "61dc7ccb-ff07-4d5b-8a61-6feb1b4cdc25",
+      "m_OwnerString": "40d8a98cd786488c87103c97cbdb8631",
+      "m_OwnerPropertyPath": "m_DisplayName",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\Las Cannon\\LasCannon_CH1Armoury_Item_m_DisplayName.json",
       "Shared": null
     },
     "m_Description": {
-      "m_Key": "",
-      "m_OwnerString": "",
-      "m_OwnerPropertyPath": "",
-      "m_JsonPath": "",
+      "m_Key": "75822758-2e56-4093-af33-579999df338b",
+      "m_OwnerString": "40d8a98cd786488c87103c97cbdb8631",
+      "m_OwnerPropertyPath": "m_Description",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\Las Cannon\\LasCannon_CH1Armoury_Item_m_Description.json",
       "Shared": null
     },
     "m_Icon": null,
@@ -112,7 +134,7 @@
       "m_WeaponModel": null,
       "m_WeaponBeltModelOverride": null,
       "m_WeaponSheathModelOverride": null,
-      "m_SoundSize": "Medium",
+      "m_SoundSize": "Large",
       "m_SoundType": "None",
       "m_SoundSizeSwitch": {
         "Value": "",
@@ -139,20 +161,20 @@
       "Ability1": {
         "Type": "SingleShot",
         "Mode": "Default",
-        "m_Ability": "!bp_fc9b96b6283f42968554d6be959394f6",
-        "m_FXSettings": "!bp_6d3a3420147f43178106d7460053e31a",
+        "m_Ability": "!bp_a489b6d823ef4b86b431aa1d42e385c7",
+        "m_FXSettings": "!bp_6cd13d0464794ec0b1f8746d0a475b96",
+        "OnHitOverrideType": "None",
+        "m_OnHitActions": null,
+        "AP": 1
+      },
+      "Ability2": {
+        "Type": "SingleShot",
+        "Mode": "Default",
+        "m_Ability": "!bp_4e20851db1714699b1297d698a3f2dc0",
+        "m_FXSettings": "!bp_6cd13d0464794ec0b1f8746d0a475b96",
         "OnHitOverrideType": "None",
         "m_OnHitActions": null,
         "AP": 2
-      },
-      "Ability2": {
-        "Type": "AOE",
-        "Mode": "Any",
-        "m_Ability": "!bp_2688289278f34ca99746239ebd1ed235",
-        "m_FXSettings": "!bp_bcbdfd391d074d37886420162fd1e17c",
-        "OnHitOverrideType": "None",
-        "m_OnHitActions": null,
-        "AP": 3
       },
       "Ability3": {
         "Type": "Reload",
@@ -213,15 +235,15 @@
       "Shared": null
     },
     "IsTwoHanded": true,
-    "WarhammerDamage": 8,
-    "WarhammerMaxDamage": 14,
-    "WarhammerPenetration": 40,
-    "DodgePenetration": 0,
-    "AdditionalHitChance": 0,
+    "WarhammerDamage": 18,
+    "WarhammerMaxDamage": 24,
+    "WarhammerPenetration": 15,
+    "DodgePenetration": 15,
+    "AdditionalHitChance": 25,
     "WarhammerRecoil": 0,
-    "WarhammerMaxDistance": 14,
-    "WarhammerMaxAmmo": 30,
-    "RateOfFire": 30,
+    "WarhammerMaxDistance": 24,
+    "WarhammerMaxAmmo": 8,
+    "RateOfFire": 1,
     "m_Enchantments": [],
     "m_DamageType": {
       "Type": "Energy"

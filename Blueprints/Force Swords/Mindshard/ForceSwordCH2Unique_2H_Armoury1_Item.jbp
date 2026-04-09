@@ -16,7 +16,9 @@
       "WeaponAbilities.Ability2.m_Ability",
       "m_VisualParameters.m_WeaponAnimationStyle",
       "WarhammerPenetration",
-      "IsTwoHanded"
+      "IsTwoHanded",
+      "$UIPropertiesComponent$d0bb020d-aa8c-43ed-b2ce-e789edbd8ef0",
+      "$ContextStackingUnitProperty$6998c4ae-e995-4439-a3b5-e2426dbf3c6e"
     ],
     "Components": [
       {
@@ -109,7 +111,7 @@
         "m_Fact": "!bp_2f7eca58a1264dfcba5df56c54b75f08"
       }
     ],
-    "Author": "AlexanderGusev",
+    "Author": "Unknown",
     "Comment": "",
     "m_DisplayName": {
       "m_Key": "311b3ddc-9645-45b4-840c-2ef88e4a8229",
@@ -122,7 +124,7 @@
       "m_Key": "a9dd4d85-8c1b-4c1c-bd1f-782caf7a987f",
       "m_OwnerString": "cf3ba0d76633406ba9876633ebf3cfa6",
       "m_OwnerPropertyPath": "m_Description",
-      "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\Imperial ForceSword\\ForceSwordCH2Unique_Armoury2_Item_m_Description.json",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\Imperial ForceSword\\ForceSwordCH2Unique_2H_Armoury1_Item_m_Description.json",
       "Shared": null
     },
     "m_Icon": {

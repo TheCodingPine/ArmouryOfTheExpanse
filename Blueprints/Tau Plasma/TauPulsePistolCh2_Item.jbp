@@ -18,7 +18,10 @@
       "WarhammerPenetration",
       "$UIPropertiesComponent$427005e3-0e2e-43ed-b013-24d509be618c",
       "$EquipmentRestrictionHasFacts$325a65b1-7d6d-48b5-a6fe-716397b5bd27",
-      "$AddFactToEquipmentWielder$45cdb9fa-0661-440e-9a17-68c80f4ae9d2"
+      "$AddFactToEquipmentWielder$45cdb9fa-0661-440e-9a17-68c80f4ae9d2",
+      "$AddFactToEquipmentWielder$80f2d0a7-6c97-44bb-93eb-ce88741351e5",
+      "$AddFactToEquipmentWielder$44b0d6d2-28b3-4f63-8da4-0ed62de41a6b",
+      "$EquipmentRestrictionStat$c9121567-be36-4aa4-b062-30675175ae3b"
     ],
     "Components": [
       {
@@ -79,15 +82,19 @@
         "All": false
       },
       {
-        "$type": "65221a9a6133bd0408b019b86642d97e, AddFactToEquipmentWielder",
-        "name": "$AddFactToEquipmentWielder$45cdb9fa-0661-440e-9a17-68c80f4ae9d2",
+        "$type": "6dfdda28c94860241a112b404538e2a7, EquipmentRestrictionStat",
+        "name": "$EquipmentRestrictionStat$c9121567-be36-4aa4-b062-30675175ae3b",
         "m_Flags": 0,
         "PrototypeLink": {
           "guid": "",
           "name": ""
         },
         "m_Overrides": [],
-        "m_Fact": "!bp_9ba1f48d6bc84f1b8d375cfb8a44cd10"
+        "Stat": "WarhammerIntelligence",
+        "MinValue": 55,
+        "m_ChangeRestrictionStatIfHasFact": true,
+        "m_Fact": "!bp_0f00188ea32349d4aa7d825910894795",
+        "m_SubtractionValue": 25
       }
     ],
     "Author": "Unknown",
@@ -195,10 +202,10 @@
         "AP": 1
       },
       "Ability2": {
-        "Type": "None",
+        "Type": "SingleShot",
         "Mode": "Default",
-        "m_Ability": "!bp_89a5e9b5b3474ca983f281080df591fb",
-        "m_FXSettings": "!bp_da15820bdf8544fe8fa0c1e700546fa3",
+        "m_Ability": "!bp_2618cdbec44d406fb0beb4ad309b71b8",
+        "m_FXSettings": "!bp_3bee856ea6534fa4b595bba7255bd86f",
         "OnHitOverrideType": "None",
         "m_OnHitActions": null,
         "AP": 2

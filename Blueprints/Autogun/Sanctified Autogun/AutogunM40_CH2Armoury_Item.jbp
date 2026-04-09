@@ -267,15 +267,15 @@
       "Shared": null
     },
     "IsTwoHanded": true,
-    "WarhammerDamage": 8,
-    "WarhammerMaxDamage": 12,
+    "WarhammerDamage": 6,
+    "WarhammerMaxDamage": 10,
     "WarhammerPenetration": 5,
     "DodgePenetration": 0,
     "AdditionalHitChance": 0,
     "WarhammerRecoil": 15,
     "WarhammerMaxDistance": 24,
     "WarhammerMaxAmmo": 24,
-    "RateOfFire": 7,
+    "RateOfFire": 6,
     "m_Enchantments": [],
     "m_DamageType": {
       "Type": "Piercing"

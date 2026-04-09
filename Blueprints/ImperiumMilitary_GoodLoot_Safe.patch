@@ -1,0 +1,13 @@
+{
+  "Items": [
+    {
+      "PatchType": "Prepend",
+      "NewElement": {
+        "m_Item": "!bp_f13eaaaa382747c5b0afb7267732a057",
+        "Diversity": 0,
+        "Count": 2,
+        "m_ReputationPointsToUnlock": 0
+      }
+    }
+  ]
+}

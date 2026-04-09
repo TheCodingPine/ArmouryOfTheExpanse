@@ -1,0 +1,105 @@
+{
+  "AssetId": "2087b58f6650464881f4e19105b60628",
+  "Data": {
+    "$type": "adc63a0dcf487a44c9c7e8ccb4b5fb33, BlueprintItemEquipmentHead",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "d7b23547716f4a949471625ff6c66fb2, EquipmentRestrictionHasFacts",
+        "name": "$EquipmentRestrictionHasFacts$535a32bd-b94c-4369-9a19-9505a7bf5937",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "m_Facts": [
+          "!bp_590cb5c394ee4b5eb213121c96063dec",
+          "!bp_affa5fdded7e404b910b990f5d344a8c",
+          "!bp_c7a53b43ac5f4f11a1aef612dd3f4f71",
+          "!bp_b53037d92c984cf3921df309241e48ca"
+        ],
+        "m_Inverted": true,
+        "All": false
+      },
+      {
+        "$type": "65221a9a6133bd0408b019b86642d97e, AddFactToEquipmentWielder",
+        "name": "$AddFactToEquipmentWielder$0715b96f-bdba-4e30-a544-e879d302d670",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "m_Fact": "!bp_dbb5c685a2354a3b83260999cea2f931"
+      }
+    ],
+    "Author": "Unknown",
+    "Comment": "",
+    "m_DisplayName": {
+      "m_Key": "d3e058ac-ad17-446b-ac27-d50ca12ee291",
+      "m_OwnerString": "2087b58f6650464881f4e19105b60628",
+      "m_OwnerPropertyPath": "m_DisplayName",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\Equipments\\Headgear\\Administratum\\AdministratumHelmet_Armoury_Item_m_DisplayName.json",
+      "Shared": null
+    },
+    "m_Description": {
+      "m_Key": "d73184cd-603a-459d-ad64-e6eb2f7b560a",
+      "m_OwnerString": "2087b58f6650464881f4e19105b60628",
+      "m_OwnerPropertyPath": "m_Description",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\Equipments\\Headgear\\Administratum\\AdministratumHelmet_Armoury_Item_m_Description.json",
+      "Shared": null
+    },
+    "m_Icon": {
+      "guid": "c57904fb56f491444bffa5e3cab6ac9e",
+      "fileid": 21300000
+    },
+    "m_FlavorText": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "m_NonIdentifiedNameText": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "m_NonIdentifiedDescriptionText": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "m_NotStackable": false,
+    "m_Weight": 0.0,
+    "m_Origin": "Tech",
+    "m_Rarity": "Common",
+    "m_Tag": "None",
+    "m_IsNotable": false,
+    "m_ProfitFactorCost": 0.0,
+    "m_CargoVolumePercent": 25,
+    "m_InventoryPutSound": "UI_INV_Flak_Put_Play",
+    "m_InventoryTakeSound": "UI_INV_Flak_Take_Play",
+    "ToCargoAutomatically": false,
+    "ItemLevel": 0,
+    "SpendCharges": true,
+    "Charges": 1,
+    "RestoreChargesAfterCombat": false,
+    "IsNonRemovable": false,
+    "IsUnlootable": false,
+    "m_EquipmentEntity": "!bp_c37535bd07824aa68344d61b143638b9",
+    "m_EquipmentEntityAlternatives": [],
+    "m_ForcedRampColorPresetIndex": 0,
+    "m_Enchantments": [],
+    "m_InventoryEquipSound": "UI_INV_Flak_Equip_Play"
+  },
+  "Meta": {
+    "ShadowDeleted": false
+  }
+}

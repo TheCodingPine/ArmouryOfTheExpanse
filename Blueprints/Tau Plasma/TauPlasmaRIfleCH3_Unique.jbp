@@ -26,24 +26,10 @@
       "$PropertyCalculatorComponent$09b6aaa2-4d71-4e26-8ea3-bea1e1a372de",
       "WeaponAbilities.Ability2.Type",
       "WeaponAbilities.Ability2.m_Ability",
-      "RateOfFire"
+      "RateOfFire",
+      "$EquipmentRestrictionStat$b6ed6129-de97-4ec2-9538-01036c972dac"
     ],
     "Components": [
-      {
-        "$type": "6dfdda28c94860241a112b404538e2a7, EquipmentRestrictionStat",
-        "name": "$EquipmentRestrictionStat$f075e2c8-42bf-4cda-b7a1-851ae0444794",
-        "m_Flags": 0,
-        "PrototypeLink": {
-          "guid": "",
-          "name": ""
-        },
-        "m_Overrides": [],
-        "Stat": "WarhammerIntelligence",
-        "MinValue": 60,
-        "m_ChangeRestrictionStatIfHasFact": false,
-        "m_Fact": null,
-        "m_SubtractionValue": 0
-      },
       {
         "$type": "65221a9a6133bd0408b019b86642d97e, AddFactToEquipmentWielder",
         "name": "$AddFactToEquipmentWielder$7aaae293-6384-443b-8a12-213db40dfaa5",
@@ -210,6 +196,21 @@
             }
           ]
         }
+      },
+      {
+        "$type": "6dfdda28c94860241a112b404538e2a7, EquipmentRestrictionStat",
+        "name": "$EquipmentRestrictionStat$b6ed6129-de97-4ec2-9538-01036c972dac",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Stat": "WarhammerIntelligence",
+        "MinValue": 55,
+        "m_ChangeRestrictionStatIfHasFact": true,
+        "m_Fact": "!bp_e34ed1a566df4d14a4027dd4cd695233",
+        "m_SubtractionValue": 35
       }
     ],
     "Author": "Unknown",

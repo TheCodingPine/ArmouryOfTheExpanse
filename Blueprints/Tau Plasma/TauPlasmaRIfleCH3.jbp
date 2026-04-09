@@ -102,10 +102,10 @@
         },
         "m_Overrides": [],
         "Stat": "WarhammerIntelligence",
-        "MinValue": 60,
-        "m_ChangeRestrictionStatIfHasFact": false,
-        "m_Fact": null,
-        "m_SubtractionValue": 0
+        "MinValue": 55,
+        "m_ChangeRestrictionStatIfHasFact": true,
+        "m_Fact": "!bp_e34ed1a566df4d14a4027dd4cd695233",
+        "m_SubtractionValue": 35
       }
     ],
     "Author": "Unknown",

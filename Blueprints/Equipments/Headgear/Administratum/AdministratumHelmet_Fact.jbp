@@ -1,0 +1,81 @@
+{
+  "AssetId": "dbb5c685a2354a3b83260999cea2f931",
+  "Data": {
+    "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "547decea8a90414eb6dedb6ac9053ec9, ReplaceBaseStatValue",
+        "name": "$ReplaceBaseStatValue$885b7e56-6ab9-4e32-91b3-0250f5741638",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "m_OriginalStat": "SkillPersuasion",
+        "m_NewAttribute": "WarhammerIntelligence",
+        "m_OnlyIfHigher": false,
+        "m_PreviousAttributeToCompare": "WarhammerIntelligence"
+      },
+      {
+        "$type": "547decea8a90414eb6dedb6ac9053ec9, ReplaceBaseStatValue",
+        "name": "$ReplaceBaseStatValue$9443b134-35d8-4daf-8546-dbfe15f40086",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "m_OriginalStat": "SkillAwareness",
+        "m_NewAttribute": "WarhammerIntelligence",
+        "m_OnlyIfHigher": false,
+        "m_PreviousAttributeToCompare": "WarhammerIntelligence"
+      }
+    ],
+    "Author": "Unknown",
+    "Comment": "",
+    "m_DisplayName": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "m_Description": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "m_Icon": null,
+    "m_AllowNonContextActions": false,
+    "HideInUI": true,
+    "HideInCharacterSheetAndLevelUp": false,
+    "HideNotAvailibleInUI": false,
+    "Ranks": 1,
+    "Prerequisites": {
+      "Composition": "And",
+      "List": []
+    },
+    "FeatureTypes": [],
+    "TalentIconInfo": {
+      "AllGroups": 0,
+      "MainGroup": 0
+    },
+    "m_Acronym": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "ShowInDialogue": false,
+    "IsStarshipFeature": false
+  },
+  "Meta": {
+    "ShadowDeleted": false
+  }
+}

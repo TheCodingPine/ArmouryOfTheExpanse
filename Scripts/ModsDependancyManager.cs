@@ -31,7 +31,7 @@ namespace ArmouryOfTheExpanse
         #region CascadingDragon's dependency finder 
         public static bool IsModEnabled(string modName, ModType modtype = ModType.UMM)
         {
-            Main.log.Log($"Checking for {modName}");
+            Main.log.Log($"Checking for {modName}:");
             bool found = false;
             if (modtype == ModType.UMM)
                 found = UnityModManager.ModEntries.Where(mod => mod.Info.Id.Equals(modName) && mod.Enabled && !mod.ErrorOnLoading).Any();
@@ -44,9 +44,9 @@ namespace ArmouryOfTheExpanse
         public static void LogModState(bool found, string modName)
         {
             if (!found)
-            { Main.log.Log($"Armoury of the Expanse - {modName} not found"); }
+            { Main.log.Log($" - {modName} not found"); }
             else
-            { Main.log.Log($"Armoury of the Expanse - {modName} found"); }
+            { Main.log.Log($" - {modName} found"); }
         }
         #endregion
 

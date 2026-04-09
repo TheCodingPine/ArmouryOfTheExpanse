@@ -141,7 +141,7 @@
       "m_Key": "8eb9049e-3301-47f0-8f4f-6559010bd62f",
       "m_OwnerString": "f43775fe14454b31bed48e5d26e44077",
       "m_OwnerPropertyPath": "m_FlavorText",
-      "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\Plasma Cannon\\PlasmaCannon_CH4Starstorm_Armoury_Item_m_FlavorText.json",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\Plasma Cannon\\PlasmaCannon_CH4Culverin_Armoury_Item_m_FlavorText.json",
       "Shared": null
     },
     "m_NonIdentifiedNameText": {
