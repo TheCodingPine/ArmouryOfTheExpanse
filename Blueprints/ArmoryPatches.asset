@@ -79,3 +79,9 @@ MonoBehaviour:
   - Guid: 99cc3c8ef7004d71917aaec7db877332
     Filename: FootfallAlmostDeadChordaAgent.patch
     PatchType: 2
+  - Guid: 53293dc9a440492fac1bd8d0f2543fa2
+    Filename: ImperiumMilitary_UlfarArmor.patch
+    PatchType: 2
+  - Guid: c0d45e7bec8341378edc57523edf1d35
+    Filename: Forest_Chest.patch
+    PatchType: 2

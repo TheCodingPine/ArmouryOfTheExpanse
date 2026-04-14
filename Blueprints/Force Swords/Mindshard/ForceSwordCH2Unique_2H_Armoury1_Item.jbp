@@ -18,7 +18,11 @@
       "WarhammerPenetration",
       "IsTwoHanded",
       "$UIPropertiesComponent$d0bb020d-aa8c-43ed-b2ce-e789edbd8ef0",
-      "$ContextStackingUnitProperty$6998c4ae-e995-4439-a3b5-e2426dbf3c6e"
+      "$ContextStackingUnitProperty$6998c4ae-e995-4439-a3b5-e2426dbf3c6e",
+      "$AddFactToEquipmentWielder$3d584b89-6cb3-4238-a71a-5ae991e31dea",
+      "$AdditionalDescriptionComponent$d0866af1-8827-4700-ab20-89c6fd0cb082",
+      "$AdditionalDescriptionComponent$2336acc6-2439-45d8-8f5f-bcf5dd09224c",
+      "m_DamageStatBonusFactor"
     ],
     "Components": [
       {
@@ -83,23 +87,6 @@
         "JunctionType": "AfterNewString"
       },
       {
-        "$type": "3c5267edd045432ab5bd6dbe606d4da3, AdditionalDescriptionComponent",
-        "name": "$AdditionalDescriptionComponent$2336acc6-2439-45d8-8f5f-bcf5dd09224c",
-        "m_Flags": 0,
-        "PrototypeLink": {
-          "guid": "6694b4f376774e978ec0e2b3bf62bd91",
-          "name": "$AdditionalDescriptionComponent$2336acc6-2439-45d8-8f5f-bcf5dd09224c"
-        },
-        "m_Overrides": [],
-        "AdditionalDescription": {
-          "m_Key": "cecee957-002b-4f20-8f6f-87f8da424d16",
-          "m_OwnerString": "6694b4f376774e978ec0e2b3bf62bd91#$AdditionalDescriptionComponent$2336acc6-2439-45d8-8f5f-bcf5dd09224c",
-          "m_OwnerPropertyPath": "AdditionalDescription",
-          "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\Imperial ForceSword\\ForceSwordCH2Unique_Armoury1_Item_AdditionalDescription.json",
-          "Shared": null
-        }
-      },
-      {
         "$type": "65221a9a6133bd0408b019b86642d97e, AddFactToEquipmentWielder",
         "name": "$AddFactToEquipmentWielder$a1fe8052-f81e-4880-ab42-a8205554ca97",
         "m_Flags": 0,
@@ -109,6 +96,17 @@
         },
         "m_Overrides": [],
         "m_Fact": "!bp_2f7eca58a1264dfcba5df56c54b75f08"
+      },
+      {
+        "$type": "65221a9a6133bd0408b019b86642d97e, AddFactToEquipmentWielder",
+        "name": "$AddFactToEquipmentWielder$3d584b89-6cb3-4238-a71a-5ae991e31dea",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "m_Fact": "!bp_b6444939f07e458886eb4f5eb62667e7"
       }
     ],
     "Author": "Unknown",
@@ -283,9 +281,9 @@
       "Shared": null
     },
     "IsTwoHanded": true,
-    "WarhammerDamage": 12,
-    "WarhammerMaxDamage": 24,
-    "WarhammerPenetration": 30,
+    "WarhammerDamage": 18,
+    "WarhammerMaxDamage": 28,
+    "WarhammerPenetration": 40,
     "DodgePenetration": 0,
     "AdditionalHitChance": 0,
     "WarhammerRecoil": 0,
@@ -299,7 +297,7 @@
       "Type": "Energy"
     },
     "m_IsNatural": false,
-    "m_DamageStatBonusFactor": "One"
+    "m_DamageStatBonusFactor": "Two"
   },
   "Meta": {
     "ShadowDeleted": false

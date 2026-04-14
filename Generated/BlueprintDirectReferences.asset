@@ -37,6 +37,9 @@ MonoBehaviour:
   - AssetId: 79c812075bb0f904fa6891f9d9223f5c
     FileId: 7319637655764902760
     Asset: {fileID: 7319637655764902760, guid: 79c812075bb0f904fa6891f9d9223f5c, type: 3}
+  - AssetId: 7e2d07016a9ee2e4fb9b5aed0feb3fb4
+    FileId: 6057686240108227192
+    Asset: {fileID: 6057686240108227192, guid: 7e2d07016a9ee2e4fb9b5aed0feb3fb4, type: 3}
   - AssetId: 978727818c21e0043a7e54de31542cb3
     FileId: 11400000
     Asset: {fileID: 11400000, guid: 978727818c21e0043a7e54de31542cb3, type: 2}

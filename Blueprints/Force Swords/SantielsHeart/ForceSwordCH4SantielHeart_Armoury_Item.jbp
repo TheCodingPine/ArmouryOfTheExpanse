@@ -111,7 +111,7 @@
       "m_Key": "69e0ccbb-1cce-4d32-a986-e3164d31dc50",
       "m_OwnerString": "1deb94cffbda4aafa01e44d1b19d0f59",
       "m_OwnerPropertyPath": "m_DisplayName",
-      "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\Imperial ForceSword\\ForceSwordCH4SantielHearth_Armoury_Item_m_DisplayName.json",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\Imperial ForceSword\\ForceSwordCH4SantielHeart_Armoury_Item_m_DisplayName.json",
       "Shared": null
     },
     "m_Description": {
@@ -277,9 +277,9 @@
       "Shared": null
     },
     "IsTwoHanded": false,
-    "WarhammerDamage": 24,
-    "WarhammerMaxDamage": 35,
-    "WarhammerPenetration": 28,
+    "WarhammerDamage": 32,
+    "WarhammerMaxDamage": 40,
+    "WarhammerPenetration": 50,
     "DodgePenetration": 0,
     "AdditionalHitChance": 0,
     "WarhammerRecoil": 0,

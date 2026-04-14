@@ -22,7 +22,8 @@
       "Family",
       "WeaponAbilities.Ability1.m_FXSettings",
       "WeaponAbilities.Ability2.m_FXSettings",
-      "$EquipmentRestrictionHasFacts$4bb931c7-92f1-454c-b2f3-732140a507a0"
+      "$EquipmentRestrictionHasFacts$4bb931c7-92f1-454c-b2f3-732140a507a0",
+      "WarhammerMaxDistance"
     ],
     "Components": [
       {
@@ -51,7 +52,9 @@
           "guid": "a5130a7096a546bf883574db563c4c57",
           "name": "$AddFactToEquipmentWielder$c4e9db0b-d841-4319-89e5-1329443fae22"
         },
-        "m_Overrides": [],
+        "m_Overrides": [
+          "m_Fact"
+        ],
         "m_Fact": "!bp_7712185d9ea049609fda2784a6ca75ce"
       },
       {
@@ -124,7 +127,7 @@
           "!bp_19673fbc918241c6add6710025f67058"
         ],
         "m_Inverted": false,
-        "All": false
+        "All": true
       }
     ],
     "Author": "Unknown",
@@ -299,13 +302,13 @@
       "Shared": null
     },
     "IsTwoHanded": true,
-    "WarhammerDamage": 18,
-    "WarhammerMaxDamage": 25,
-    "WarhammerPenetration": 20,
+    "WarhammerDamage": 24,
+    "WarhammerMaxDamage": 30,
+    "WarhammerPenetration": 25,
     "DodgePenetration": 0,
     "AdditionalHitChance": 30,
     "WarhammerRecoil": 0,
-    "WarhammerMaxDistance": 30,
+    "WarhammerMaxDistance": 45,
     "WarhammerMaxAmmo": 5,
     "RateOfFire": 1,
     "m_Enchantments": [],

@@ -126,11 +126,11 @@
                   "PropertyName": "Value1"
                 },
                 "BonusValue": {
-                  "ValueType": "Simple",
+                  "ValueType": "CasterProperty",
                   "Value": 0,
                   "ValueRank": "Default",
                   "ValueShared": "Damage",
-                  "Property": "None",
+                  "Property": "PsyRating",
                   "m_CustomProperty": null,
                   "PropertyName": "Value1"
                 }
@@ -138,7 +138,7 @@
               "HasRighteousFury": false,
               "Half": false,
               "IsAoE": false,
-              "m_Weapon": "None",
+              "m_Weapon": null,
               "WriteResultToSharedValue": false,
               "ResultSharedValue": "Damage",
               "DoNotUseCrModifier": false
@@ -175,7 +175,7 @@
                 "Progression": "MultiplyByModifier",
                 "m_CustomProgression": [],
                 "m_StartLevel": 0,
-                "m_StepLevel": 2,
+                "m_StepLevel": 3,
                 "Negate": false,
                 "Limit": "None",
                 "Min": 0,

@@ -6,7 +6,10 @@
     "m_Overrides": [
       "$AddFactToEquipmentWielder$4bf6a6e0-2c15-4b18-a459-b439abfadf9a",
       "m_Description",
-      "m_DisplayName"
+      "m_DisplayName",
+      "WarhammerDamage",
+      "WarhammerMaxDamage",
+      "WarhammerPenetration"
     ],
     "Components": [
       {
@@ -267,9 +270,9 @@
       "Shared": null
     },
     "IsTwoHanded": false,
-    "WarhammerDamage": 7,
-    "WarhammerMaxDamage": 11,
-    "WarhammerPenetration": 25,
+    "WarhammerDamage": 14,
+    "WarhammerMaxDamage": 24,
+    "WarhammerPenetration": 40,
     "DodgePenetration": 0,
     "AdditionalHitChance": 0,
     "WarhammerRecoil": 0,

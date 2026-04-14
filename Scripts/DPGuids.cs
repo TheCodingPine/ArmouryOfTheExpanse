@@ -56,7 +56,13 @@ public static class DPAssetsManager
                 { DPAsset.Plasmacannon_Yellow,
                     new DPGuids(DPGuids.Plasmacannon_YellowAsset(), DPGuids.Plasmacannon_YellowIcon()) },
                 { DPAsset.Autocannon_Green,
-                    new DPGuids(DPGuids.Autocannon_GreenAsset(), DPGuids.Autocannon_GreenIcon()) }
+                    new DPGuids(DPGuids.Autocannon_GreenAsset(), DPGuids.Autocannon_GreenIcon()) },
+                { DPAsset.Autocannon_Black,
+                    new DPGuids(DPGuids.Autocannon_BlackAsset(), DPGuids.Autocannon_BlackIcon()) },
+                { DPAsset.Autocannon_Blue,
+                    new DPGuids(DPGuids.Autocannon_BlueAsset(), DPGuids.Autocannon_BlueIcon()) },
+                { DPAsset.Autocannon_Red,
+                    new DPGuids(DPGuids.Autocannon_RedAsset(), DPGuids.Autocannon_RedIcon()) }
         };
 
     /// <summary> both asset and icon  </summary>
@@ -93,7 +99,7 @@ public static class DPAssetsManager
 
         }
 
-        ApplyBigLaserVFX();
+        //ApplyBigLaserVFX();
 
         ////VFX test
         //var laser = ResourcesLibrary.TryGetBlueprint<BlueprintItemWeapon>("40d8a98cd786488c87103c97cbdb8631");
@@ -143,7 +149,6 @@ public static class DPAssetsManager
         catch (System.Exception)
         {
             Main.log.Log($"[ERROR] BigLaser projectile switching failed");
-            throw;
         }
     }
 
@@ -193,7 +198,10 @@ public enum DPAsset
     Plasmacannon_Green,
     Plasmacannon_Red,
     //Autocannon
-    Autocannon_Green
+    Autocannon_Green,
+    Autocannon_Black,
+    Autocannon_Blue,
+    Autocannon_Red,
 }
 
 /// <summary>holding model id and icon id
@@ -285,6 +293,15 @@ public class DPGuids
 
     internal static UnityEngine.Sprite Autocannon_GreenIcon() => IconFetcher("ff9036159320461f99c9929c34857342");
     internal static GameObject Autocannon_GreenAsset() => ModelFetcher("ff9036159320461f99c9929c34857342");
+
+    internal static UnityEngine.Sprite Autocannon_BlackIcon() => IconFetcher("dc25e303d3e7459c81a8e2b5ef0f2981");
+    internal static GameObject Autocannon_BlackAsset() => ModelFetcher("dc25e303d3e7459c81a8e2b5ef0f2981");
+
+    internal static UnityEngine.Sprite Autocannon_BlueIcon() => IconFetcher("0f3df98bce3f4da98263fa171b0f610b");
+    internal static GameObject Autocannon_BlueAsset() => ModelFetcher("0f3df98bce3f4da98263fa171b0f610b");
+
+    internal static UnityEngine.Sprite Autocannon_RedIcon() => IconFetcher("b2d93f8fe06e4e7a9ab78355d13cfd3b");
+    internal static GameObject Autocannon_RedAsset() => ModelFetcher("b2d93f8fe06e4e7a9ab78355d13cfd3b");
 
     internal static UnityEngine.Sprite AngelicIcon() => IconFetcher("0840082384904430a87009f6a42c6196");
     internal static GameObject AngelicAsset() => ModelFetcher("0840082384904430a87009f6a42c6196");

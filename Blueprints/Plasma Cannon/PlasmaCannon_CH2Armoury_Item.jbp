@@ -21,7 +21,7 @@
         },
         "m_Overrides": [],
         "Stat": "WarhammerStrength",
-        "MinValue": 55,
+        "MinValue": 60,
         "m_ChangeRestrictionStatIfHasFact": true,
         "m_Fact": "!bp_26376b596c474d67849613617ced7b04",
         "m_SubtractionValue": 25
@@ -66,7 +66,7 @@
           "name": "$AddFactToEquipmentWielder$44b0d6d2-28b3-4f63-8da4-0ed62de41a6b"
         },
         "m_Overrides": [],
-        "m_Fact": "!bp_adf766ad17194a3080f20cd93be25392"
+        "m_Fact": "!bp_cf53fe10c1b442d2b69b493611331c7e"
       },
       {
         "$type": "c8cf2b4638d44ca29565527b0d0b90c2, AddStringToFactName",
@@ -255,14 +255,14 @@
       "Shared": null
     },
     "IsTwoHanded": true,
-    "WarhammerDamage": 13,
-    "WarhammerMaxDamage": 18,
-    "WarhammerPenetration": 40,
+    "WarhammerDamage": 18,
+    "WarhammerMaxDamage": 25,
+    "WarhammerPenetration": 45,
     "DodgePenetration": 0,
     "AdditionalHitChance": 0,
     "WarhammerRecoil": 0,
-    "WarhammerMaxDistance": 8,
-    "WarhammerMaxAmmo": 4,
+    "WarhammerMaxDistance": 20,
+    "WarhammerMaxAmmo": 8,
     "RateOfFire": 0,
     "m_Enchantments": [],
     "m_DamageType": {

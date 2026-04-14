@@ -42,9 +42,9 @@ namespace ArmouryOfTheExpanse
                         new ArmouryElement("f43775fe14454b31bed48e5d26e44077", DPAsset.Plasmacannon_Yellow), //plasma culverin
                             //Auto Cannon                            
                         new ArmouryElement("4cc6ec1168ef4c0fa0cf9ebdb98ad98b", DPAsset.Autocannon_Green), //Autocannon variant
-                        new ArmouryElement("7ca9a0f43a2142769e2cc71a7a5d0429", DPAsset.Autocannon_Green), //Big Salvo
-                        new ArmouryElement("70bb7e0af7394f58a5952eae9dd72402", DPAsset.Autocannon_Green), //Autocannon Act2
-                        new ArmouryElement("f13eaaaa382747c5b0afb7267732a057", DPAsset.Autocannon_Green), //Autocannon Act4
+                        new ArmouryElement("7ca9a0f43a2142769e2cc71a7a5d0429", DPAsset.Autocannon_Black), //Big Salvo
+                        new ArmouryElement("70bb7e0af7394f58a5952eae9dd72402", DPAsset.Autocannon_Black), //Autocannon Act2
+                        new ArmouryElement("f13eaaaa382747c5b0afb7267732a057", DPAsset.Autocannon_Blue), //Autocannon Act4
                             //Las Cannon
                         new ArmouryElement("40d8a98cd786488c87103c97cbdb8631", DPAsset.Lascannon_Green), //Lascannon Act1
                         new ArmouryElement("857411fca50b4d33a3953bf87abd3c97", DPAsset.Lascannon_Blue), //Lascannon Act2

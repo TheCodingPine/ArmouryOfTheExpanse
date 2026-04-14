@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Manifest:
     UniqueName: ArmouryOfTheExpanse
-    Version: 1.2.0
+    Version: 1.2.1
     DisplayName: Armoury Of The Expanse
-    Description: A small collection of weapons and armors
+    Description: A collection of weapons and armors
     Author: OdinThePine
     Repository: 
     HomePage: 

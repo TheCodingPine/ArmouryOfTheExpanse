@@ -106,7 +106,7 @@
           "Value": 0,
           "ValueRank": "Default",
           "ValueShared": "Damage",
-          "Property": "WeaponSkillBonus",
+          "Property": "StrengthBonus",
           "m_CustomProperty": null,
           "PropertyName": "Value1",
           "Enabled": true
@@ -116,7 +116,7 @@
           "Value": 0,
           "ValueRank": "Default",
           "ValueShared": "Damage",
-          "Property": "WeaponSkillBonus",
+          "Property": "StrengthBonus",
           "m_CustomProperty": null,
           "PropertyName": "Value1",
           "Enabled": true

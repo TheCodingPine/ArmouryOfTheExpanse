@@ -16,7 +16,7 @@
         "m_Overrides": [],
         "m_Restrictions": {
           "Property": {
-            "Operation": "Sum",
+            "Operation": "BoolAnd",
             "TargetType": "CurrentEntity",
             "TargetEvaluator": null,
             "FailSilentlyIfNoTarget": false,
@@ -34,6 +34,22 @@
                   "Min": 0,
                   "Max": 0
                 }
+              },
+              {
+                "$type": "d04a8b4d1fec4545b9e4d90b81ce2498, HasFactGetter",
+                "name": "$HasFactGetter$99e407c6fa4b4dd3ae80a2ee57be629e",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": false,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                },
+                "m_Fact": "!bp_cd7617e9f2034aeaad3426a9a6b12a81",
+                "Target": "RuleInitiator"
               }
             ]
           }

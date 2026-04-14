@@ -10,7 +10,9 @@
       "WarhammerMaxDamage",
       "WarhammerDamage",
       "m_Description",
-      "$AddFactToEquipmentWielder$a1fe8052-f81e-4880-ab42-a8205554ca97"
+      "$AddFactToEquipmentWielder$a1fe8052-f81e-4880-ab42-a8205554ca97",
+      "m_FlavorText",
+      "WarhammerPenetration"
     ],
     "Components": [
       {
@@ -103,7 +105,7 @@
         "m_Fact": "!bp_6b4204d2c4cf4796af95a2f554befd28"
       }
     ],
-    "Author": "AlexanderGusev",
+    "Author": "Unknown",
     "Comment": "",
     "m_DisplayName": {
       "m_Key": "a3d8120e-053a-4c84-b39e-ca3ab9612faf",
@@ -124,10 +126,10 @@
       "fileid": 21300000
     },
     "m_FlavorText": {
-      "m_Key": "",
-      "m_OwnerString": "",
-      "m_OwnerPropertyPath": "",
-      "m_JsonPath": "",
+      "m_Key": "820111b4-a2bf-498c-bfb8-4cae278633ee",
+      "m_OwnerString": "4b697b99238849e6a18a0b9ce9e1a0f8",
+      "m_OwnerPropertyPath": "m_FlavorText",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\Imperial ForceSword\\ForceSwordCH4Unique_Armoury1_Item_m_FlavorText.json",
       "Shared": null
     },
     "m_NonIdentifiedNameText": {
@@ -275,9 +277,9 @@
       "Shared": null
     },
     "IsTwoHanded": false,
-    "WarhammerDamage": 28,
-    "WarhammerMaxDamage": 36,
-    "WarhammerPenetration": 25,
+    "WarhammerDamage": 30,
+    "WarhammerMaxDamage": 38,
+    "WarhammerPenetration": 40,
     "DodgePenetration": 0,
     "AdditionalHitChance": 0,
     "WarhammerRecoil": 0,
