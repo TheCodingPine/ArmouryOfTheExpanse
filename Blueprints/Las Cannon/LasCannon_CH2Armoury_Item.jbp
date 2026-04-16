@@ -7,7 +7,9 @@
       "WarhammerDamage",
       "WarhammerMaxDamage",
       "m_Rarity",
-      "$AddStringToFactName$8c9ddaa6-aa82-42cd-aa42-dce18be84d40"
+      "$AddStringToFactName$8c9ddaa6-aa82-42cd-aa42-dce18be84d40",
+      "m_DisplayName",
+      "m_Description"
     ],
     "Components": [
       {
@@ -53,31 +55,37 @@
         "m_Fact": "!bp_da524d7394384325bc8aff143dd83e63"
       },
       {
-        "$type": "65221a9a6133bd0408b019b86642d97e, AddFactToEquipmentWielder",
-        "name": "$AddFactToEquipmentWielder$8bce1281-68bb-4f9c-8bd0-cf6ff5f00047",
+        "$type": "3c5267edd045432ab5bd6dbe606d4da3, AdditionalDescriptionComponent",
+        "name": "$AdditionalDescriptionComponent$9514bf80-8383-4041-8524-25936e39b45c",
         "m_Flags": 0,
         "PrototypeLink": {
           "guid": "40d8a98cd786488c87103c97cbdb8631",
-          "name": "$AddFactToEquipmentWielder$8bce1281-68bb-4f9c-8bd0-cf6ff5f00047"
+          "name": "$AdditionalDescriptionComponent$9514bf80-8383-4041-8524-25936e39b45c"
         },
         "m_Overrides": [],
-        "m_Fact": "!bp_7712185d9ea049609fda2784a6ca75ce"
+        "AdditionalDescription": {
+          "m_Key": "7eb1b448-064b-4ac5-9e43-cad16d1155f5",
+          "m_OwnerString": "40d8a98cd786488c87103c97cbdb8631#$AdditionalDescriptionComponent$9514bf80-8383-4041-8524-25936e39b45c",
+          "m_OwnerPropertyPath": "AdditionalDescription",
+          "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\Las Cannon\\LasCannon_CH1Armoury_Item_AdditionalDescription.json",
+          "Shared": null
+        }
       }
     ],
     "Author": "Unknown",
     "Comment": "",
     "m_DisplayName": {
-      "m_Key": "61dc7ccb-ff07-4d5b-8a61-6feb1b4cdc25",
-      "m_OwnerString": "40d8a98cd786488c87103c97cbdb8631",
+      "m_Key": "04020c9c-1529-4d68-b5da-47732abfb1b0",
+      "m_OwnerString": "857411fca50b4d33a3953bf87abd3c97",
       "m_OwnerPropertyPath": "m_DisplayName",
-      "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\Las Cannon\\LasCannon_CH1Armoury_Item_m_DisplayName.json",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\Las Cannon\\LasCannon_CH2Armoury_Item_m_DisplayName.json",
       "Shared": null
     },
     "m_Description": {
-      "m_Key": "75822758-2e56-4093-af33-579999df338b",
-      "m_OwnerString": "40d8a98cd786488c87103c97cbdb8631",
-      "m_OwnerPropertyPath": "m_Description",
-      "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\Las Cannon\\LasCannon_CH1Armoury_Item_m_Description.json",
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
       "Shared": null
     },
     "m_Icon": null,
@@ -136,7 +144,7 @@
         "Group": ""
       },
       "m_SoundTypeSwitch": {
-        "Value": "Plasma",
+        "Value": "Laser",
         "Group": "ProjectileType"
       },
       "m_MuffledTypeSwitch": {
@@ -160,16 +168,16 @@
         "m_FXSettings": "!bp_6cd13d0464794ec0b1f8746d0a475b96",
         "OnHitOverrideType": "None",
         "m_OnHitActions": null,
-        "AP": 1
+        "AP": 2
       },
       "Ability2": {
-        "Type": "SingleShot",
+        "Type": "AOE",
         "Mode": "Default",
         "m_Ability": "!bp_4e20851db1714699b1297d698a3f2dc0",
         "m_FXSettings": "!bp_6cd13d0464794ec0b1f8746d0a475b96",
         "OnHitOverrideType": "None",
         "m_OnHitActions": null,
-        "AP": 2
+        "AP": 3
       },
       "Ability3": {
         "Type": "Reload",
@@ -178,7 +186,7 @@
         "m_FXSettings": null,
         "OnHitOverrideType": "None",
         "m_OnHitActions": null,
-        "AP": 4
+        "AP": 2
       },
       "Ability4": {
         "Type": "None",
@@ -230,15 +238,15 @@
       "Shared": null
     },
     "IsTwoHanded": true,
-    "WarhammerDamage": 22,
-    "WarhammerMaxDamage": 28,
-    "WarhammerPenetration": 15,
+    "WarhammerDamage": 28,
+    "WarhammerMaxDamage": 40,
+    "WarhammerPenetration": 100,
     "DodgePenetration": 15,
     "AdditionalHitChance": 25,
     "WarhammerRecoil": 0,
-    "WarhammerMaxDistance": 24,
-    "WarhammerMaxAmmo": 8,
-    "RateOfFire": 1,
+    "WarhammerMaxDistance": 20,
+    "WarhammerMaxAmmo": 1,
+    "RateOfFire": 0,
     "m_Enchantments": [],
     "m_DamageType": {
       "Type": "Energy"

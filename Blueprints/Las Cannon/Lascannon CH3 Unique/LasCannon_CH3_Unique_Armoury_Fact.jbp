@@ -8,7 +8,7 @@
       {
         "$type": "28fa403fa7a94a2f9ea361583e66cdb4, WarhammerWeaponStatsModifierInitiator",
         "name": "$WarhammerWeaponStatsModifierInitiator$c920c3ab-d476-48c5-999e-436b3def5052",
-        "m_Flags": 0,
+        "m_Flags": "Disabled",
         "PrototypeLink": {
           "guid": "",
           "name": ""
@@ -154,7 +154,7 @@
       {
         "$type": "428580af48b84509b97be533f03c7759, WarhammerHitChanceModifierInitiator",
         "name": "$WarhammerHitChanceModifierInitiator$1dc6fe86-3865-4d66-bdec-e407d51baf1c",
-        "m_Flags": 0,
+        "m_Flags": "Disabled",
         "PrototypeLink": {
           "guid": "",
           "name": ""
@@ -227,7 +227,7 @@
       {
         "$type": "607a58399d9a479eb9e824d3285866fa, BlockChanceModifierAttacker",
         "name": "$BlockChanceModifierAttacker$ab58529c-c628-4cb9-b914-ed9c9e620cce",
-        "m_Flags": 0,
+        "m_Flags": "Disabled",
         "PrototypeLink": {
           "guid": "",
           "name": ""
@@ -280,7 +280,7 @@
       {
         "$type": "9f491e61b52742b2b04cc7b0fb35f9c0, OverpenetrationModifierInitiator",
         "name": "$OverpenetrationModifierInitiator$46fa1b4e-408c-43e9-aa91-68fe28fb8a0a",
-        "m_Flags": 0,
+        "m_Flags": "Disabled",
         "PrototypeLink": {
           "guid": "",
           "name": ""

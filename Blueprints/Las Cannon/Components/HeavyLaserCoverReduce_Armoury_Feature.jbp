@@ -6,8 +6,114 @@
     "m_Overrides": [],
     "Components": [
       {
-        "$type": "428580af48b84509b97be533f03c7759, WarhammerHitChanceModifierInitiator",
-        "name": "$WarhammerHitChanceModifierInitiator$6c5ddcff-b00f-44a0-b395-732f1e0b17e4",
+        "$type": "6ebdb034bf2f486b932f9342e175ec6d, AbilityLifecycleTriggerCaster",
+        "name": "$AbilityLifecycleTriggerCaster$8159fdb0-c388-44ed-b501-77c4fb0e1dab",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Condition": {
+          "Operation": "BoolAnd",
+          "TargetType": "CurrentEntity",
+          "TargetEvaluator": null,
+          "FailSilentlyIfNoTarget": false,
+          "Getters": [
+            {
+              "$type": "3584620744644ad6932525e79c8ca8e6, CheckAbilityWeaponIsSourceOfFactGetter",
+              "name": "$CheckAbilityWeaponIsSourceOfFactGetter$cadcc30207c3448bb78a3a103dc97bc7",
+              "Settings": {
+                "Progression": "AsIs",
+                "m_CustomProgression": [],
+                "m_StartLevel": 0,
+                "m_StepLevel": 0,
+                "Negate": false,
+                "Limit": "None",
+                "Min": 0,
+                "Max": 0
+              }
+            }
+          ]
+        },
+        "StartActions": {
+          "Actions": [
+            {
+              "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
+              "name": "$ContextActionApplyBuff$fa9e893d-2b87-45b4-a718-6236f97fc334",
+              "m_Buff": "!bp_0a58832988684147be330180eede41b5",
+              "BuffEndCondition": "CombatEnd",
+              "Permanent": true,
+              "DurationValue": {
+                "BonusValue": {
+                  "ValueType": "Simple",
+                  "Value": 0,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null,
+                  "PropertyName": "Value1"
+                },
+                "RoundsValue": {
+                  "ValueType": "Simple",
+                  "Value": 0,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null,
+                  "PropertyName": "Value1"
+                }
+              },
+              "ToCaster": true,
+              "AsChild": false,
+              "SameDuration": false,
+              "Ranks": {
+                "ValueType": "Simple",
+                "Value": 0,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "None",
+                "m_CustomProperty": null,
+                "PropertyName": "Value1"
+              },
+              "ActionsOnApply": {
+                "Actions": []
+              },
+              "ActionsOnImmune": {
+                "Actions": []
+              },
+              "AddFactSource": false
+            }
+          ]
+        },
+        "EndActions": {
+          "Actions": [
+            {
+              "$type": "23ddfb172c2d3c144ab007dec380d712, ContextActionRemoveBuff",
+              "name": "$ContextActionRemoveBuff$525af81c-564a-4e13-b22a-caaf7a8b1e43",
+              "m_Buff": "!bp_0a58832988684147be330180eede41b5",
+              "RemoveRank": false,
+              "RemoveSeveralRanks": false,
+              "RankNumber": {
+                "ValueType": "Simple",
+                "Value": 0,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "None",
+                "m_CustomProperty": null,
+                "PropertyName": "Value1"
+              },
+              "m_CasterRanksRemovalPolicy": "Default",
+              "ToCaster": false
+            }
+          ]
+        },
+        "m_Facts": [],
+        "m_FactsToCheckOnOwner": []
+      },
+      {
+        "$type": "607a58399d9a479eb9e824d3285866fa, BlockChanceModifierAttacker",
+        "name": "$BlockChanceModifierAttacker$f4e54d76-c075-4b9b-84f9-21532a19fd17",
         "m_Flags": 0,
         "PrototypeLink": {
           "guid": "",
@@ -16,14 +122,14 @@
         "m_Overrides": [],
         "Restrictions": {
           "Property": {
-            "Operation": "Sum",
-            "TargetType": "CurrentEntity",
+            "Operation": "BoolAnd",
+            "TargetType": "RuleInitiator",
             "TargetEvaluator": null,
             "FailSilentlyIfNoTarget": false,
             "Getters": [
               {
                 "$type": "3584620744644ad6932525e79c8ca8e6, CheckAbilityWeaponIsSourceOfFactGetter",
-                "name": "$CheckAbilityWeaponIsSourceOfFactGetter$0067c24e71904d40b4c1ee6b276f7e5e",
+                "name": "$CheckAbilityWeaponIsSourceOfFactGetter$55532552-7c16-4fdb-b594-e6e0c2fa1dbe",
                 "Settings": {
                   "Progression": "AsIs",
                   "m_CustomProgression": [],
@@ -38,8 +144,8 @@
             ]
           }
         },
-        "Properties": "CoverMagnitude",
-        "HitChance": {
+        "Properties": "BlockChanceMultiplier",
+        "BlockChance": {
           "ValueType": "Simple",
           "Value": 0,
           "ValueRank": "Default",
@@ -48,7 +154,7 @@
           "m_CustomProperty": null,
           "PropertyName": "Value1"
         },
-        "RighteousFuryChance": {
+        "BlockChanceMultiplierValue": {
           "ValueType": "Simple",
           "Value": 0,
           "ValueRank": "Default",
@@ -56,31 +162,11 @@
           "Property": "None",
           "m_CustomProperty": null,
           "PropertyName": "Value1"
-        },
-        "CoverPenetrationPercent": {
-          "ValueType": "Simple",
-          "Value": 0,
-          "ValueRank": "Default",
-          "ValueShared": "Damage",
-          "Property": "None",
-          "m_CustomProperty": null,
-          "PropertyName": "Value1"
-        },
-        "CoverMagnitude": {
-          "ValueType": "Simple",
-          "Value": -75,
-          "ValueRank": "Default",
-          "ValueShared": "Damage",
-          "Property": "None",
-          "m_CustomProperty": null,
-          "PropertyName": "Value1"
-        },
-        "AutoCrit": false,
-        "NeverCrit": false
+        }
       }
     ],
     "Author": "Unknown",
-    "Comment": "",
+    "Comment": "destroy cover",
     "m_DisplayName": {
       "m_Key": "",
       "m_OwnerString": "",

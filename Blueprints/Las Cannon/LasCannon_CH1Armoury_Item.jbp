@@ -58,15 +58,23 @@
         "m_Fact": "!bp_da524d7394384325bc8aff143dd83e63"
       },
       {
-        "$type": "65221a9a6133bd0408b019b86642d97e, AddFactToEquipmentWielder",
-        "name": "$AddFactToEquipmentWielder$8bce1281-68bb-4f9c-8bd0-cf6ff5f00047",
+        "$type": "3c5267edd045432ab5bd6dbe606d4da3, AdditionalDescriptionComponent",
+        "name": "$AdditionalDescriptionComponent$9514bf80-8383-4041-8524-25936e39b45c",
         "m_Flags": 0,
         "PrototypeLink": {
-          "guid": "",
-          "name": ""
+          "guid": "bd1ffcfed2fe48ad9ad2d447a85e55bd",
+          "name": "$AdditionalDescriptionComponent$373254fb-b191-4c4c-8db5-99c01eea2585"
         },
-        "m_Overrides": [],
-        "m_Fact": "!bp_7712185d9ea049609fda2784a6ca75ce"
+        "m_Overrides": [
+          "AdditionalDescription"
+        ],
+        "AdditionalDescription": {
+          "m_Key": "7eb1b448-064b-4ac5-9e43-cad16d1155f5",
+          "m_OwnerString": "40d8a98cd786488c87103c97cbdb8631#$AdditionalDescriptionComponent$9514bf80-8383-4041-8524-25936e39b45c",
+          "m_OwnerPropertyPath": "AdditionalDescription",
+          "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\Las Cannon\\LasCannon_CH1Armoury_Item_AdditionalDescription.json",
+          "Shared": null
+        }
       }
     ],
     "Author": "Unknown",
@@ -141,7 +149,7 @@
         "Group": ""
       },
       "m_SoundTypeSwitch": {
-        "Value": "Plasma",
+        "Value": "Laser",
         "Group": "ProjectileType"
       },
       "m_MuffledTypeSwitch": {
@@ -165,16 +173,16 @@
         "m_FXSettings": "!bp_6cd13d0464794ec0b1f8746d0a475b96",
         "OnHitOverrideType": "None",
         "m_OnHitActions": null,
-        "AP": 1
+        "AP": 2
       },
       "Ability2": {
-        "Type": "SingleShot",
+        "Type": "AOE",
         "Mode": "Default",
         "m_Ability": "!bp_4e20851db1714699b1297d698a3f2dc0",
         "m_FXSettings": "!bp_6cd13d0464794ec0b1f8746d0a475b96",
         "OnHitOverrideType": "None",
         "m_OnHitActions": null,
-        "AP": 2
+        "AP": 3
       },
       "Ability3": {
         "Type": "Reload",
@@ -183,7 +191,7 @@
         "m_FXSettings": null,
         "OnHitOverrideType": "None",
         "m_OnHitActions": null,
-        "AP": 4
+        "AP": 2
       },
       "Ability4": {
         "Type": "None",
@@ -235,15 +243,15 @@
       "Shared": null
     },
     "IsTwoHanded": true,
-    "WarhammerDamage": 18,
-    "WarhammerMaxDamage": 24,
-    "WarhammerPenetration": 15,
+    "WarhammerDamage": 20,
+    "WarhammerMaxDamage": 30,
+    "WarhammerPenetration": 100,
     "DodgePenetration": 15,
     "AdditionalHitChance": 25,
     "WarhammerRecoil": 0,
-    "WarhammerMaxDistance": 24,
-    "WarhammerMaxAmmo": 8,
-    "RateOfFire": 1,
+    "WarhammerMaxDistance": 20,
+    "WarhammerMaxAmmo": 1,
+    "RateOfFire": 0,
     "m_Enchantments": [],
     "m_DamageType": {
       "Type": "Energy"

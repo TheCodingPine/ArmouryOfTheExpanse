@@ -43,12 +43,16 @@ namespace ArmouryOfTheExpanse
         public static GUIStyle headerStyle = null;
         public static GUIStyle panelStyle = null;
         public static Texture2D panelTexture = null;
+        public static MyModSettings settings;
 
         [OwlcatModificationEnterPoint]
         public static void Load(Kingmaker.Modding.OwlcatModification entry)
         {
             mod = entry;
             harmony = new(entry.Manifest.UniqueName);
+            settings = ModDataManager.Load();
+            entry.OnShowGUI = onShowGUI;
+            entry.OnHideGUI = onHideGUI;
             entry.OnDrawGUI = MyOnGuiMethod;
             log = mod.Logger;
 
@@ -68,13 +72,23 @@ namespace ArmouryOfTheExpanse
                 if (loaded) return;
                 loaded = true;
                 log.Log("Postfix applied to Init [BlueprintsCache]");
-                ModsDependanciesManager.Init(); //check 3rd party mods & logger
+                settings = ModDataManager.Load();
+                ModsDependanciesManager.Init(); //check 3rd party mods & logger              
                 ApplyPatches();
             }
         }
 
         //---
 
+        public static void onShowGUI()
+        {
+            settings = ModDataManager.Load();
+        }
+
+        public static void onHideGUI()
+        {
+            ApplyPatchesFromSettings();
+        }
 
         static void MyOnGuiMethod()
         {
@@ -82,7 +96,9 @@ namespace ArmouryOfTheExpanse
 
             //vertical div with styles
             GUILayout.BeginVertical(panelStyle);
-            GUILayout.Label("Check if mod exist", GUILayout.ExpandWidth(true));
+                GUILayout.Label("LASCANNON", headerStyle);
+                settings.loreAccurateLascannon = GUILayout.Toggle(settings.loreAccurateLascannon, " Lore Accurate Lascannon", GUILayout.ExpandWidth(false));
+                GUILayout.Label("Increases the strength requirement for Lascannons from 60 to 80.", GUILayout.ExpandWidth(true));
 
 
             GUILayout.EndVertical();
@@ -112,9 +128,16 @@ namespace ArmouryOfTheExpanse
                 log.Log("Patching for DPWeaponAssetPack complete");
             }
 
+            ApplyPatchesFromSettings();
         }
 
-
+        public static void ApplyPatchesFromSettings()
+        {
+            log.Log("Applying settings");
+            ModDataManager.Save(settings);
+            WeaponsOptions.Lascannon_Patch(settings.loreAccurateLascannon);
+            log.Log("Settings applied");
+        }
 
 
 
