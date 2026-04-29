@@ -55,9 +55,6 @@ MonoBehaviour:
   - Guid: eccd177967a04c96b85ae8505fd8b0a4
     Filename: Loot_Uniq_Locked  - InquisitionArsenal.patch
     PatchType: 2
-  - Guid: 717d3067af334797a146a1f4d1649d35
-    Filename: AdeptusMechanicus_SecretRoomChest.patch
-    PatchType: 2
   - Guid: 19b0d16a16154dcdb645c05ca609007c
     Filename: ImperiumMilitary_PoorLootBig (10).patch
     PatchType: 2
@@ -84,4 +81,13 @@ MonoBehaviour:
     PatchType: 2
   - Guid: c0d45e7bec8341378edc57523edf1d35
     Filename: Forest_Chest.patch
+    PatchType: 2
+  - Guid: c82c3907f84747238863bf5c405e3b66
+    Filename: Footfall_AngryCommonerAssassin.patch
+    PatchType: 2
+  - Guid: 3872a93d301a4fb3a6da2ef6fa493046
+    Filename: AdeptusMechanicus_LootGoodHidden.patch
+    PatchType: 2
+  - Guid: 95d5cddecbfa450594660ca4bdbf68e3
+    Filename: AdeptusMechanicus_QuicksilverLootBag.patch
     PatchType: 2

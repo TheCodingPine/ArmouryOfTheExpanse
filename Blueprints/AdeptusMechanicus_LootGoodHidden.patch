@@ -3,13 +3,13 @@
     {
       "PatchType": "Insert",
       "NewElement": {
-        "m_Item": "!bp_4cc6ec1168ef4c0fa0cf9ebdb98ad98b",
+        "m_Item": "!bp_10c9c8cf23d24c67af3b8365c0d026d6",
         "Diversity": 0,
         "Count": 1,
         "m_ReputationPointsToUnlock": 0
       },
       "InsertAfterTarget": {
-        "m_Item": "!bp_ff30bc4470f5496c8d29818da6c6931e",
+        "m_Item": "!bp_01fcc1fe911d4ced864f2dd0af7a1e56",
         "Count": 1,
         "m_ReputationPointsToUnlock": 0
       }

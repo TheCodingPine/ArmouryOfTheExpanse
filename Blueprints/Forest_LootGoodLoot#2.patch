@@ -13,6 +13,20 @@
         "Count": 1,
         "m_ReputationPointsToUnlock": 0
       }
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "m_Item": "!bp_9d6c7ba68b6a49b598948b52b2c20bb2",
+        "Diversity": 0,
+        "Count": 1,
+        "m_ReputationPointsToUnlock": 0
+      },
+      "InsertAfterTarget": {
+        "m_Item": "!bp_e4570c06ba5c4dd9bb0734d85ad81ce4",
+        "Count": 1,
+        "m_ReputationPointsToUnlock": 0
+      }
     }
   ]
 }

@@ -25,7 +25,7 @@
         },
         "m_Overrides": [],
         "Stat": "WarhammerStrength",
-        "MinValue": 60,
+        "MinValue": 80,
         "m_ChangeRestrictionStatIfHasFact": true,
         "m_Fact": "!bp_26376b596c474d67849613617ced7b04",
         "m_SubtractionValue": 25
@@ -85,10 +85,10 @@
       "Shared": null
     },
     "m_Description": {
-      "m_Key": "",
-      "m_OwnerString": "",
-      "m_OwnerPropertyPath": "",
-      "m_JsonPath": "",
+      "m_Key": "50458bd9-ea8d-4bdc-b489-64fb2619a0d3",
+      "m_OwnerString": "e879f2d1d6634aac8326e24a55d49a58",
+      "m_OwnerPropertyPath": "m_Description",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\Las Cannon\\LasCannon_CH3_Unique_Armoury_Item_m_Description.json",
       "Shared": null
     },
     "m_Icon": null,
@@ -241,11 +241,11 @@
       "Shared": null
     },
     "IsTwoHanded": true,
-    "WarhammerDamage": 42,
-    "WarhammerMaxDamage": 50,
+    "WarhammerDamage": 38,
+    "WarhammerMaxDamage": 46,
     "WarhammerPenetration": 100,
-    "DodgePenetration": 15,
-    "AdditionalHitChance": 25,
+    "DodgePenetration": 30,
+    "AdditionalHitChance": 0,
     "WarhammerRecoil": 0,
     "WarhammerMaxDistance": 20,
     "WarhammerMaxAmmo": 1,

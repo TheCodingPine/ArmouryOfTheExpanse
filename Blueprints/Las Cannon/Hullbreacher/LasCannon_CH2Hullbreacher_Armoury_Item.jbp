@@ -1,18 +1,20 @@
 {
-  "AssetId": "40d8a98cd786488c87103c97cbdb8631",
+  "AssetId": "10c9c8cf23d24c67af3b8365c0d026d6",
   "Data": {
     "$type": "c00f723cccf2d314198c42a572c631fd, BlueprintItemWeapon",
-    "PrototypeLink": "",
+    "PrototypeLink": "40d8a98cd786488c87103c97cbdb8631",
     "m_Overrides": [
+      "WarhammerDamage",
+      "WarhammerMaxDamage",
+      "m_Rarity",
+      "$AddStringToFactName$8c9ddaa6-aa82-42cd-aa42-dce18be84d40",
       "m_DisplayName",
-      "$EquipmentRestrictionHasFacts$c122edc0-1614-472c-8160-8257d5f536c7",
-      "$EquipmentRestrictionStat$e44133fa-d538-47ea-b8ec-fcbaff2accb6",
-      "$EquipmentRestrictionHasFacts$78882ab2-1160-4515-a2a7-3d0441d70c5a",
-      "m_Icon",
-      "m_VisualParameters.m_WeaponModel",
-      "Comment",
-      "Author",
-      "m_Description"
+      "m_Description",
+      "$AddFactToEquipmentWielder$90134ff3-51a9-4d14-817a-d13e77dd7704",
+      "WeaponAbilities.Ability1.m_OnHitActions",
+      "WeaponAbilities.Ability2.m_OnHitActions",
+      "WeaponAbilities.Ability1.OnHitOverrideType",
+      "WeaponAbilities.Ability2.OnHitOverrideType"
     ],
     "Components": [
       {
@@ -20,8 +22,8 @@
         "name": "$EquipmentRestrictionStat$e44133fa-d538-47ea-b8ec-fcbaff2accb6",
         "m_Flags": 0,
         "PrototypeLink": {
-          "guid": "",
-          "name": ""
+          "guid": "40d8a98cd786488c87103c97cbdb8631",
+          "name": "$EquipmentRestrictionStat$e44133fa-d538-47ea-b8ec-fcbaff2accb6"
         },
         "m_Overrides": [],
         "Stat": "WarhammerStrength",
@@ -35,8 +37,8 @@
         "name": "$EquipmentRestrictionHasFacts$78882ab2-1160-4515-a2a7-3d0441d70c5a",
         "m_Flags": 0,
         "PrototypeLink": {
-          "guid": "",
-          "name": ""
+          "guid": "40d8a98cd786488c87103c97cbdb8631",
+          "name": "$EquipmentRestrictionHasFacts$78882ab2-1160-4515-a2a7-3d0441d70c5a"
         },
         "m_Overrides": [],
         "m_Facts": [
@@ -51,8 +53,8 @@
         "name": "$AddFactToEquipmentWielder$205092aa-485e-4443-852a-24756b7819a2",
         "m_Flags": 0,
         "PrototypeLink": {
-          "guid": "",
-          "name": ""
+          "guid": "40d8a98cd786488c87103c97cbdb8631",
+          "name": "$AddFactToEquipmentWielder$205092aa-485e-4443-852a-24756b7819a2"
         },
         "m_Overrides": [],
         "m_Fact": "!bp_da524d7394384325bc8aff143dd83e63"
@@ -62,12 +64,10 @@
         "name": "$AdditionalDescriptionComponent$9514bf80-8383-4041-8524-25936e39b45c",
         "m_Flags": 0,
         "PrototypeLink": {
-          "guid": "bd1ffcfed2fe48ad9ad2d447a85e55bd",
-          "name": "$AdditionalDescriptionComponent$373254fb-b191-4c4c-8db5-99c01eea2585"
+          "guid": "40d8a98cd786488c87103c97cbdb8631",
+          "name": "$AdditionalDescriptionComponent$9514bf80-8383-4041-8524-25936e39b45c"
         },
-        "m_Overrides": [
-          "AdditionalDescription"
-        ],
+        "m_Overrides": [],
         "AdditionalDescription": {
           "m_Key": "7eb1b448-064b-4ac5-9e43-cad16d1155f5",
           "m_OwnerString": "40d8a98cd786488c87103c97cbdb8631#$AdditionalDescriptionComponent$9514bf80-8383-4041-8524-25936e39b45c",
@@ -80,17 +80,17 @@
     "Author": "Unknown",
     "Comment": "",
     "m_DisplayName": {
-      "m_Key": "61dc7ccb-ff07-4d5b-8a61-6feb1b4cdc25",
-      "m_OwnerString": "40d8a98cd786488c87103c97cbdb8631",
+      "m_Key": "4dc0f29c-087e-4347-afe8-3ad6c93cd417",
+      "m_OwnerString": "10c9c8cf23d24c67af3b8365c0d026d6",
       "m_OwnerPropertyPath": "m_DisplayName",
-      "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\Las Cannon\\LasCannon_CH1Armoury_Item_m_DisplayName.json",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\Las Cannon\\LasCannon_CH2Hullbreacher_Armoury_Item_m_DisplayName_1.json",
       "Shared": null
     },
     "m_Description": {
-      "m_Key": "75822758-2e56-4093-af33-579999df338b",
-      "m_OwnerString": "40d8a98cd786488c87103c97cbdb8631",
+      "m_Key": "3abe3eac-fb0c-4079-8b0f-cb98c399c0fa",
+      "m_OwnerString": "10c9c8cf23d24c67af3b8365c0d026d6",
       "m_OwnerPropertyPath": "m_Description",
-      "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\Las Cannon\\LasCannon_CH1Armoury_Item_m_Description.json",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\Las Cannon\\LasCannon_CH2Hullbreacher_Armoury_Item_m_Description.json",
       "Shared": null
     },
     "m_Icon": null,
@@ -118,7 +118,7 @@
     "m_NotStackable": false,
     "m_Weight": 0.0,
     "m_Origin": "RangedWeaponry",
-    "m_Rarity": "Common",
+    "m_Rarity": "Unique",
     "m_Tag": "None",
     "m_IsNotable": false,
     "m_ProfitFactorCost": 0.0,
@@ -171,8 +171,8 @@
         "Mode": "Default",
         "m_Ability": "!bp_a489b6d823ef4b86b431aa1d42e385c7",
         "m_FXSettings": "!bp_6cd13d0464794ec0b1f8746d0a475b96",
-        "OnHitOverrideType": "None",
-        "m_OnHitActions": null,
+        "OnHitOverrideType": "Add",
+        "m_OnHitActions": "!bp_712dfefb8b0d48a3b21b721c5d65b467",
         "AP": 2
       },
       "Ability2": {
@@ -180,8 +180,8 @@
         "Mode": "Default",
         "m_Ability": "!bp_4e20851db1714699b1297d698a3f2dc0",
         "m_FXSettings": "!bp_6cd13d0464794ec0b1f8746d0a475b96",
-        "OnHitOverrideType": "None",
-        "m_OnHitActions": null,
+        "OnHitOverrideType": "Add",
+        "m_OnHitActions": "!bp_712dfefb8b0d48a3b21b721c5d65b467",
         "AP": 3
       },
       "Ability3": {
@@ -243,8 +243,8 @@
       "Shared": null
     },
     "IsTwoHanded": true,
-    "WarhammerDamage": 20,
-    "WarhammerMaxDamage": 30,
+    "WarhammerDamage": 32,
+    "WarhammerMaxDamage": 44,
     "WarhammerPenetration": 100,
     "DodgePenetration": 30,
     "AdditionalHitChance": 0,

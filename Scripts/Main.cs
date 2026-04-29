@@ -96,10 +96,17 @@ namespace ArmouryOfTheExpanse
 
             //vertical div with styles
             GUILayout.BeginVertical(panelStyle);
-                GUILayout.Label("LASCANNON", headerStyle);
-                settings.loreAccurateLascannon = GUILayout.Toggle(settings.loreAccurateLascannon, " Lore Accurate Lascannon", GUILayout.ExpandWidth(false));
-                GUILayout.Label("Increases the strength requirement for Lascannons from 60 to 80.", GUILayout.ExpandWidth(true));
 
+            GUILayout.Label("LASCANNON", headerStyle);
+            GUILayout.BeginHorizontal();
+                settings.loreInaccurateLascannon = GUILayout.Toggle(settings.loreInaccurateLascannon, " Lore Accurate Lascannon: ", GUILayout.Width(300));
+                GUILayout.Label("Decreases the strength requirement for Lascannons from 80 to 60.", GUILayout.ExpandWidth(true));
+            GUILayout.EndHorizontal();
+            //GUILayout.Label("Slider for THINGS", headerStyle);
+            //GUILayout.BeginHorizontal();
+            //        GUILayout.Label("Value: " + settings.sliderValue, GUILayout.Width(300));
+            //        settings.sliderValue = (int)GUILayout.HorizontalSlider(settings.sliderValue, 1f, 100f, GUILayout.Width(200));
+            //GUILayout.EndHorizontal();
 
             GUILayout.EndVertical();
         }
@@ -133,10 +140,8 @@ namespace ArmouryOfTheExpanse
 
         public static void ApplyPatchesFromSettings()
         {
-            log.Log("Applying settings");
             ModDataManager.Save(settings);
-            WeaponsOptions.Lascannon_Patch(settings.loreAccurateLascannon);
-            log.Log("Settings applied");
+            WeaponsOptions.Lascannon_Patch(settings.loreInaccurateLascannon);
         }
 
 

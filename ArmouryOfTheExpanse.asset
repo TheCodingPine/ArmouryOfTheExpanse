@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Manifest:
     UniqueName: ArmouryOfTheExpanse
-    Version: 1.2.2
+    Version: 1.2.3
     DisplayName: Armoury Of The Expanse
     Description: 25+ new weapons and armors
     Author: OdinThePine

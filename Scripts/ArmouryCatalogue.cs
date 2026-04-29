@@ -28,6 +28,7 @@ namespace ArmouryOfTheExpanse
                         new ArmouryElement("e11922e693164c0895e415b76a7ba809", DPAsset.Sunblade), //act1 base alternative
  
                             //Power 2Handed
+                                //eldar 2handed
                             //Power 1Handed
                         new ArmouryElement("3b1cdbdec35f4d249c5d0eaf57778046", DPAsset.DarktideA), //new asset [Kiava Gamma Pattern] Power Sword
                         new ArmouryElement("5f54e5c81b25449eaf410483c709d343", DPAsset.DarktideA), //Beastflayer
@@ -48,12 +49,16 @@ namespace ArmouryOfTheExpanse
                             //Las Cannon
                         new ArmouryElement("40d8a98cd786488c87103c97cbdb8631", DPAsset.Lascannon_Green), //Lascannon Act1
                         new ArmouryElement("857411fca50b4d33a3953bf87abd3c97", DPAsset.Lascannon_Blue), //Lascannon Act2
-                        new ArmouryElement("e879f2d1d6634aac8326e24a55d49a58", DPAsset.Lascannon_Black), //Lascannon Act3
+                        new ArmouryElement("10c9c8cf23d24c67af3b8365c0d026d6", DPAsset.Lascannon_Red), //Lascannon Act2 Hullbreacher                      
+                        new ArmouryElement("e879f2d1d6634aac8326e24a55d49a58", DPAsset.Lascannon_Black), //Lascannon Act3 HammerOfMankind
                             //Bolt Sniper
                         new ArmouryElement("697624ccaced41a28655058622ed2ac2", DPAsset.BoltSniper_SM),
-                        new ArmouryElement("aa38dbb582be4b62b977c3fc8379d979", DPAsset.BoltSniper_HM)
+                        new ArmouryElement("aa38dbb582be4b62b977c3fc8379d979", DPAsset.BoltSniper_HM),
 
-
+                            //Perinetus
+                        new ArmouryElement("9d6c7ba68b6a49b598948b52b2c20bb2", DPAsset.Perinetus_Black), //act1
+                        new ArmouryElement("1b000bf9569146deb33e94d1cff3f615", DPAsset.Perinetus_Green) //act2
+                        
 
                     };
                 }

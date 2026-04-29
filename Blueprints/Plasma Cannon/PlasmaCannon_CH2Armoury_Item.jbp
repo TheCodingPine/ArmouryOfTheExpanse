@@ -8,7 +8,8 @@
       "WarhammerMaxDamage",
       "$AddStringToFactName$50944bd8-cc3f-4df5-9bbf-237851a2d6b8",
       "m_Rarity",
-      "WeaponAbilities.Ability2.m_Ability"
+      "WeaponAbilities.Ability2.m_Ability",
+      "WarhammerPenetration"
     ],
     "Components": [
       {
@@ -255,9 +256,9 @@
       "Shared": null
     },
     "IsTwoHanded": true,
-    "WarhammerDamage": 18,
-    "WarhammerMaxDamage": 25,
-    "WarhammerPenetration": 45,
+    "WarhammerDamage": 28,
+    "WarhammerMaxDamage": 36,
+    "WarhammerPenetration": 50,
     "DodgePenetration": 0,
     "AdditionalHitChance": 0,
     "WarhammerRecoil": 0,

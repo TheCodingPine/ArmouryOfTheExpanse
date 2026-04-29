@@ -62,7 +62,16 @@ public static class DPAssetsManager
                 { DPAsset.Autocannon_Blue,
                     new DPGuids(DPGuids.Autocannon_BlueAsset(), DPGuids.Autocannon_BlueIcon()) },
                 { DPAsset.Autocannon_Red,
-                    new DPGuids(DPGuids.Autocannon_RedAsset(), DPGuids.Autocannon_RedIcon()) }
+                    new DPGuids(DPGuids.Autocannon_RedAsset(), DPGuids.Autocannon_RedIcon()) },
+                { DPAsset.Ghostglaive2H,
+                    new DPGuids(DPGuids.Ghostglaive2H_Asset(), DPGuids.Ghostglaive2H_Icon()) },
+
+                { DPAsset.Perinetus_Black,
+                    new DPGuids(DPGuids.Perinetus_BlackAsset(), DPGuids.Perinetus_BlackIcon()) },
+                { DPAsset.Perinetus_Green,
+                    new DPGuids(DPGuids.Perinetus_GreenAsset(), DPGuids.Perinetus_GreenIcon()) },
+                { DPAsset.AngelusCarabine,
+                    new DPGuids(DPGuids.AngelusCarabineAsset(), DPGuids.AngelusCarabineIcon()) },
         };
 
     /// <summary> both asset and icon  </summary>
@@ -202,6 +211,10 @@ public enum DPAsset
     Autocannon_Black,
     Autocannon_Blue,
     Autocannon_Red,
+    Ghostglaive2H,
+    Perinetus_Black,
+    Perinetus_Green,
+    AngelusCarabine
 }
 
 /// <summary>holding model id and icon id
@@ -305,6 +318,23 @@ public class DPGuids
 
     internal static UnityEngine.Sprite AngelicIcon() => IconFetcher("0840082384904430a87009f6a42c6196");
     internal static GameObject AngelicAsset() => ModelFetcher("0840082384904430a87009f6a42c6196");
+
+    internal static UnityEngine.Sprite Ghostglaive2H_Icon() => IconFetcher("471b335004eb4932961acceaba40f9bf");
+    internal static GameObject Ghostglaive2H_Asset() => ModelFetcher("471b335004eb4932961acceaba40f9bf");
+
+
+
+    internal static UnityEngine.Sprite Perinetus_BlackIcon() => IconFetcher("0ff68005d5eb49ab9a4cc93dcf7b6219");
+    internal static GameObject Perinetus_BlackAsset() => ModelFetcher("0ff68005d5eb49ab9a4cc93dcf7b6219");
+
+    internal static UnityEngine.Sprite Perinetus_GreenIcon() => IconFetcher("e07c52378d9041e0843d3dd9203184f0");
+    internal static GameObject Perinetus_GreenAsset() => ModelFetcher("e07c52378d9041e0843d3dd9203184f0");
+
+    internal static UnityEngine.Sprite AngelusCarabineIcon() => IconFetcher("9b600e69e5074ca9aa629ab14850bd12");
+    internal static GameObject AngelusCarabineAsset() => ModelFetcher("9b600e69e5074ca9aa629ab14850bd12");
+
+
+
 
     private static GameObject ModelFetcher(string guid)
     {

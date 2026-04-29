@@ -291,7 +291,7 @@
     "WarhammerPenetration": 60,
     "DodgePenetration": 0,
     "AdditionalHitChance": 0,
-    "WarhammerRecoil": 45,
+    "WarhammerRecoil": 60,
     "WarhammerMaxDistance": 20,
     "WarhammerMaxAmmo": 65,
     "RateOfFire": 2,

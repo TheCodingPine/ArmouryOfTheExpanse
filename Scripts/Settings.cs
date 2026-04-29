@@ -9,7 +9,8 @@ namespace ArmouryOfTheExpanse
 {
     public class MyModSettings
     {
-        public bool loreAccurateLascannon { get; set; } = false;
+        public bool loreInaccurateLascannon { get; set; } = false;
+        public int sliderValue = 1;
     }
 
     public static class ModDataManager
