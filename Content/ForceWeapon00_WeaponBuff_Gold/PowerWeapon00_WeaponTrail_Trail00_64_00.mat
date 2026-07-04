@@ -1,0 +1,226 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: PowerWeapon00_WeaponTrail_Trail00_64_00
+  m_Shader: {fileID: 4800000, guid: 9fbe281ddb5f9824eb5d54ec51d84bc9, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - DISTORTION_ON
+  - INVERT_OPACITY_FALLOFF
+  - PARTICLES_LIGHTING_ON
+  - SOFT_PARTICLES
+  - TEXTURE1_ON
+  - _ALPHAPREMULTIPLY_ON
+  - _DOUBLESIDED_ON
+  - _NORMALMAP
+  - _TRANSPARENT_ON
+  m_InvalidKeywords:
+  - _ALPHATEST_ON
+  - _RADIALALPHASUBSTRACT_OFF
+  - _SUBSTRACTFALLOFF_OFF
+  - _SUBSTRACTSOFTNESS_OFF
+  - _USEUNSCALEDTIME_OFF
+  m_LightmapFlags: 1
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 1
+  m_CustomRenderQueue: 3029
+  stringTagMap:
+    RenderType: Transparent
+  disabledShaderPasses:
+  - SHADOWCASTER
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseMap:
+        m_Texture: {fileID: 2800000, guid: e32c3ec4e2c96aa4b8c2ce12ffaa1962, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: 6660ec32a5c2a73488a8bf6dd7fbbfba, type: 2}
+        m_Scale: {x: -1.5, y: 3}
+        m_Offset: {x: 0, y: 0.5}
+    - _ColorAlphaRamp:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: e32c3ec4e2c96aa4b8c2ce12ffaa1962, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex1:
+        m_Texture: {fileID: 2800000, guid: d14b4b4dbeb0aac4c99ec61cfe5fea4d, type: 2}
+        m_Scale: {x: 0.1, y: 2}
+        m_Offset: {x: 0, y: 0}
+    - _MasksMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Noise0Tex:
+        m_Texture: {fileID: 2800000, guid: 2329c34ef2c21af43b2c50e335780bc9, type: 2}
+        m_Scale: {x: 0.5, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Noise1Tex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _PosVatMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RotVatMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RoughnessMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ThicknessMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AlphaScale: 0.6
+    - _ApplyTexSheetUvBump: 1
+    - _ApplyTexSheetUvEmission: 1
+    - _ApplyTexSheetUvNoise0: 1
+    - _ApplyTexSheetUvNoise1: 1
+    - _ApplyTexSheetUvTex1: 1
+    - _Blend: 1
+    - _BumpScale: 0.05
+    - _ColorAlphaRampEnabled: 0
+    - _CullMode: 0
+    - _Cutoff: 0.001
+    - _Cutout: 0.001
+    - _DetailNormalMapScale: 1
+    - _Distortion: 2
+    - _DistortionColorFactor: 0.2
+    - _DistortionDoesNotUseAlpha: 0
+    - _DistortionEnabled: 1
+    - _DistortionThicknessScale: 0.85
+    - _DoubleSided: 1
+    - _DoubleSidedNormalMode: 1
+    - _DstBlend: 10
+    - _Emission: 0
+    - _EmissionAlbedoSuppression: 0
+    - _EmissionColorFactor: 0
+    - _EmissionColorScale: 1
+    - _EmissionMapUsage: 0
+    - _EnvironmentReflections: 1
+    - _FluidFogEnabled: 0
+    - _FogInfluence: 0.5
+    - _FogOfWarMaterialFlag: 1
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _HDRColorClamp: 1
+    - _HDRColorScale: 0.33
+    - _HdrColorClamp: 1
+    - _HdrColorScale: 10
+    - _InvertOpacityFalloffEnabled: 1
+    - _LightingBackfaceFactor: 0.5
+    - _LightingEnabled: 1
+    - _LightingVertexInfluence: 0.5
+    - _LightingWrapFactor: 0.5
+    - _MainTex1Weight: 0.2
+    - _Metallic: 0
+    - _Mode: 0
+    - _Noise0Enabled: 0
+    - _Noise0IDSpeedScale: 0
+    - _Noise0Scale: 0.68
+    - _Noise1Enabled: 0
+    - _Noise1IDSpeedScale: 0
+    - _Noise1Scale: 1
+    - _NoiseUvCorrectionEnabled: 0
+    - _NormalMapEnabled: 1
+    - _OccludedObjectClip: 0
+    - _OccluderObjectOpacity: 1
+    - _OcclusionProbes: 1
+    - _OcclusionStrength: 1
+    - _OpacityFalloff: 0
+    - _OpacityFalloffEnabled: 0
+    - _OverrideNormalsEnabled: 0
+    - _Parallax: 0.02
+    - _Queue: 0
+    - _QueueOffset: 29
+    - _RadialAlphaEnabled: 0
+    - _RadialAlphaGradientPower: 1
+    - _RadialAlphaGradientStart: 1
+    - _RadialAlphaSubstract: 0
+    - _RampAlbedoWeight: 0
+    - _RampScrollSpeed: 0
+    - _RandomizeNoiseOffset: 0
+    - _RandomizeRampOffset: 0
+    - _ReceiveShadows: 1
+    - _Roughness: 1
+    - _SmoothnessTextureChannel: 0
+    - _SnapUvToWorldXZEnabled: 0
+    - _SoftParticlesEnabled: 1
+    - _Softness: 7
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _StencilRef: 0
+    - _SubstractFalloff: 0
+    - _SubstractSoftness: 0
+    - _SubstractVertexAlpha: 1
+    - _Surface: 1
+    - _Tex1Enabled: 1
+    - _Tex1MixMode: 2
+    - _TexSheetEnabled: 0
+    - _Thickness: 1
+    - _ThicknessSharpness: 1
+    - _TranslucencyAmbientBumpScale: 1
+    - _TranslucencyAmbientScale: 1
+    - _TranslucencyDistortion: 0.1
+    - _TranslucencyForwardScale: 1
+    - _Translucent: 0
+    - _Type: 2
+    - _UVSec: 0
+    - _UseUnscaledTime: 0
+    - _VatCurrentFrame: 0
+    - _VatEnabled: 0
+    - _VatLerp: 0
+    - _VatNumOfFrames: 0
+    - _VatPivMax: 0
+    - _VatPivMin: 0
+    - _VatPosMax: 0
+    - _VatPosMin: 0
+    - _VatType: 0
+    - _VirtualOffset: 0.4
+    - _VirtualOffsetVertexPosition: 0
+    - _WrapDiffuseFactor: 0.5
+    - _ZTest: 4
+    - _ZWrite: 0
+    m_Colors:
+    - _BaseColor: {r: 0.60931927, g: 0.6226415, b: 0.28488788, a: 1}
+    - _Color: {r: 0.60931927, g: 0.6226415, b: 0.28488788, a: 1}
+    - _DistortionOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
+    - _Noise0Speed: {r: 0, g: -0.6, b: 0, a: 0}
+    - _Noise1Speed: {r: 0, g: 0, b: 0, a: 0}
+    - _TintColor: {r: 1, g: 1, b: 1, a: 1}
+    - _TranslucencyColor: {r: 1, g: 1, b: 1, a: 1}
+    - _UV0Speed: {r: 0, g: 0, b: 0, a: 0}
+    - _UV1Speed: {r: 1, g: 0, b: 0, a: 0}
+    - _UVBumpSpeed: {r: -0.5, g: 0, b: 0, a: 0}
+    - _UvEmissionSpeed: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1

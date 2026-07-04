@@ -224,7 +224,9 @@
                                               }
                                             ]
                                           },
-                                          "Weight": 75
+                                          "Weight": 75,
+                                          "UseContextValue": false,
+                                          "ValueName": "Value1"
                                         },
                                         {
                                           "Action": {
@@ -236,15 +238,6 @@
                                                 "BuffEndCondition": "CombatEnd",
                                                 "Permanent": true,
                                                 "DurationValue": {
-                                                  "BonusValue": {
-                                                    "ValueType": "Simple",
-                                                    "Value": 3,
-                                                    "ValueRank": "Default",
-                                                    "ValueShared": "Damage",
-                                                    "Property": "None",
-                                                    "m_CustomProperty": null,
-                                                    "PropertyName": "Value1"
-                                                  },
                                                   "RoundsValue": {
                                                     "ValueType": "Simple",
                                                     "Value": 3,
@@ -277,7 +270,9 @@
                                               }
                                             ]
                                           },
-                                          "Weight": 25
+                                          "Weight": 25,
+                                          "UseContextValue": false,
+                                          "ValueName": "Value1"
                                         }
                                       ]
                                     }
@@ -324,7 +319,9 @@
                                         }
                                       ]
                                     },
-                                    "Weight": 50
+                                    "Weight": 50,
+                                    "UseContextValue": false,
+                                    "ValueName": "Value1"
                                   },
                                   {
                                     "Action": {
@@ -336,15 +333,6 @@
                                           "BuffEndCondition": "CombatEnd",
                                           "Permanent": true,
                                           "DurationValue": {
-                                            "BonusValue": {
-                                              "ValueType": "Simple",
-                                              "Value": 3,
-                                              "ValueRank": "Default",
-                                              "ValueShared": "Damage",
-                                              "Property": "None",
-                                              "m_CustomProperty": null,
-                                              "PropertyName": "Value1"
-                                            },
                                             "RoundsValue": {
                                               "ValueType": "Simple",
                                               "Value": 3,
@@ -377,7 +365,9 @@
                                         }
                                       ]
                                     },
-                                    "Weight": 50
+                                    "Weight": 50,
+                                    "UseContextValue": false,
+                                    "ValueName": "Value1"
                                   }
                                 ]
                               }
@@ -424,7 +414,9 @@
                                   }
                                 ]
                               },
-                              "Weight": 25
+                              "Weight": 25,
+                              "UseContextValue": false,
+                              "ValueName": "Value1"
                             },
                             {
                               "Action": {
@@ -436,15 +428,6 @@
                                     "BuffEndCondition": "CombatEnd",
                                     "Permanent": true,
                                     "DurationValue": {
-                                      "BonusValue": {
-                                        "ValueType": "Simple",
-                                        "Value": 3,
-                                        "ValueRank": "Default",
-                                        "ValueShared": "Damage",
-                                        "Property": "None",
-                                        "m_CustomProperty": null,
-                                        "PropertyName": "Value1"
-                                      },
                                       "RoundsValue": {
                                         "ValueType": "Simple",
                                         "Value": 3,
@@ -477,7 +460,9 @@
                                   }
                                 ]
                               },
-                              "Weight": 75
+                              "Weight": 75,
+                              "UseContextValue": false,
+                              "ValueName": "Value1"
                             }
                           ]
                         }
@@ -495,15 +480,6 @@
                     "BuffEndCondition": "CombatEnd",
                     "Permanent": true,
                     "DurationValue": {
-                      "BonusValue": {
-                        "ValueType": "Simple",
-                        "Value": 3,
-                        "ValueRank": "Default",
-                        "ValueShared": "Damage",
-                        "Property": "None",
-                        "m_CustomProperty": null,
-                        "PropertyName": "Value1"
-                      },
                       "RoundsValue": {
                         "ValueType": "Simple",
                         "Value": 3,
@@ -603,15 +579,6 @@
               "BuffEndCondition": "CombatEnd",
               "Permanent": true,
               "DurationValue": {
-                "BonusValue": {
-                  "ValueType": "Simple",
-                  "Value": 3,
-                  "ValueRank": "Default",
-                  "ValueShared": "Damage",
-                  "Property": "None",
-                  "m_CustomProperty": null,
-                  "PropertyName": "Value1"
-                },
                 "RoundsValue": {
                   "ValueType": "Simple",
                   "Value": 3,
@@ -839,7 +806,7 @@
         "DoNotApplyOnInterrupts": false
       }
     ],
-    "Author": "YuriyElburih",
+    "Author": "Unknown",
     "Comment": "Лайфсайкл пришлось разбить на 2 потому что у нас внутри него в экшонах происходит подмена контекста и мы уже не знаем ничего про фбилку 9в частности бп оружия)",
     "m_DisplayName": {
       "m_Key": "",

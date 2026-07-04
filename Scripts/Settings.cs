@@ -10,6 +10,8 @@ namespace ArmouryOfTheExpanse
     public class MyModSettings
     {
         public bool loreInaccurateLascannon { get; set; } = false;
+        public bool removeTauPropaganda { get; set; } = true;
+
         public int sliderValue = 1;
     }
 

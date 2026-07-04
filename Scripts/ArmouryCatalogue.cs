@@ -18,12 +18,12 @@ namespace ArmouryOfTheExpanse
                     {
                         //Melee
                             //Force 2Handed
-                        new ArmouryElement("cf3ba0d76633406ba9876633ebf3cfa6", DPAsset.Runeblade), //Mindshard
-                        new ArmouryElement("5f3b9e68aa78405ab23ade27846b6b2f", DPAsset.Runeblade_On), //hexagrammic greatsword
+                        new ArmouryElement("cf3ba0d76633406ba9876633ebf3cfa6", DPAsset.Runeblade, AuraColor.ForceGoldAura), //Mindshard
+                        new ArmouryElement("5f3b9e68aa78405ab23ade27846b6b2f", DPAsset.Runeblade_On, AuraColor.ForceGoldAura), //hexagrammic greatsword
                             //Force 1Handed
-                        new ArmouryElement("4b697b99238849e6a18a0b9ce9e1a0f8", DPAsset.Aquila), //FrozenVigil
+                        new ArmouryElement("4b697b99238849e6a18a0b9ce9e1a0f8", DPAsset.Aquila, AuraColor.ForceBlueAura), //FrozenVigil
                         new ArmouryElement("1720f627b780467aabef39690f0f69e8", DPAsset.Aquila), //whisper   
-                        new ArmouryElement("1deb94cffbda4aafa01e44d1b19d0f59", DPAsset.Holy), //santiel's heart
+                        new ArmouryElement("1deb94cffbda4aafa01e44d1b19d0f59", DPAsset.Holy, AuraColor.ForceRedAura), //santiel's heart
                         new ArmouryElement("728f49c5e09941f9be18aa3697069dc4", DPAsset.Sunblade), //ravensword
                         new ArmouryElement("e11922e693164c0895e415b76a7ba809", DPAsset.Sunblade), //act1 base alternative
  
@@ -31,7 +31,7 @@ namespace ArmouryOfTheExpanse
                                 //eldar 2handed
                             //Power 1Handed
                         new ArmouryElement("3b1cdbdec35f4d249c5d0eaf57778046", DPAsset.DarktideA), //new asset [Kiava Gamma Pattern] Power Sword
-                        new ArmouryElement("5f54e5c81b25449eaf410483c709d343", DPAsset.DarktideA), //Beastflayer
+                        new ArmouryElement("5f54e5c81b25449eaf410483c709d343", DPAsset.DarktideA, AuraColor.PowerRedAura), //Beastflayer
                         new ArmouryElement("ae22ac5586ac44f4bb2b2bda8667bdb3", DPAsset.Angelic), //Savant's Razor
                         new ArmouryElement("e9f3637e43ad4d7cabb73ea11c9bf365", DPAsset.Angelic), //Savant's Talon
                         
@@ -78,12 +78,25 @@ namespace ArmouryOfTheExpanse
     {
         public string Guid { get; }
         public DPAsset NewVisual { get; }
+        public AuraColor Enchantment { get; }
 
-        public ArmouryElement(string guid, DPAsset name)
+        public ArmouryElement(string guid, DPAsset name, AuraColor vfx = AuraColor.NoAura)
         {
             Guid = guid;
             NewVisual = name;
+            Enchantment = vfx;
         }
+    }
+
+    public enum AuraColor
+    {
+        NoAura,
+        ForcePinkAura,
+        ForceRedAura,
+        ForceBlueAura,
+        ForceGreenAura,
+        ForceGoldAura,
+        PowerRedAura
     }
 
 
@@ -98,3 +111,7 @@ namespace ArmouryOfTheExpanse
 //      - add the two getters and the enum to DPAssetsManager._guids
 // > New blueprint?
 //      - add the jbp guid in ArmouryCatalogue with the desired visual enum
+// > New enchantment?
+//      - add a enum AuraColor entry
+//      - add the case in EnchantmentSwitching()
+//      - add the enum to ArmouryCatalogue weapons

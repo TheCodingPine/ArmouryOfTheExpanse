@@ -108,6 +108,13 @@ namespace ArmouryOfTheExpanse
             //        settings.sliderValue = (int)GUILayout.HorizontalSlider(settings.sliderValue, 1f, 100f, GUILayout.Width(200));
             //GUILayout.EndHorizontal();
 
+            GUILayout.Label("TAU WEAPONS", headerStyle);
+            GUILayout.BeginHorizontal();
+            settings.removeTauPropaganda = GUILayout.Toggle(settings.removeTauPropaganda, " Remove T'Au propaganda: ", GUILayout.Width(300));
+            GUILayout.Label("Nerf for the T'au plasma rifles base damage.", GUILayout.ExpandWidth(true));
+            GUILayout.EndHorizontal();
+
+
             GUILayout.EndVertical();
         }
 
@@ -142,6 +149,7 @@ namespace ArmouryOfTheExpanse
         {
             ModDataManager.Save(settings);
             WeaponsOptions.Lascannon_Patch(settings.loreInaccurateLascannon);
+            WeaponsOptions.TauBurst_Patch(settings.removeTauPropaganda);
         }
 
 

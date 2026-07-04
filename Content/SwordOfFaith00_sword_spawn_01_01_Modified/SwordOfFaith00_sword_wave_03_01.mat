@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SwordOfFaith00_sword_wave_03_01
+  m_Shader: {fileID: -6465566751694194690, guid: b9de41268f310da4eb3e002102471ff3,
+    type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 3002
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Main_Tex:
+        m_Texture: {fileID: 2800000, guid: a402f12e8aea7c14a92c58de6e3ed222, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Mask_Tex:
+        m_Texture: {fileID: 2800000, guid: f340c4e0be02e674bb9fca7687a527e4, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Noise_Tex:
+        m_Texture: {fileID: 2800000, guid: 14e13a4467e56b64cb9e76523d726c91, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Alpha_Power: 1
+    - _Camera_Offset: 0
+    - _Distortion_Power: 1.1
+    - _Distortion_Scale: 10
+    - _Emission_Power: 0
+    - _Main_Tex_Speed: 0.15
+    - _MaskCut: 5
+    - _MaskCutPositionY: 1.7
+    - _Noise_Tex_Power: 1
+    - _Normal_Power: 0.01
+    - _Object_Space: 0
+    - _OccluderObjectOpacity: 1
+    - _QueueControl: -1
+    - _QueueOffset: 2
+    - _Roughness: 0
+    m_Colors:
+    - _Main_Tex_Color: {r: 0, g: 4.8227882, b: 5.992157, a: 1}
+    - _Main_Tex_Speed: {r: -2, g: 0.1, b: 0, a: 0}
+    - _Main_Tex_Tiling: {r: 0.5, g: 1.5, b: 0, a: 0}
+    - _Mask_Tex_Offset: {r: 0, g: 0, b: 0, a: 0}
+    - _Mask_Tex_TIling: {r: 0.35, g: 1, b: 0, a: 0}
+    - _Specular_Color: {r: 0.25490198, g: 0.023112608, b: 0, a: 1}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1

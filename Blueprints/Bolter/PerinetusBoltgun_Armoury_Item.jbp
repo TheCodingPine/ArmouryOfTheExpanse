@@ -63,11 +63,14 @@
           "m_AdditionalString"
         ],
         "m_AdditionalString": {
-          "m_Key": "495f0bc8-a72c-46c9-bbfc-b056e2cad06d",
-          "m_OwnerString": "9d6c7ba68b6a49b598948b52b2c20bb2#$AddStringToFactName$f56fcaa1-2136-4f8e-846c-3dfff8cc051f",
-          "m_OwnerPropertyPath": "m_AdditionalString",
-          "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\Bolt Sniper Rifle\\PerinetusBoltgun_Armoury_Item_m_AdditionalString.json",
-          "Shared": null
+          "m_Key": "",
+          "m_OwnerString": "",
+          "m_OwnerPropertyPath": "",
+          "m_JsonPath": "",
+          "Shared": {
+            "assetguid": "7279ff9098ddaaa4d9c66264d3cdac50",
+            "stringkey": "f2cc3fee-abc1-4cf3-ac30-7c1b0517caec"
+          }
         },
         "JunctionType": "BeforeFirstSquareBrackets"
       }
@@ -75,7 +78,7 @@
     "Author": "ElenaMironova",
     "Comment": "",
     "m_DisplayName": {
-      "m_Key": "b5744f5e-cd5c-4e81-b3b1-c5aae83bf079",
+      "m_Key": "37698e0f-03f3-4351-b373-f03810e4ab0c",
       "m_OwnerString": "9d6c7ba68b6a49b598948b52b2c20bb2",
       "m_OwnerPropertyPath": "m_DisplayName",
       "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\Bolt Sniper Rifle\\PerinetusBoltgun_Armoury_Item_m_DisplayName.json",
@@ -93,10 +96,10 @@
       "fileid": 21300000
     },
     "m_FlavorText": {
-      "m_Key": "6f5f7ebe-18d2-4ba7-bbae-21c4f2448948",
-      "m_OwnerString": "9d6c7ba68b6a49b598948b52b2c20bb2",
-      "m_OwnerPropertyPath": "m_FlavorText",
-      "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\Bolt Sniper Rifle\\PerinetusBoltgun_Armoury_Item_m_FlavorText.json",
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
       "Shared": null
     },
     "m_NonIdentifiedNameText": {

@@ -31,9 +31,6 @@ MonoBehaviour:
   - Guid: 784206a20050475aae687d6cc52e41cc
     Filename: ImperiumMilitary_LootChest1.patch
     PatchType: 2
-  - Guid: ef120bd921684e76b547b195b0c4c0a0
-    Filename: Cue_0008.patch
-    PatchType: 2
   - Guid: ae395f7430ba42a48307f277adb03f0f
     Filename: ImperiumMilitary_DLC2_CH4CyberEaglePatternProtocol.patch
     PatchType: 2
@@ -90,4 +87,10 @@ MonoBehaviour:
     PatchType: 2
   - Guid: 95d5cddecbfa450594660ca4bdbf68e3
     Filename: AdeptusMechanicus_QuicksilverLootBag.patch
+    PatchType: 2
+  - Guid: ef120bd921684e76b547b195b0c4c0a0
+    Filename: Cue_0008.patch
+    PatchType: 2
+  - Guid: 00745851b09a4846afa9978b887c3782
+    Filename: Loot_Good_Massacre_TechRoom.patch
     PatchType: 2

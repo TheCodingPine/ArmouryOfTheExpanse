@@ -91,7 +91,7 @@ public static class DPAssetsManager
                 var item = ResourcesLibrary.TryGetBlueprint<BlueprintItemWeapon>(catalogueItem.Guid);
                 if (item != null)
                 {
-                    AssetsSwitching(item, catalogueItem.NewVisual);
+                    AssetsSwitching(item, catalogueItem.NewVisual, catalogueItem.Enchantment);
                     Main.log.Log($" - jbp {catalogueItem.Guid} is now a {catalogueItem.NewVisual}");
                 }
                 else
@@ -123,7 +123,7 @@ public static class DPAssetsManager
         //projectile.View.LoadAsset();
     }
 
-    private static void AssetsSwitching(BlueprintItemWeapon item, DPAsset newVisual)
+    private static void AssetsSwitching(BlueprintItemWeapon item, DPAsset newVisual, AuraColor enchantment)
     {
         try
         {
@@ -135,6 +135,12 @@ public static class DPAssetsManager
             var visualParams = AccessTools.FieldRefAccess<BlueprintItemWeapon, WeaponVisualParameters>("m_VisualParameters");
             var model = AccessTools.FieldRefAccess<WeaponVisualParameters, GameObject>("m_WeaponModel");
             model(visualParams(item)) = _guids[newVisual].asset ?? model(visualParams(item));
+
+            if (enchantment != AuraColor.NoAura)
+            {
+                EnchantmentSwitching(item, enchantment);
+            }
+
         }
         catch (System.Exception)
         {
@@ -143,6 +149,34 @@ public static class DPAssetsManager
         }
     }
 
+    private static void EnchantmentSwitching(BlueprintItemWeapon item, AuraColor enchantment)
+    {
+        item.Enchantments.Clear();
+        switch (enchantment)
+        {
+            case AuraColor.ForcePinkAura:
+                item.Enchantments.Add(ResourcesLibrary.TryGetBlueprint<BlueprintItemEnchantment>("1310eb2505a4484e998349a60ea1e2bb"));
+                break;
+            case AuraColor.ForceRedAura:
+                item.Enchantments.Add(ResourcesLibrary.TryGetBlueprint<BlueprintItemEnchantment>("8ae628c71f184ebc9a1c3b6e279bc6d1"));
+                break;
+            case AuraColor.ForceBlueAura:
+                item.Enchantments.Add(ResourcesLibrary.TryGetBlueprint<BlueprintItemEnchantment>("39c4150a2a244302aade0dff83ce94cd"));
+                break;
+            case AuraColor.ForceGreenAura:
+                item.Enchantments.Add(ResourcesLibrary.TryGetBlueprint<BlueprintItemEnchantment>("b089e78def7849c5afd03b24684b412d"));
+                break;
+            case AuraColor.ForceGoldAura:
+                item.Enchantments.Add(ResourcesLibrary.TryGetBlueprint<BlueprintItemEnchantment>("c11c5367d526416ebbf93f02f1d3a506"));
+                break;
+            case AuraColor.PowerRedAura:
+                item.Enchantments.Add(ResourcesLibrary.TryGetBlueprint<BlueprintItemEnchantment>("e2d6e2679001416bb3c0aa37644582c6"));
+                break;
+            default:
+                Main.log.Log($"[ERROR] {enchantment} is not an enchantment color");
+                break;
+        }
+    }
 
     private static void ApplyBigLaserVFX()
     {
