@@ -16,7 +16,9 @@
       "WeaponAbilities.Ability2.m_Ability",
       "m_Rarity",
       "WarhammerPenetration",
-      "WeaponAbilities.Ability2.Type"
+      "WeaponAbilities.Ability2.Type",
+      "$AddStringToFactName$d39b1fd3-750e-482d-856f-b518293d1fd0",
+      "$AddStringToFactName$c5bc1ce9-9929-4d73-a2f7-da54a0e36571"
     ],
     "Components": [
       {
@@ -53,23 +55,21 @@
       },
       {
         "$type": "c8cf2b4638d44ca29565527b0d0b90c2, AddStringToFactName",
-        "name": "$AddStringToFactName$f56fcaa1-2136-4f8e-846c-3dfff8cc051f",
+        "name": "$AddStringToFactName$c5bc1ce9-9929-4d73-a2f7-da54a0e36571",
         "m_Flags": 0,
         "PrototypeLink": {
-          "guid": "bd1ffcfed2fe48ad9ad2d447a85e55bd",
-          "name": "$AddStringToFactName$d39b1fd3-750e-482d-856f-b518293d1fd0"
+          "guid": "",
+          "name": ""
         },
-        "m_Overrides": [
-          "m_AdditionalString"
-        ],
+        "m_Overrides": [],
         "m_AdditionalString": {
           "m_Key": "",
           "m_OwnerString": "",
           "m_OwnerPropertyPath": "",
           "m_JsonPath": "",
           "Shared": {
-            "assetguid": "7279ff9098ddaaa4d9c66264d3cdac50",
-            "stringkey": "f2cc3fee-abc1-4cf3-ac30-7c1b0517caec"
+            "assetguid": "934c56b8baabd7542923ca81ddf127f6",
+            "stringkey": "4647d8ed-a158-4cfc-b1e7-b271a3b3e52c"
           }
         },
         "JunctionType": "BeforeFirstSquareBrackets"

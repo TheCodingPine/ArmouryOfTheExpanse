@@ -1,0 +1,19 @@
+{
+  "Components": [
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "aea59f4a6ffae1e45a67d731f3f7908f, AddLoot",
+        "name": "$AddLoot$aee67c38-d850-47da-82f9-718c7c1f86f6",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "m_Loot": "!bp_106a196a49e84fd99c4de8655666fd65"
+      },
+      "InsertAfterTarget": "$Experience$cc367f86-fafa-447f-b688-027b771dcfad"
+    }
+  ]
+}

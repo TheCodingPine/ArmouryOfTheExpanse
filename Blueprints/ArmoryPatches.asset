@@ -94,3 +94,6 @@ MonoBehaviour:
   - Guid: 00745851b09a4846afa9978b887c3782
     Filename: Loot_Good_Massacre_TechRoom.patch
     PatchType: 2
+  - Guid: b2c3ef7e4c7d48628cefcb4555a214e9
+    Filename: KhorneBloodletter_Melee_Perils.patch
+    PatchType: 2

@@ -34625,7 +34625,7 @@ GameObject:
   - component: {fileID: 2641005649478813786}
   - component: {fileID: 1887142287388726065}
   m_Layer: 1
-  m_Name: SwordOfFaith00_sword_spawn_01_01_Modified
+  m_Name: SwordOfFaith00_sword_spawn_01_01_Blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

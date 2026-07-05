@@ -1,0 +1,53 @@
+{
+  "AssetId": "106a196a49e84fd99c4de8655666fd65",
+  "Data": {
+    "$type": "2fb8fe48c9208c245a98402d50657143, BlueprintUnitLoot",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "a7a24a2cb7f69674cbbbbb84578ba9fa, LootRandomItem",
+        "name": "$LootRandomItem$3b6b2e4d-028c-4af7-8f07-e7f5177d2bf4",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "m_OverrideReputationPointsToUnlock": false,
+        "m_ReputationPointsToUnlock": 0,
+        "m_Items": [
+          {
+            "Item": {
+              "m_Type": "Item",
+              "m_Item": "!bp_852867c372764de9a71f7b9a3c340e1f",
+              "m_Loot": null,
+              "m_OverrideProfitFactorCost": false,
+              "m_ProfitFactorCost": 0,
+              "m_Diversity": 0
+            },
+            "Weight": 25
+          },
+          {
+            "Item": {
+              "m_Type": "Item",
+              "m_Item": null,
+              "m_Loot": null,
+              "m_OverrideProfitFactorCost": false,
+              "m_ProfitFactorCost": 0,
+              "m_Diversity": 0
+            },
+            "Weight": 75
+          }
+        ]
+      }
+    ],
+    "Author": "Unknown",
+    "Comment": "",
+    "m_ReputationPointsToUnlock": 0,
+    "m_Dummy": {}
+  },
+  "Meta": {
+    "ShadowDeleted": false
+  }
+}
