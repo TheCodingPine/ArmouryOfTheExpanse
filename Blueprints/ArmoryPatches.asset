@@ -55,12 +55,6 @@ MonoBehaviour:
   - Guid: 19b0d16a16154dcdb645c05ca609007c
     Filename: ImperiumMilitary_PoorLootBig (10).patch
     PatchType: 2
-  - Guid: c7eb3d98427f43969b9180bc4a3c77ca
-    Filename: Starport_GoodLoot04.patch
-    PatchType: 2
-  - Guid: ba4813c84de24a8ba24e12dc3ee71847
-    Filename: Loot_Uniq - puzzle.patch
-    PatchType: 2
   - Guid: e0c8b78831474d98be0d97cf84ca1ec2
     Filename: ImperiumMilitary_Bottom03.patch
     PatchType: 2

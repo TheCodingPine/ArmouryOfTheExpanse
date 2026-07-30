@@ -215,7 +215,8 @@
             "m_LinkProperty": true,
             "m_PropertyName": "Value1",
             "m_PropertySource": "!bp_2f7eca58a1264dfcba5df56c54b75f08",
-            "m_LinkKey": "bonuse"
+            "m_LinkKey": "bonuse",
+            "Main": false
           }
         ]
       },
@@ -249,7 +250,7 @@
                 "Min": 0,
                 "Max": 0
               },
-              "Property": "WeaponSkillBonus"
+              "Property": "StrengthBonus"
             }
           ]
         }

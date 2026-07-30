@@ -39,27 +39,40 @@ namespace ArmouryOfTheExpanse
         {
             if (val)
             {
-                Main.log.Log($"Remove T'au Propaganda - patching");
-                BlueprintItemWeapon rifle1 = ResourcesLibrary.TryGetBlueprint<BlueprintItemWeapon>("68cf5d05a72844859ec3ed459927669a"); //Xeno Pulse Rifle | 12-20 Rof2
-                TweakStats(rifle1, 7, 9);
-                BlueprintItemWeapon rifle2 = ResourcesLibrary.TryGetBlueprint<BlueprintItemWeapon>("040ada7657ca4bd9ac2b5ed49fd28f97"); //Pulse Rifle | 22-28 RoF3
-                TweakStats(rifle2, 9, 11);
-                BlueprintItemWeapon rifle3 = ResourcesLibrary.TryGetBlueprint<BlueprintItemWeapon>("a68df8a0f14542a59aeea2e009e80c0b"); //Shas'ui Pride | 24-34 RoF3 
-                TweakStats(rifle3, 10, 13);
+                try
+                {
+                    Main.log.Log($"Remove T'au Propaganda - patching");
+                    BlueprintItemWeapon rifle1 = ResourcesLibrary.TryGetBlueprint<BlueprintItemWeapon>("68cf5d05a72844859ec3ed459927669a"); //Xeno Pulse Rifle | 12-20 Rof2
+                    TweakStats(rifle1, 7, 9);
+                    BlueprintItemWeapon rifle2 = ResourcesLibrary.TryGetBlueprint<BlueprintItemWeapon>("040ada7657ca4bd9ac2b5ed49fd28f97"); //Pulse Rifle | 22-28 RoF3
+                    TweakStats(rifle2, 9, 11);
+                    BlueprintItemWeapon rifle3 = ResourcesLibrary.TryGetBlueprint<BlueprintItemWeapon>("a68df8a0f14542a59aeea2e009e80c0b"); //Shas'ui Pride | 24-34 RoF3 
+                    TweakStats(rifle3, 10, 13);
 
+                    Main.log.Log($"Nerfed damage and RoF on T'au burst weapons");
+                }
+                catch (System.Exception)
+                {
+                    Main.log.Log($"An error occurred nerfing T'au weapons");
+                }
 
-
-                Main.log.Log($"Nerfed damage and RoF on T'au burst weapons");
 
             }
         }
 
         private static void TweakStats(BlueprintItemWeapon item, int minDmg, int maxDmg, int? RoF = null)
         {
-            EquipmentRestrictionStat strRequisite = item.ComponentsArray.OfType<EquipmentRestrictionStat>().First();
+            //EquipmentRestrictionStat strRequisite = item.ComponentsArray.OfType<EquipmentRestrictionStat>().First();
+        
+            if (item == null)
+                return;
+
             item.WarhammerDamage = minDmg;
             item.WarhammerMaxDamage = maxDmg;
-            if (RoF != null) item.RateOfFire = RoF.Value;
+
+            if (RoF.HasValue)
+                item.RateOfFire = RoF.Value;
+            
         }
 
 

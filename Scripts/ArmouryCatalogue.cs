@@ -7,8 +7,9 @@ namespace ArmouryOfTheExpanse
     public static class ArmouryCatalogue
     {
         internal static List<ArmouryElement> _catalogue;
+        internal static List<WeaponLocation> _locations;
 
-        public static List<ArmouryElement> Get()
+        public static List<ArmouryElement> GetCatalogue()
         {
             try
             {
@@ -72,6 +73,70 @@ namespace ArmouryOfTheExpanse
                 throw;
             }
         }
+
+        public static List<WeaponLocation> GetLocations()
+        {
+            try
+            {
+                if (_locations == null)
+                {
+                    _locations = new List<WeaponLocation>
+                    {
+                        ////Melee
+                        //    //Force 2Handed
+                        //new WeaponLocation("cf3ba0d76633406ba9876633ebf3cfa6", ""), //Mindshard
+                        //new WeaponLocation("5f3b9e68aa78405ab23ade27846b6b2f", ""), //hexagrammic greatsword
+                        //    //Force 1Handed
+                        //new WeaponLocation("4b697b99238849e6a18a0b9ce9e1a0f8", ""), //FrozenVigil
+                        //new WeaponLocation("1720f627b780467aabef39690f0f69e8", ""), //whisper   
+                        //new WeaponLocation("1deb94cffbda4aafa01e44d1b19d0f59", ""), //santiel's heart
+                        //new WeaponLocation("728f49c5e09941f9be18aa3697069dc4", ""), //ravensword
+                        //new WeaponLocation("e11922e693164c0895e415b76a7ba809", ""), //act1 base alternative
+ 
+                        //    //Power 2Handed
+                        //        //eldar 2handed
+                        //    //Power 1Handed
+                        //new WeaponLocation("3b1cdbdec35f4d249c5d0eaf57778046", ""), //new asset [Kiava Gamma Pattern] Power Sword
+                        //new WeaponLocation("5f54e5c81b25449eaf410483c709d343", ""), //Beastflayer
+                        //new WeaponLocation("ae22ac5586ac44f4bb2b2bda8667bdb3", ""), //Savant's Razor
+                        //new WeaponLocation("e9f3637e43ad4d7cabb73ea11c9bf365", ""), //Savant's Talon
+                        
+                                                                                                  
+                        ////Ranged
+                        //    //Plasma Cannon
+                        //new WeaponLocation("e4570c06ba5c4dd9bb0734d85ad81ce4", ""), //Act1 plasma cannon
+                        //new WeaponLocation("d8a45ba1f0b7478d91eb3a1998e00729", ""), //Act2 plasma cannon                     
+                        //new WeaponLocation("f43775fe14454b31bed48e5d26e44077", ""), //plasma culverin
+                        //    //Auto Cannon                            
+                        //new WeaponLocation("4cc6ec1168ef4c0fa0cf9ebdb98ad98b", ""), //Autocannon variant
+                        //new WeaponLocation("7ca9a0f43a2142769e2cc71a7a5d0429", ""), //Big Salvo
+                        //new WeaponLocation("70bb7e0af7394f58a5952eae9dd72402", ""), //Autocannon Act2
+                        //new WeaponLocation("f13eaaaa382747c5b0afb7267732a057", ""), //Autocannon Act4
+                            //Las Cannon
+                        new WeaponLocation("40d8a98cd786488c87103c97cbdb8631", "370588b7ad7c4c89b216a06601a8ec93"), //Lascannon Act1
+                        new WeaponLocation("857411fca50b4d33a3953bf87abd3c97", "ba4813c84de24a8ba24e12dc3ee71847"), //Lascannon Act2
+                        //new WeaponLocation("10c9c8cf23d24c67af3b8365c0d026d6", ""), //Lascannon Act2 Hullbreacher                      
+                        //new WeaponLocation("e879f2d1d6634aac8326e24a55d49a58", ""), //Lascannon Act3 HammerOfMankind
+                        //    //Bolt Sniper
+                        //new WeaponLocation("697624ccaced41a28655058622ed2ac2", ""),
+                        //new WeaponLocation("aa38dbb582be4b62b977c3fc8379d979", ""),
+
+                        //    //Perinetus
+                        //new WeaponLocation("9d6c7ba68b6a49b598948b52b2c20bb2", ""), //act1
+                        //new WeaponLocation("1b000bf9569146deb33e94d1cff3f615", "") //act2
+                        
+                    };
+                }
+                int? count = _locations.Count;
+                Main.log.Log($"ArmouryLocations found: {count} weapons will be hand-placed with care");
+                return _locations;
+            }
+            catch (Exception)
+            {
+                Main.log.Log($"[ERROR] ArmouryLocations crashed");
+                throw;
+            }
+        }
     }
 
     public class ArmouryElement
@@ -85,6 +150,17 @@ namespace ArmouryOfTheExpanse
             Guid = guid;
             NewVisual = name;
             Enchantment = vfx;
+        }
+    }
+
+    public class WeaponLocation
+    {
+        public string guidWeapon { get; }
+        public string guidContainer { get; }
+        public WeaponLocation(string guidWeapon, string guidContainer)
+        {
+            this.guidWeapon = guidWeapon;
+            this.guidContainer = guidContainer;
         }
     }
 

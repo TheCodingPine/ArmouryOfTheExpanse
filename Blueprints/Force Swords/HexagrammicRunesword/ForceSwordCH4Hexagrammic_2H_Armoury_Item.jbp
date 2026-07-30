@@ -17,7 +17,8 @@
       "m_VisualParameters.m_WeaponAnimationStyle",
       "WarhammerPenetration",
       "IsTwoHanded",
-      "Author"
+      "Author",
+      "WeaponAbilities.Ability3.m_Ability"
     ],
     "Components": [
       {
@@ -224,9 +225,9 @@
         "AP": 2
       },
       "Ability3": {
-        "Type": "Custom",
+        "Type": "SingleShot",
         "Mode": "Default",
-        "m_Ability": "!bp_8f63a3008a614bc085b6fb56443d3f92",
+        "m_Ability": "!bp_23ef9d1892e04a0fa9e5f6f8131cbc99",
         "m_FXSettings": "!bp_02a6e061e3464785a0ed3d3f4e7ff41a",
         "OnHitOverrideType": "None",
         "m_OnHitActions": null,
@@ -282,9 +283,9 @@
       "Shared": null
     },
     "IsTwoHanded": true,
-    "WarhammerDamage": 25,
-    "WarhammerMaxDamage": 36,
-    "WarhammerPenetration": 35,
+    "WarhammerDamage": 30,
+    "WarhammerMaxDamage": 50,
+    "WarhammerPenetration": 40,
     "DodgePenetration": 0,
     "AdditionalHitChance": 0,
     "WarhammerRecoil": 0,

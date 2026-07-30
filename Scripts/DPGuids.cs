@@ -82,7 +82,7 @@ public static class DPAssetsManager
     {
         Main.log.Log($"Begin assets switching:");
 
-        List<ArmouryElement> catalogue = ArmouryCatalogue.Get();
+        List<ArmouryElement> catalogue = ArmouryCatalogue.GetCatalogue();
 
         foreach (var catalogueItem in catalogue)
         {

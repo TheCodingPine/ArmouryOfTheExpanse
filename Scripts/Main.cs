@@ -2,6 +2,7 @@ using HarmonyLib;
 using Kingmaker.Blueprints;
 using Kingmaker.Blueprints.Attributes;
 using Kingmaker.Blueprints.Facts;
+using Kingmaker.Blueprints.Items.Weapons;
 using Kingmaker.Blueprints.JsonSystem;
 using Kingmaker.Designers.EventConditionActionSystem.Actions;
 using Kingmaker.ElementsSystem;
@@ -142,6 +143,10 @@ namespace ArmouryOfTheExpanse
                 log.Log("Patching for DPWeaponAssetPack complete");
             }
 
+
+
+            PlaceWeaponsByHand();
+
             ApplyPatchesFromSettings();
         }
 
@@ -152,12 +157,39 @@ namespace ArmouryOfTheExpanse
             WeaponsOptions.TauBurst_Patch(settings.removeTauPropaganda);
         }
 
+        public static void PlaceWeaponsByHand()
+        {
+            Main.log.Log($"Begin placing weapons in the world:");
+
+            List<WeaponLocation> locations = ArmouryCatalogue.GetLocations();
+
+            foreach (var item in locations)
+            {
+                try
+                {
+                    if (item != null)
+                    {
+                        string status = PersonalPatcher.AddWeaponToContainer(item);
+                        Main.log.Log($" - {status}");
+                    }
+                    else
+                    {
+                        Main.log.Log($"[ERROR] placing {item.guidWeapon}");
+                    }
+                }
+                catch (System.Exception)
+                {
+                    Main.log.Log($"[ERROR] placing {item.guidWeapon ?? "item" }");
+                }
+
+            }
+        }
 
 
         //--
 
 
-        #region Stylesheet my beloved
+            #region Stylesheet my beloved
 
         public static void Bullet(string text)
         {
