@@ -1,0 +1,212 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1166898237, guid: bdcc9caea55324446b4d2ab38a611554, type: 3}
+  m_Name: RCP_EE_ArmorEnforcerLightCarapace
+  m_EditorClassIdentifier: 
+  IndexPairs:
+  - Name: 'CR_Armor_Gray2 : CR_Armor_Gray0'
+    PrimaryIndex: 2
+    SecondaryIndex: 0
+  - Name: 'CR_Armor_Gray2 : CR_Armor_Gray1'
+    PrimaryIndex: 2
+    SecondaryIndex: 1
+  - Name: 'CR_Armor_Green2 : CR_Armor_Gray1'
+    PrimaryIndex: 29
+    SecondaryIndex: 1
+  - Name: 'CR_Armor_Blue2 : CR_Armor_Gray1'
+    PrimaryIndex: 47
+    SecondaryIndex: 1
+  - Name: 'CR_Armor_Brown1 : CR_Armor_Gray1'
+    PrimaryIndex: 64
+    SecondaryIndex: 1
+  - Name: 'CR_Armor_White1 : CR_Armor_Gray3'
+    PrimaryIndex: 5
+    SecondaryIndex: 3
+  - Name: 'CR_Armor_Orange2 : CR_Armor_Gray3'
+    PrimaryIndex: 17
+    SecondaryIndex: 3
+  - Name: 'CR_Armor_Yellow3 : CR_Armor_Gray3'
+    PrimaryIndex: 24
+    SecondaryIndex: 3
+  - Name: 'CR_Armor_Green2 : CR_Armor_Gray3'
+    PrimaryIndex: 29
+    SecondaryIndex: 3
+  - Name: 'CR_Armor_Blue2 : CR_Armor_Gray3'
+    PrimaryIndex: 47
+    SecondaryIndex: 3
+  - Name: 'CR_Armor_Purple3 : CR_Armor_Gray3'
+    PrimaryIndex: 60
+    SecondaryIndex: 3
+  - Name: 'CR_Armor_Brown1 : CR_Armor_Gray3'
+    PrimaryIndex: 64
+    SecondaryIndex: 3
+  - Name: 'CR_Armor_BlueReavingTempest : CR_Armor_Gray3'
+    PrimaryIndex: 69
+    SecondaryIndex: 3
+  - Name: 'CR_Armor_Gray1 : CR_Armor_Red3'
+    PrimaryIndex: 1
+    SecondaryIndex: 12
+  - Name: 'CR_Armor_Red4 : CR_Armor_Red3'
+    PrimaryIndex: 13
+    SecondaryIndex: 12
+  - Name: 'CR_Armor_Green0 : CR_Armor_Red3'
+    PrimaryIndex: 27
+    SecondaryIndex: 12
+  - Name: 'CR_Armor_Turquoise3 : CR_Armor_Red3'
+    PrimaryIndex: 36
+    SecondaryIndex: 12
+  - Name: 'CR_Armor_Blue2 : CR_Armor_Red3'
+    PrimaryIndex: 47
+    SecondaryIndex: 12
+  - Name: 'CR_Armor_BlueReavingTempest : CR_Armor_Red3'
+    PrimaryIndex: 69
+    SecondaryIndex: 12
+  - Name: 'CR_Armor_Brown1 : CR_Armor_Red3'
+    PrimaryIndex: 64
+    SecondaryIndex: 12
+  - Name: 'CR_Armor_Gray4 : CR_Armor_Orange3'
+    PrimaryIndex: 4
+    SecondaryIndex: 18
+  - Name: 'CR_Armor_White1 : CR_Armor_Orange3'
+    PrimaryIndex: 5
+    SecondaryIndex: 18
+  - Name: 'CR_Armor_Yellow2 : CR_Armor_Orange3'
+    PrimaryIndex: 23
+    SecondaryIndex: 18
+  - Name: 'CR_Armor_Green2 : CR_Armor_Orange3'
+    PrimaryIndex: 29
+    SecondaryIndex: 18
+  - Name: 'CR_Armor_Cyan2 : CR_Armor_Orange3'
+    PrimaryIndex: 41
+    SecondaryIndex: 18
+  - Name: 'CR_Armor_Blue2 : CR_Armor_Orange3'
+    PrimaryIndex: 47
+    SecondaryIndex: 18
+  - Name: 'CR_Armor_Brown0 : CR_Armor_Orange3'
+    PrimaryIndex: 63
+    SecondaryIndex: 18
+  - Name: 'CR_Armor_BlueReavingTempest : CR_Armor_Orange3'
+    PrimaryIndex: 69
+    SecondaryIndex: 18
+  - Name: 'CR_Armor_Gray0 : CR_Armor_Yellow4'
+    PrimaryIndex: 0
+    SecondaryIndex: 25
+  - Name: 'CR_Armor_Red4 : CR_Armor_Yellow4'
+    PrimaryIndex: 13
+    SecondaryIndex: 25
+  - Name: 'CR_Armor_Orange4 : CR_Armor_Yellow4'
+    PrimaryIndex: 19
+    SecondaryIndex: 25
+  - Name: 'CR_Armor_Turquoise3 : CR_Armor_Yellow4'
+    PrimaryIndex: 36
+    SecondaryIndex: 25
+  - Name: 'CR_Armor_Cyan2 : CR_Armor_Yellow4'
+    PrimaryIndex: 41
+    SecondaryIndex: 25
+  - Name: 'CR_Armor_Blue2 : CR_Armor_Yellow4'
+    PrimaryIndex: 47
+    SecondaryIndex: 25
+  - Name: 'CR_Armor_Brown1 : CR_Armor_Yellow4'
+    PrimaryIndex: 64
+    SecondaryIndex: 25
+  - Name: 'CR_Armor_Gray0 : CR_Armor_Green3'
+    PrimaryIndex: 0
+    SecondaryIndex: 30
+  - Name: 'CR_Armor_Red4 : CR_Armor_Green3'
+    PrimaryIndex: 13
+    SecondaryIndex: 30
+  - Name: 'CR_Armor_Orange2 : CR_Armor_Green3'
+    PrimaryIndex: 17
+    SecondaryIndex: 30
+  - Name: 'CR_Armor_Yellow2 : CR_Armor_Green3'
+    PrimaryIndex: 23
+    SecondaryIndex: 30
+  - Name: 'CR_Armor_Green1 : CR_Armor_Green3'
+    PrimaryIndex: 28
+    SecondaryIndex: 30
+  - Name: 'CR_Armor_Blue2 : CR_Armor_Green3'
+    PrimaryIndex: 47
+    SecondaryIndex: 30
+  - Name: 'CR_Armor_Brown1 : CR_Armor_Green3'
+    PrimaryIndex: 64
+    SecondaryIndex: 30
+  - Name: 'CR_Armor_BlueReavingTempest : CR_Armor_Green3'
+    PrimaryIndex: 69
+    SecondaryIndex: 30
+  - Name: 'CR_Armor_Gray0 : CR_Armor_Cyan2'
+    PrimaryIndex: 0
+    SecondaryIndex: 41
+  - Name: 'CR_Armor_Gray4 : CR_Armor_Cyan2'
+    PrimaryIndex: 4
+    SecondaryIndex: 41
+  - Name: 'CR_Armor_Orange2 : CR_Armor_Cyan2'
+    PrimaryIndex: 17
+    SecondaryIndex: 41
+  - Name: 'CR_Armor_Cyan1 : CR_Armor_Cyan2'
+    PrimaryIndex: 40
+    SecondaryIndex: 41
+  - Name: 'CR_Armor_Brown1 : CR_Armor_Cyan2'
+    PrimaryIndex: 64
+    SecondaryIndex: 41
+  - Name: 'CR_Armor_Gray0 : CR_Armor_Blue2'
+    PrimaryIndex: 0
+    SecondaryIndex: 47
+  - Name: 'CR_Armor_Red2 : CR_Armor_Blue2'
+    PrimaryIndex: 11
+    SecondaryIndex: 47
+  - Name: 'CR_Armor_Yellow2 : CR_Armor_Blue2'
+    PrimaryIndex: 23
+    SecondaryIndex: 47
+  - Name: 'CR_Armor_Green2 : CR_Armor_Blue2'
+    PrimaryIndex: 29
+    SecondaryIndex: 47
+  - Name: 'CR_Armor_Turquoise3 : CR_Armor_Blue2'
+    PrimaryIndex: 36
+    SecondaryIndex: 47
+  - Name: 'CR_Armor_Blue0 : CR_Armor_Blue2'
+    PrimaryIndex: 45
+    SecondaryIndex: 47
+  - Name: 'CR_Armor_Brown1 : CR_Armor_Blue2'
+    PrimaryIndex: 64
+    SecondaryIndex: 47
+  - Name: 'CR_Armor_Gray0 : CR_Armor_Violet3'
+    PrimaryIndex: 0
+    SecondaryIndex: 54
+  - Name: 'CR_Armor_Gray4 : CR_Armor_Violet3'
+    PrimaryIndex: 4
+    SecondaryIndex: 54
+  - Name: 'CR_Armor_Yellow2 : CR_Armor_Violet3'
+    PrimaryIndex: 23
+    SecondaryIndex: 54
+  - Name: 'CR_Armor_Green2 : CR_Armor_Violet3'
+    PrimaryIndex: 29
+    SecondaryIndex: 54
+  - Name: 'CR_Armor_Brown2 : CR_Armor_Violet3'
+    PrimaryIndex: 65
+    SecondaryIndex: 54
+  - Name: 'CR_Armor_Gray0 : CR_Armor_Brown2'
+    PrimaryIndex: 0
+    SecondaryIndex: 65
+  - Name: 'CR_Armor_Gray2 : CR_Armor_Brown2'
+    PrimaryIndex: 2
+    SecondaryIndex: 65
+  - Name: 'CR_Armor_Red3 : CR_Armor_Brown2'
+    PrimaryIndex: 12
+    SecondaryIndex: 65
+  - Name: 'CR_Armor_Green3 : CR_Armor_Brown2'
+    PrimaryIndex: 30
+    SecondaryIndex: 65
+  - Name: 'CR_Armor_Cyan1 : CR_Armor_Brown2'
+    PrimaryIndex: 40
+    SecondaryIndex: 65
+  PrimaryIndex: -1
+  SecondaryIndex: -1

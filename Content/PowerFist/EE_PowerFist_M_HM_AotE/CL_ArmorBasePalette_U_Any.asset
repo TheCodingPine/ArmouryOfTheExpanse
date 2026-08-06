@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -834490895, guid: bdcc9caea55324446b4d2ab38a611554, type: 3}
+  m_Name: CL_ArmorBasePalette_U_Any
+  m_EditorClassIdentifier: 
+  Ramps:
+  - {fileID: 2800000, guid: 54ffac5a3f610274ca98bb14ec5c739e, type: 2}
+  - {fileID: 2800000, guid: 55373ac13fc98e9448ac72ced60eb2c6, type: 2}

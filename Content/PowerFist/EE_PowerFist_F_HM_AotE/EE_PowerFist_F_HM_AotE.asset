@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2086151842, guid: bdcc9caea55324446b4d2ab38a611554, type: 3}
+  m_Name: EE_PowerFist_F_HM_AotE
+  m_EditorClassIdentifier: 
+  IsExportEnabled: 0
+  CantBeHiddenByDollRoom: 0
+  ShowAboveAllIgnoreLayer: 0
+  m_RequiresDlc:
+    guid: 
+  Layer: 300
+  m_HideBodyParts: 0
+  ShowLowerMaterials: 1
+  isOnlyRightBP: 0
+  IsAugmentation: 0
+  AugmentationArmSide: 0
+  SkeletonModifiers:
+  - Name: L_ForeArm
+    Scale: {x: 1.2, y: 1.5, z: 1.5}
+    Offset: {x: 0, y: 0, z: 0}
+    ApplyOffset: 0
+    IgnoreIfCharacterContainsEE: []
+  - Name: L_Toe_1_01
+    Scale: {x: 0.8, y: 1, z: 1}
+    Offset: {x: 0, y: 0, z: 0}
+    ApplyOffset: 0
+    IgnoreIfCharacterContainsEE: []
+  - Name: L_Toe_2_01
+    Scale: {x: 0.8, y: 1, z: 1}
+    Offset: {x: 0, y: 0, z: 0}
+    ApplyOffset: 0
+    IgnoreIfCharacterContainsEE: []
+  - Name: L_Hand
+    Scale: {x: 1.2, y: 1.2, z: 1.2}
+    Offset: {x: 0, y: 0, z: 0}
+    ApplyOffset: 0
+    IgnoreIfCharacterContainsEE: []
+  PrimaryColorsProfile: {fileID: 0}
+  SecondaryColorsProfile: {fileID: 11400000, guid: 5ca8513458ee99c449670aaf83f4af64,
+    type: 2}
+  BakedTextures: {fileID: 0}
+  PreviewTexture: {fileID: 0}
+  ColorPresets: {fileID: 11400000, guid: 066af9c8bfe39ff4e805c51fc8af9e29, type: 2}
+  m_PrimaryRamps: []
+  m_SecondaryRamps: []
+  BodyParts:
+  - m_Type: 32
+    RendererPrefab: {fileID: 6314342926869975011, guid: 743ef65d0b1da234eb7e71bcd1357938,
+      type: 3}
+    Material: {fileID: 2100000, guid: daa1e7f26cb2bf2478cb7a7e7b474c6a, type: 2}
+    Textures:
+    - ActiveTexture: {fileID: 2800000, guid: 314930735a873984dbbb8f8050e7c7ef, type: 2}
+      DiffuseTexture: {fileID: 2800000, guid: 314930735a873984dbbb8f8050e7c7ef, type: 2}
+      NormalTexture: {fileID: 2800000, guid: 62e2ea5d4ef19064f85582e770283261, type: 2}
+      MaskTexture: {fileID: 2800000, guid: 726e83acfa880bd48b43791ec732d8d6, type: 2}
+      RampShadowTexture: {fileID: 0}
+      DefaultMask1: {fileID: 0}
+      DefaultMask2: {fileID: 0}
+      DiffuseActive: 1
+      NormalActive: 1
+      MaskActive: 1
+      RampShadowActive: 0
+      UseRamp1Mask: 1
+      UseRamp2Mask: 1
+      UseDefaultMask1: 0
+      UseDefaultMask2: 0
+      UseShadowMask: 0
+      Ramps:
+        PrimaryMask: {fileID: 0}
+        PrimaryRamp: {fileID: 0}
+        SecondaryMask: {fileID: 0}
+        SecondaryRamp: {fileID: 0}
+      Channel: 0
+  - m_Type: 64
+    RendererPrefab: {fileID: 0}
+    Material: {fileID: 2100000, guid: daa1e7f26cb2bf2478cb7a7e7b474c6a, type: 2}
+    Textures:
+    - ActiveTexture: {fileID: 2800000, guid: 0a8ce6bd4da4025448db4253f3748847, type: 2}
+      DiffuseTexture: {fileID: 2800000, guid: 0a8ce6bd4da4025448db4253f3748847, type: 2}
+      NormalTexture: {fileID: 2800000, guid: 01fb27caff452ab4da8e72b805957204, type: 2}
+      MaskTexture: {fileID: 2800000, guid: affa93407f2b224498dacae9bd9b744a, type: 2}
+      RampShadowTexture: {fileID: 0}
+      DefaultMask1: {fileID: 0}
+      DefaultMask2: {fileID: 0}
+      DiffuseActive: 1
+      NormalActive: 1
+      MaskActive: 1
+      RampShadowActive: 0
+      UseRamp1Mask: 0
+      UseRamp2Mask: 0
+      UseDefaultMask1: 0
+      UseDefaultMask2: 0
+      UseShadowMask: 0
+      Ramps:
+        PrimaryMask: {fileID: 0}
+        PrimaryRamp: {fileID: 0}
+        SecondaryMask: {fileID: 0}
+        SecondaryRamp: {fileID: 0}
+      Channel: 0
+  OutfitParts: []
+  ForcedPrimaryIndex: -1
+  ForcedSecondaryIndex: -1

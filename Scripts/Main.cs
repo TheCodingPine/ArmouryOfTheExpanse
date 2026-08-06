@@ -1,33 +1,16 @@
 using HarmonyLib;
 using Kingmaker.Blueprints;
-using Kingmaker.Blueprints.Attributes;
-using Kingmaker.Blueprints.Facts;
-using Kingmaker.Blueprints.Items.Weapons;
 using Kingmaker.Blueprints.JsonSystem;
-using Kingmaker.Designers.EventConditionActionSystem.Actions;
-using Kingmaker.ElementsSystem;
-using Kingmaker.EntitySystem.Entities;
-using Kingmaker.EntitySystem.Persistence.Versioning;
-using Kingmaker.Enums;
 using Kingmaker.Items;
+using Kingmaker.Items.Slots;
 using Kingmaker.Modding;
-using Kingmaker.ResourceLinks;
-using Kingmaker.UnitLogic;
-using Kingmaker.UnitLogic.Abilities.Blueprints;
-using Kingmaker.View;
-using Kingmaker.View.Animation;
-using Kingmaker.View.Mechanics.Entities;
 using Kingmaker.Visual.CharacterSystem;
 using Owlcat.Runtime.Core.Logging;
-using Owlcat.Runtime.Visual.FogOfWar;
-using StateHasher.Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
 using UnityEngine;
 using UnityModManagerNet;
-using static UnityModManagerNet.UnityModManager;
 
 namespace ArmouryOfTheExpanse
 {
@@ -35,7 +18,7 @@ namespace ArmouryOfTheExpanse
 #if DEBUG
     [EnableReloading]
 #endif
-    public static class Main
+    public static partial class Main
     {
 
         static Kingmaker.Modding.OwlcatModification mod;
@@ -62,7 +45,7 @@ namespace ArmouryOfTheExpanse
 
         }
 
-        [HarmonyPriority(Priority.LowerThanNormal)]
+        [HarmonyPriority(HarmonyLib.Priority.LowerThanNormal)]
         [HarmonyPatch(typeof(BlueprintsCache))]
         public static class BlueprintsCache_Init_Patch
         {
@@ -76,6 +59,7 @@ namespace ArmouryOfTheExpanse
                 settings = ModDataManager.Load();
                 ModsDependanciesManager.Init(); //check 3rd party mods & logger              
                 ApplyPatches();
+                harmony.PatchAll();
             }
         }
 
@@ -184,66 +168,6 @@ namespace ArmouryOfTheExpanse
 
             }
         }
-
-
-        //--
-
-
-            #region Stylesheet my beloved
-
-        public static void Bullet(string text)
-        {
-            GUILayout.BeginHorizontal();
-            GUILayout.Label("•", GUILayout.Width(15));
-            GUILayout.Label(text, GUILayout.ExpandWidth(true));
-            GUILayout.EndHorizontal();
-        }
-
-        public static void InitGUIStyle()
-        {
-            //onGui draw every frame; I'm trying to cache the header style
-            if (headerStyle == null)
-            {
-                headerStyle = new GUIStyle(GUI.skin.label);
-                headerStyle.fontSize = 25;
-                headerStyle.fontStyle = FontStyle.Bold;
-            }
-            //same for the vertical box/div behind
-            if (panelStyle == null)
-            {
-                panelTexture = new Texture2D(1, 1);
-                panelTexture.SetPixel(0, 0, new Color(0f, 0f, 0f, 0.6f)); // black, 60% opacity
-                panelTexture.Apply();
-
-                panelStyle = new GUIStyle(GUI.skin.box)
-                {
-                    normal = { background = panelTexture },
-                    padding = new RectOffset(12, 12, 12, 12)
-                };
-            }
-        }
-        #endregion
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     }
 

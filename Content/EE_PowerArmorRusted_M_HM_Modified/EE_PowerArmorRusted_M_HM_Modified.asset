@@ -1,0 +1,306 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2086151842, guid: bdcc9caea55324446b4d2ab38a611554, type: 3}
+  m_Name: EE_PowerArmorRusted_M_HM_Modified
+  m_EditorClassIdentifier: 
+  IsExportEnabled: 0
+  CantBeHiddenByDollRoom: 0
+  ShowAboveAllIgnoreLayer: 0
+  m_RequiresDlc:
+    guid: 
+  Layer: 260
+  m_HideBodyParts: 8610906116
+  ShowLowerMaterials: 1
+  isOnlyRightBP: 0
+  IsAugmentation: 0
+  AugmentationArmSide: 0
+  SkeletonModifiers: []
+  PrimaryColorsProfile: {fileID: 0}
+  SecondaryColorsProfile: {fileID: 0}
+  BakedTextures: {fileID: 0}
+  PreviewTexture: {fileID: 0}
+  ColorPresets: {fileID: 11400000, guid: b140f92b4a74be24ca621458374a9fae, type: 2}
+  m_PrimaryRamps: []
+  m_SecondaryRamps: []
+  BodyParts:
+  - m_Type: 131072
+    RendererPrefab: {fileID: 8841997234030155164, guid: c0d1f045a93c4444d99e3b401f965d50,
+      type: 3}
+    Material: {fileID: 2100000, guid: e60da7a096790b94e84b1e068deeede5, type: 2}
+    Textures:
+    - ActiveTexture: {fileID: 2800000, guid: c66cd0d23ba4d384c87ce04b03e2fe7f, type: 3}
+      DiffuseTexture: {fileID: 2800000, guid: c66cd0d23ba4d384c87ce04b03e2fe7f, type: 3}
+      NormalTexture: {fileID: 2800000, guid: 2f2418f98bab36349a6c83cfd257dcec, type: 2}
+      MaskTexture: {fileID: 2800000, guid: eb9b7f53f1212014a94d81997519af90, type: 2}
+      RampShadowTexture: {fileID: 0}
+      DefaultMask1: {fileID: 0}
+      DefaultMask2: {fileID: 0}
+      DiffuseActive: 1
+      NormalActive: 1
+      MaskActive: 1
+      RampShadowActive: 0
+      UseRamp1Mask: 0
+      UseRamp2Mask: 0
+      UseDefaultMask1: 0
+      UseDefaultMask2: 0
+      UseShadowMask: 0
+      Ramps:
+        PrimaryMask: {fileID: 0}
+        PrimaryRamp: {fileID: 0}
+        SecondaryMask: {fileID: 0}
+        SecondaryRamp: {fileID: 0}
+      Channel: 0
+  - m_Type: 1024
+    RendererPrefab: {fileID: 4235965084342816416, guid: 4bdc10e95f8306f44bb84242e625c727,
+      type: 3}
+    Material: {fileID: 2100000, guid: e60da7a096790b94e84b1e068deeede5, type: 2}
+    Textures:
+    - ActiveTexture: {fileID: 2800000, guid: 8065ffac89c5972418657d1897d9e1b2, type: 2}
+      DiffuseTexture: {fileID: 2800000, guid: 8065ffac89c5972418657d1897d9e1b2, type: 2}
+      NormalTexture: {fileID: 2800000, guid: 20cfe93dd0fe4cd4ca827c37c6e7c6a9, type: 2}
+      MaskTexture: {fileID: 2800000, guid: 8c325b0e86ac95845b37084a89e16d92, type: 2}
+      RampShadowTexture: {fileID: 0}
+      DefaultMask1: {fileID: 0}
+      DefaultMask2: {fileID: 0}
+      DiffuseActive: 1
+      NormalActive: 1
+      MaskActive: 1
+      RampShadowActive: 0
+      UseRamp1Mask: 0
+      UseRamp2Mask: 0
+      UseDefaultMask1: 0
+      UseDefaultMask2: 0
+      UseShadowMask: 0
+      Ramps:
+        PrimaryMask: {fileID: 0}
+        PrimaryRamp: {fileID: 0}
+        SecondaryMask: {fileID: 0}
+        SecondaryRamp: {fileID: 0}
+      Channel: 0
+  - m_Type: 16
+    RendererPrefab: {fileID: 5309150618083786787, guid: 817205ae5ee849c45b6967ef6d4e683d,
+      type: 3}
+    Material: {fileID: 2100000, guid: e60da7a096790b94e84b1e068deeede5, type: 2}
+    Textures:
+    - ActiveTexture: {fileID: 2800000, guid: eeb7f176adf87074dbe95348dd827d00, type: 2}
+      DiffuseTexture: {fileID: 2800000, guid: eeb7f176adf87074dbe95348dd827d00, type: 2}
+      NormalTexture: {fileID: 2800000, guid: a4e061c98cc4f2445ab6bc3702ffd06c, type: 2}
+      MaskTexture: {fileID: 2800000, guid: 1e386677a01696245b5764b8a28a6126, type: 2}
+      RampShadowTexture: {fileID: 0}
+      DefaultMask1: {fileID: 0}
+      DefaultMask2: {fileID: 0}
+      DiffuseActive: 1
+      NormalActive: 1
+      MaskActive: 1
+      RampShadowActive: 0
+      UseRamp1Mask: 0
+      UseRamp2Mask: 0
+      UseDefaultMask1: 0
+      UseDefaultMask2: 0
+      UseShadowMask: 0
+      Ramps:
+        PrimaryMask: {fileID: 0}
+        PrimaryRamp: {fileID: 0}
+        SecondaryMask: {fileID: 0}
+        SecondaryRamp: {fileID: 0}
+      Channel: 0
+  - m_Type: 67108864
+    RendererPrefab: {fileID: 5886726748895190641, guid: 9d93b0b42b3cf914ab6143367ea03261,
+      type: 3}
+    Material: {fileID: 2100000, guid: e60da7a096790b94e84b1e068deeede5, type: 2}
+    Textures:
+    - ActiveTexture: {fileID: 2800000, guid: 704b5039dc34b524da5093d38dcaaf1a, type: 3}
+      DiffuseTexture: {fileID: 2800000, guid: 704b5039dc34b524da5093d38dcaaf1a, type: 3}
+      NormalTexture: {fileID: 2800000, guid: 1ddf0502e898d9a4a8c045eba64aa180, type: 2}
+      MaskTexture: {fileID: 2800000, guid: 916a90fa82a523646bfb87d97e001cc1, type: 2}
+      RampShadowTexture: {fileID: 0}
+      DefaultMask1: {fileID: 0}
+      DefaultMask2: {fileID: 0}
+      DiffuseActive: 1
+      NormalActive: 1
+      MaskActive: 1
+      RampShadowActive: 0
+      UseRamp1Mask: 0
+      UseRamp2Mask: 0
+      UseDefaultMask1: 0
+      UseDefaultMask2: 0
+      UseShadowMask: 0
+      Ramps:
+        PrimaryMask: {fileID: 0}
+        PrimaryRamp: {fileID: 0}
+        SecondaryMask: {fileID: 0}
+        SecondaryRamp: {fileID: 0}
+      Channel: 0
+  - m_Type: 262144
+    RendererPrefab: {fileID: 256123677449065959, guid: 020b8a5ba4ccc61498d13d42b0cf296a,
+      type: 3}
+    Material: {fileID: 2100000, guid: e60da7a096790b94e84b1e068deeede5, type: 2}
+    Textures:
+    - ActiveTexture: {fileID: 2800000, guid: 83348f7de0ad6894c9f7b27a2c6748c8, type: 2}
+      DiffuseTexture: {fileID: 2800000, guid: 83348f7de0ad6894c9f7b27a2c6748c8, type: 2}
+      NormalTexture: {fileID: 2800000, guid: 47c17ea3c30fcb341906658b35191b80, type: 2}
+      MaskTexture: {fileID: 2800000, guid: d10a5122b9692ee47af75fd221f9d4ed, type: 2}
+      RampShadowTexture: {fileID: 0}
+      DefaultMask1: {fileID: 0}
+      DefaultMask2: {fileID: 0}
+      DiffuseActive: 1
+      NormalActive: 1
+      MaskActive: 1
+      RampShadowActive: 0
+      UseRamp1Mask: 0
+      UseRamp2Mask: 0
+      UseDefaultMask1: 0
+      UseDefaultMask2: 0
+      UseShadowMask: 0
+      Ramps:
+        PrimaryMask: {fileID: 0}
+        PrimaryRamp: {fileID: 0}
+        SecondaryMask: {fileID: 0}
+        SecondaryRamp: {fileID: 0}
+      Channel: 0
+  - m_Type: 512
+    RendererPrefab: {fileID: 0}
+    Material: {fileID: 2100000, guid: e60da7a096790b94e84b1e068deeede5, type: 2}
+    Textures:
+    - ActiveTexture: {fileID: 2800000, guid: 312ae07b60536d443afb9508cbf31bbc, type: 2}
+      DiffuseTexture: {fileID: 2800000, guid: 312ae07b60536d443afb9508cbf31bbc, type: 2}
+      NormalTexture: {fileID: 2800000, guid: 636cf4acf84f70d49b0e6ab30051fad4, type: 2}
+      MaskTexture: {fileID: 2800000, guid: 239ea7659dda90d40b7ac79bbde03754, type: 2}
+      RampShadowTexture: {fileID: 0}
+      DefaultMask1: {fileID: 0}
+      DefaultMask2: {fileID: 0}
+      DiffuseActive: 1
+      NormalActive: 1
+      MaskActive: 1
+      RampShadowActive: 0
+      UseRamp1Mask: 0
+      UseRamp2Mask: 0
+      UseDefaultMask1: 0
+      UseDefaultMask2: 0
+      UseShadowMask: 0
+      Ramps:
+        PrimaryMask: {fileID: 0}
+        PrimaryRamp: {fileID: 0}
+        SecondaryMask: {fileID: 0}
+        SecondaryRamp: {fileID: 0}
+      Channel: 0
+  - m_Type: 524288
+    RendererPrefab: {fileID: 1743055797704152205, guid: 07a40556294a34e49a66a1c9d4d2b237,
+      type: 3}
+    Material: {fileID: 2100000, guid: e60da7a096790b94e84b1e068deeede5, type: 2}
+    Textures:
+    - ActiveTexture: {fileID: 2800000, guid: af559de396e329f4ebde9b489a968be0, type: 3}
+      DiffuseTexture: {fileID: 2800000, guid: af559de396e329f4ebde9b489a968be0, type: 3}
+      NormalTexture: {fileID: 2800000, guid: 191dd6ca90904024c853ee2eecead0d6, type: 2}
+      MaskTexture: {fileID: 2800000, guid: 8425351dd88bac04687ba2db103e3662, type: 2}
+      RampShadowTexture: {fileID: 0}
+      DefaultMask1: {fileID: 0}
+      DefaultMask2: {fileID: 0}
+      DiffuseActive: 1
+      NormalActive: 1
+      MaskActive: 1
+      RampShadowActive: 0
+      UseRamp1Mask: 0
+      UseRamp2Mask: 0
+      UseDefaultMask1: 0
+      UseDefaultMask2: 0
+      UseShadowMask: 0
+      Ramps:
+        PrimaryMask: {fileID: 0}
+        PrimaryRamp: {fileID: 0}
+        SecondaryMask: {fileID: 0}
+        SecondaryRamp: {fileID: 0}
+      Channel: 0
+  - m_Type: 65536
+    RendererPrefab: {fileID: 6486647857203144996, guid: f711acd4799a5b64e86a5acf426d6c40,
+      type: 3}
+    Material: {fileID: 2100000, guid: e60da7a096790b94e84b1e068deeede5, type: 2}
+    Textures:
+    - ActiveTexture: {fileID: 2800000, guid: d743fa3e0e75fa24a9fffa7aec1cbe49, type: 3}
+      DiffuseTexture: {fileID: 2800000, guid: d743fa3e0e75fa24a9fffa7aec1cbe49, type: 3}
+      NormalTexture: {fileID: 2800000, guid: 6f856c6f3e9be6d4d924509f3c9aea0b, type: 2}
+      MaskTexture: {fileID: 2800000, guid: 8e2660cae35b4e647a41c41e94c36a75, type: 2}
+      RampShadowTexture: {fileID: 0}
+      DefaultMask1: {fileID: 0}
+      DefaultMask2: {fileID: 0}
+      DiffuseActive: 1
+      NormalActive: 1
+      MaskActive: 1
+      RampShadowActive: 0
+      UseRamp1Mask: 0
+      UseRamp2Mask: 0
+      UseDefaultMask1: 0
+      UseDefaultMask2: 0
+      UseShadowMask: 0
+      Ramps:
+        PrimaryMask: {fileID: 0}
+        PrimaryRamp: {fileID: 0}
+        SecondaryMask: {fileID: 0}
+        SecondaryRamp: {fileID: 0}
+      Channel: 0
+  - m_Type: 1
+    RendererPrefab: {fileID: 594445063372075795, guid: 9ccbb733dc5e0904f888e0a1cce31429,
+      type: 3}
+    Material: {fileID: 2100000, guid: e60da7a096790b94e84b1e068deeede5, type: 2}
+    Textures:
+    - ActiveTexture: {fileID: 2800000, guid: 2d893b9931e8e584cbd5aa0bc0bcd546, type: 3}
+      DiffuseTexture: {fileID: 2800000, guid: 2d893b9931e8e584cbd5aa0bc0bcd546, type: 3}
+      NormalTexture: {fileID: 2800000, guid: 6902d28d7d948d049b76cd464e32b443, type: 2}
+      MaskTexture: {fileID: 2800000, guid: 3d118f152b19f554483bc5e0e7b62516, type: 2}
+      RampShadowTexture: {fileID: 0}
+      DefaultMask1: {fileID: 0}
+      DefaultMask2: {fileID: 0}
+      DiffuseActive: 1
+      NormalActive: 1
+      MaskActive: 1
+      RampShadowActive: 0
+      UseRamp1Mask: 0
+      UseRamp2Mask: 0
+      UseDefaultMask1: 0
+      UseDefaultMask2: 0
+      UseShadowMask: 0
+      Ramps:
+        PrimaryMask: {fileID: 0}
+        PrimaryRamp: {fileID: 0}
+        SecondaryMask: {fileID: 0}
+        SecondaryRamp: {fileID: 0}
+      Channel: 0
+  - m_Type: 4194304
+    RendererPrefab: {fileID: 5734282821229624122, guid: a066993052edef348b4091299118556c,
+      type: 3}
+    Material: {fileID: 2100000, guid: e60da7a096790b94e84b1e068deeede5, type: 2}
+    Textures:
+    - ActiveTexture: {fileID: 2800000, guid: e47830f492102854eae0f9e2f06448d4, type: 3}
+      DiffuseTexture: {fileID: 2800000, guid: e47830f492102854eae0f9e2f06448d4, type: 3}
+      NormalTexture: {fileID: 2800000, guid: fcf688686b966de419a8a766d633fb35, type: 2}
+      MaskTexture: {fileID: 2800000, guid: fe37ccf1438e0934f8fd24d1b0a73332, type: 2}
+      RampShadowTexture: {fileID: 0}
+      DefaultMask1: {fileID: 0}
+      DefaultMask2: {fileID: 0}
+      DiffuseActive: 1
+      NormalActive: 1
+      MaskActive: 1
+      RampShadowActive: 0
+      UseRamp1Mask: 0
+      UseRamp2Mask: 0
+      UseDefaultMask1: 0
+      UseDefaultMask2: 0
+      UseShadowMask: 0
+      Ramps:
+        PrimaryMask: {fileID: 0}
+        PrimaryRamp: {fileID: 0}
+        SecondaryMask: {fileID: 0}
+        SecondaryRamp: {fileID: 0}
+      Channel: 0
+  OutfitParts: []
+  ForcedPrimaryIndex: -1
+  ForcedSecondaryIndex: -1

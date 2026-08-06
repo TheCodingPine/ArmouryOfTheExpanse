@@ -54,7 +54,7 @@
       {
         "$type": "c8cf2b4638d44ca29565527b0d0b90c2, AddStringToFactName",
         "name": "$AddStringToFactName$f56fcaa1-2136-4f8e-846c-3dfff8cc051f",
-        "m_Flags": 0,
+        "m_Flags": "Disabled",
         "PrototypeLink": {
           "guid": "bd1ffcfed2fe48ad9ad2d447a85e55bd",
           "name": "$AddStringToFactName$d39b1fd3-750e-482d-856f-b518293d1fd0"

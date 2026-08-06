@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1166898237, guid: bdcc9caea55324446b4d2ab38a611554, type: 3}
+  m_Name: RCP_EE_ArmorEnforcer
+  m_EditorClassIdentifier: 
+  IndexPairs:
+  - Name: 'CR_Armor_White1 : CR_Armor_Gray3'
+    PrimaryIndex: 9
+    SecondaryIndex: 6
+  - Name: 'CR_Armor_Black : CR_Armor_Black'
+    PrimaryIndex: 8
+    SecondaryIndex: 8
+  - Name: 'CR_Armor_Orange0 : CR_Armor_Red1'
+    PrimaryIndex: 15
+    SecondaryIndex: 10
+  - Name: 'CR_Armor_Turquoise1 : CR_Armor_Red2'
+    PrimaryIndex: 34
+    SecondaryIndex: 11
+  - Name: 'CR_Armor_Orange1 : CR_Armor_Red3'
+    PrimaryIndex: 16
+    SecondaryIndex: 12
+  - Name: 'CR_Armor_Blue9_RT : CR_Armor_Orange1'
+    PrimaryIndex: 73
+    SecondaryIndex: 16
+  - Name: 'CR_Armor_Cyan2 : CR_Armor_Orange2'
+    PrimaryIndex: 41
+    SecondaryIndex: 17
+  - Name: 'CR_Armor_Cyan6 : CR_Armor_Yellow2'
+    PrimaryIndex: 44
+    SecondaryIndex: 23
+  - Name: 'CR_Armor_Gray2 : CR_Armor_Yellow3'
+    PrimaryIndex: 2
+    SecondaryIndex: 24
+  - Name: 'CR_Armor_Yellow1 : CR_Armor_Green2'
+    PrimaryIndex: 22
+    SecondaryIndex: 29
+  - Name: 'CR_Armor_Brown0 : CR_Armor_Green4'
+    PrimaryIndex: 63
+    SecondaryIndex: 31
+  - Name: 'CR_Armor_Violet3 : CR_Armor_Turquoise2'
+    PrimaryIndex: 54
+    SecondaryIndex: 35
+  - Name: 'CR_Armor_Purple2 : CR_Armor_Turquoise3'
+    PrimaryIndex: 59
+    SecondaryIndex: 36
+  - Name: 'CR_Armor_Orange4 : CR_Armor_Cyan1'
+    PrimaryIndex: 19
+    SecondaryIndex: 40
+  - Name: 'CR_Armor_Brown2 : CR_Armor_Cyan2'
+    PrimaryIndex: 65
+    SecondaryIndex: 41
+  - Name: 'CR_Armor_Yellow2 : CR_Armor_Blue1'
+    PrimaryIndex: 23
+    SecondaryIndex: 46
+  - Name: 'CR_Armor_Turquoise3 : CR_Armor_Blue2'
+    PrimaryIndex: 36
+    SecondaryIndex: 47
+  - Name: 'CR_Armor_Green0 : CR_Armor_Violet2'
+    PrimaryIndex: 27
+    SecondaryIndex: 53
+  PrimaryIndex: -1
+  SecondaryIndex: -1
