@@ -1,68 +1,28 @@
 {
-  "AssetId": "2278b025664b4a1c90a5f49830f68626",
+  "AssetId": "a482c5cc9ecb46619e59e8dc3de80001",
   "Data": {
     "$type": "da11db195c86e0d4dae17a2c03a4ba9a, BlueprintAbility",
-    "PrototypeLink": "9dec1bdade284190b0977f5f70d26d3e",
-    "m_Overrides": [
-      "$WarhammerOverrideAbilityApCost$5625f4ff-f3b2-4358-86e3-0631e5d34c1a",
-      "$WarhammerEndTurn$1056777c-3103-4099-b86e-66f42396e52e",
-      "$WarhammerAbilityAttackDelivery$f6e76c7e-cc5b-4844-bee2-652cbf54db4b",
-      "$AbilityEffectRunAction$61b202f0-3a25-49c5-b5b2-f8021dd129f3",
-      "Author",
-      "m_DisplayName"
-    ],
+    "PrototypeLink": "",
+    "m_Overrides": [],
     "Components": [
       {
-        "$type": "18beb8746b848f6448d3ee6969a32467, WarhammerOverrideAbilityApCost",
-        "name": "$WarhammerOverrideAbilityApCost$5625f4ff-f3b2-4358-86e3-0631e5d34c1a",
+        "$type": "d19abe965ccc4bd2891e68c149a9ab56, AbilityCustomAnimationByBuff",
+        "name": "$AbilityCustomAnimationByBuff$a1dc060f-e47b-4d83-8795-6d7ede998fbc",
         "m_Flags": 0,
         "PrototypeLink": {
           "guid": "",
           "name": ""
         },
         "m_Overrides": [],
-        "Restrictions": {
-          "Property": {
-            "Operation": "Sum",
-            "TargetType": "CurrentEntity",
-            "TargetEvaluator": null,
-            "FailSilentlyIfNoTarget": false,
-            "Getters": []
-          }
+        "DefaultAnimationLink": {
+          "AssetId": "b7e61f513e2edff4e8854cf82baeba76"
         },
-        "m_overrideMode": "Single",
-        "m_newCost": 0,
-        "m_costBonus": 0,
-        "m_costMinimum": 0,
-        "m_Ability": null,
-        "m_AffectedGroup": null,
-        "m_AbilityGroupList": [],
-        "NotSelectedGroup": false,
-        "AffectOnlyMelee": false,
-        "AffectOnlyRanged": false,
-        "AffectOnlyAoE": false,
-        "AffectOnlyBurst": false,
-        "AffectOnlyHeavy": false
-      },
-      {
-        "$type": "224c1eb24ed98e942ae15b9e10e62724, WarhammerEndTurn",
-        "name": "$WarhammerEndTurn$1056777c-3103-4099-b86e-66f42396e52e",
-        "m_Flags": 0,
-        "PrototypeLink": {
-          "guid": "",
-          "name": ""
-        },
-        "m_Overrides": [],
-        "clearMPInsteadOfEndingTurn": true,
-        "Condition": {
-          "Operation": "And",
-          "Conditions": []
-        },
-        "m_BuffToCaster": null
+        "OverrideAnimationType": "Unused",
+        "Variants": []
       },
       {
         "$type": "e6da52cf4bc945a1b3276a25991d7a68, WarhammerAbilityAttackDelivery",
-        "name": "$WarhammerAbilityAttackDelivery$f6e76c7e-cc5b-4844-bee2-652cbf54db4b",
+        "name": "$WarhammerAbilityAttackDelivery$02ba1d6d-16c9-4ffd-b96c-c297bef0966b",
         "m_Flags": 0,
         "PrototypeLink": {
           "guid": "",
@@ -98,48 +58,75 @@
         "m_IsLosDefinedByPattern": false
       },
       {
-        "$type": "d19abe965ccc4bd2891e68c149a9ab56, AbilityCustomAnimationByBuff",
-        "name": "$AbilityCustomAnimationByBuff$d1864fd1-f67a-4369-abd4-59c46de9cfb0",
+        "$type": "18beb8746b848f6448d3ee6969a32467, WarhammerOverrideAbilityApCost",
+        "name": "$WarhammerOverrideAbilityApCost$49e1dfcc-6dcb-42b4-9444-185f788b8c2e",
         "m_Flags": 0,
         "PrototypeLink": {
           "guid": "",
           "name": ""
         },
         "m_Overrides": [],
-        "DefaultAnimationLink": {
-          "AssetId": "b7e61f513e2edff4e8854cf82baeba76"
+        "Restrictions": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": []
+          }
         },
-        "OverrideAnimationType": "Unused",
-        "Variants": []
+        "m_overrideMode": "Single",
+        "m_newCost": 0,
+        "m_costBonus": 0,
+        "m_costMinimum": 0,
+        "m_Ability": null,
+        "m_AffectedGroup": null,
+        "m_AbilityGroupList": [],
+        "NotSelectedGroup": false,
+        "AffectOnlyMelee": false,
+        "AffectOnlyRanged": false,
+        "AffectOnlyAoE": false,
+        "AffectOnlyBurst": false,
+        "AffectOnlyHeavy": false
+      },
+      {
+        "$type": "224c1eb24ed98e942ae15b9e10e62724, WarhammerEndTurn",
+        "name": "$WarhammerEndTurn$88666104-5291-49a0-bd26-d2e7d1de63a5",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "clearMPInsteadOfEndingTurn": true,
+        "Condition": {
+          "Operation": "And",
+          "Conditions": []
+        },
+        "m_BuffToCaster": null
       }
     ],
     "Author": "Unknown",
-    "Comment": "Melee Attack",
+    "Comment": "",
     "m_DisplayName": {
-      "m_Key": "38abc057-fafd-4570-8e84-6092bf9d2f49",
-      "m_OwnerString": "2278b025664b4a1c90a5f49830f68626",
+      "m_Key": "f8ff8ce1-f239-4370-908d-8df6dcb3afb0",
+      "m_OwnerString": "a482c5cc9ecb46619e59e8dc3de80001",
       "m_OwnerPropertyPath": "m_DisplayName",
-      "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\PowerFist\\PowerFistMeleeAttack_Ability_AotE_m_DisplayName_1.json",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\PowerFist\\PowerFistMeleeAttack_Crushing_Ability_AotE_m_DisplayName.json",
       "Shared": null
     },
     "m_Description": {
-      "m_Key": "",
-      "m_OwnerString": "",
-      "m_OwnerPropertyPath": "",
-      "m_JsonPath": "",
-      "Shared": {
-        "assetguid": "3e1366fa4189d244bbdff7d10605b60c",
-        "stringkey": "9ef3a5de-2237-40db-9f71-666570ed99e4"
-      }
+      "m_Key": "d1fdb0c9-592c-422c-8140-c0512e7c0047",
+      "m_OwnerString": "a482c5cc9ecb46619e59e8dc3de80001",
+      "m_OwnerPropertyPath": "m_Description",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\PowerFist\\PowerFistMeleeAttack_Crushing_Ability_AotE_m_Description.json",
+      "Shared": null
     },
-    "m_Icon": {
-      "guid": "81a2e656593a8fb4abb520ee1fd20ff4",
-      "fileid": 21300000
-    },
+    "m_Icon": null,
     "m_AllowNonContextActions": false,
     "Type": "Weapon",
     "Range": "Weapon",
-    "CustomRange": 1,
+    "CustomRange": 0,
     "MinRange": 0,
     "ActionPointCost": 1,
     "AbilityParamsSource": "Weapon",
@@ -176,15 +163,13 @@
     "UsingInThreateningArea": "CanUseWithoutAOO",
     "UsingInOverwatchArea": "WillCauseAttack",
     "CombatStateRestriction": "NoRestriction",
-    "m_AbilityGroups": [
-      "!bp_1cf206b13141425491c379bc75ef0699"
-    ],
+    "m_AbilityGroups": [],
     "MaterialComponent": {
       "m_Item": null,
       "Count": 1
     },
     "ResourceAssetIds": [],
-    "m_FXSettings": "!bp_a29d9b4bce7449d78fc33c1e5797d028",
+    "m_FXSettings": "!bp_c4ebb100b9e44bb5a82f1403726b0158",
     "m_AbilityTag": "None",
     "m_CombatHudCommandsOverride": null
   },

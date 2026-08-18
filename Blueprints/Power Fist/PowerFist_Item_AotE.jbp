@@ -33,6 +33,21 @@
         ],
         "m_Inverted": true,
         "All": false
+      },
+      {
+        "$type": "6dfdda28c94860241a112b404538e2a7, EquipmentRestrictionStat",
+        "name": "$EquipmentRestrictionStat$3d1b0ec6-a062-44f3-97c3-bcf1c3aebf9a",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Stat": "WarhammerStrength",
+        "MinValue": 60,
+        "m_ChangeRestrictionStatIfHasFact": true,
+        "m_Fact": "!bp_26376b596c474d67849613617ced7b04",
+        "m_SubtractionValue": 25
       }
     ],
     "Author": "Unknown",
@@ -51,7 +66,10 @@
       "m_JsonPath": "",
       "Shared": null
     },
-    "m_Icon": null,
+    "m_Icon": {
+      "guid": "77b29d4a00c248a4dab75933a8cc7f7e",
+      "fileid": 21300000
+    },
     "m_FlavorText": {
       "m_Key": "",
       "m_OwnerString": "",
@@ -118,12 +136,12 @@
         "Group": ""
       },
       "m_MissSoundType": "MediumMetal",
-      "m_EquipSound": "",
-      "m_UnequipSound": "",
+      "m_EquipSound": "Foley_WP_M_PowerAxe_Equip_Play",
+      "m_UnequipSound": "Foley_WP_M_PowerAxe_Remove_Play",
       "m_OutOfAmmoSound": "",
-      "m_InventoryEquipSound": "",
-      "m_InventoryPutSound": "",
-      "m_InventoryTakeSound": ""
+      "m_InventoryEquipSound": "UI_INV_Power_Equip_Play",
+      "m_InventoryPutSound": "UI_INV_Power_Put_Play",
+      "m_InventoryTakeSound": "UI_INV_Power_Take_Play"
     },
     "m_OnHitActions": null,
     "AbilityContainer": {
@@ -148,8 +166,8 @@
       "Ability3": {
         "Type": "SingleShot",
         "Mode": "Default",
-        "m_Ability": "!bp_2278b025664b4a1c90a5f49830f68626",
-        "m_FXSettings": "!bp_c4ebb100b9e44bb5a82f1403726b0158",
+        "m_Ability": "!bp_a482c5cc9ecb46619e59e8dc3de80001",
+        "m_FXSettings": "!bp_6256056e200842b2af3a637fb37d6331",
         "OnHitOverrideType": "None",
         "m_OnHitActions": null,
         "AP": 0
@@ -177,7 +195,7 @@
     "m_AttackOfOpportunityAbilityFXSettings": null,
     "Category": "Melee",
     "Family": "Power",
-    "Classification": "MaulOrHammer",
+    "Classification": "None",
     "m_HoldingType": "OneHanded",
     "m_Range": "Melee",
     "m_Heaviness": "Heavy",

@@ -151,7 +151,7 @@
           "Pattern": {
             "m_Type": "Cone",
             "m_Blueprint": null,
-            "m_Radius": 2,
+            "m_Radius": 3,
             "m_Angle": 90
           },
           "Targets": "Any",
@@ -376,7 +376,7 @@
             {
               "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
               "name": "$ContextActionApplyBuff$7dd4f03274ee422882de561f929ff2cf",
-              "m_Buff": "!bp_720d4ae2b5504bef98ad58304e9c3ee8",
+              "m_Buff": "!bp_c57220b6341d478582b87e10cf287a47",
               "BuffEndCondition": "CombatEnd",
               "Permanent": true,
               "DurationValue": {

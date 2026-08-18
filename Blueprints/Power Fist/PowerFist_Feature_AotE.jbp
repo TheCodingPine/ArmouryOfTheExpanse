@@ -15,6 +15,101 @@
         },
         "m_Overrides": [],
         "m_EquipmentEntity": "!bp_820040955e61486db9ce3e0555404c29"
+      },
+      {
+        "$type": "0bde26e1c00620f4b9a960c1110b7b30, WarhammerParryChanceModifierDefender",
+        "name": "$WarhammerParryChanceModifierDefender$6a0c6099-006c-489f-9572-aff1b32242ce",
+        "m_Flags": "Disabled",
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": []
+          }
+        },
+        "Properties": "ParryChance",
+        "ParryChance": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1"
+        },
+        "AttackerWeaponSkillBonus": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1"
+        },
+        "DefenderWeaponSkillBonus": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1"
+        },
+        "ParryChanceMultiplierValue": {
+          "ValueType": "Simple",
+          "Value": 1,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1"
+        },
+        "PercentParryModifier": false,
+        "PercentMultiplierModifier": false,
+        "m_AlwaysParry": false,
+        "m_NeverParry": true
+      },
+      {
+        "$type": "f08844ce14d498a45a9fc64582489a2a, AddContextStatBonus",
+        "name": "$AddContextStatBonus$ea175681-50ee-4d47-a124-65e450753517",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": []
+          }
+        },
+        "Descriptor": "None",
+        "Stat": "WarhammerStrength",
+        "Multiplier": 1,
+        "Value": {
+          "ValueType": "Simple",
+          "Value": 10,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1"
+        },
+        "IsPercentModifier": false,
+        "m_ActionsOnAdd": {
+          "Actions": []
+        }
       }
     ],
     "Author": "Unknown",

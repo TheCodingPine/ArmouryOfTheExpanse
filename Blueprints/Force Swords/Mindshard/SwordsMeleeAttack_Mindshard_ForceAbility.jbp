@@ -376,7 +376,7 @@
             {
               "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
               "name": "$ContextActionApplyBuff$7dd4f03274ee422882de561f929ff2cf",
-              "m_Buff": "!bp_720d4ae2b5504bef98ad58304e9c3ee8",
+              "m_Buff": "!bp_c57220b6341d478582b87e10cf287a47",
               "BuffEndCondition": "CombatEnd",
               "Permanent": true,
               "DurationValue": {
@@ -474,6 +474,29 @@
             "Main": false
           }
         ]
+      },
+      {
+        "$type": "c788cf748ec86bc45b986ac4de28cf45, AbilitySpawnFx",
+        "name": "$AbilitySpawnFx$4824abe3-3388-4967-8eac-3195d240489f",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "PrefabLink": {
+          "AssetId": "9025fd20876e40e48ba02e369b431acb"
+        },
+        "Time": "OnStart",
+        "Anchor": "Caster",
+        "WeaponTarget": "None",
+        "DestroyOnCast": false,
+        "Delay": 0.0,
+        "PositionAnchor": "None",
+        "UseExtraAttachment": false,
+        "AttachingSnapperIndex": 0,
+        "OrientationAnchor": "None",
+        "OrientationMode": "Copy"
       }
     ],
     "Author": "Unknown",
