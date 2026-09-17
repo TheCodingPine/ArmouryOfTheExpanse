@@ -35,8 +35,23 @@
         "All": false
       },
       {
-        "$type": "6dfdda28c94860241a112b404538e2a7, EquipmentRestrictionStat",
-        "name": "$EquipmentRestrictionStat$3d1b0ec6-a062-44f3-97c3-bcf1c3aebf9a",
+        "$type": "d19abe965ccc4bd2891e68c149a9ab56, AbilityCustomAnimationByBuff",
+        "name": "$AbilityCustomAnimationByBuff$7edfe3ed-2153-4af3-a0f3-667f589b45d1",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "DefaultAnimationLink": {
+          "AssetId": "a28cd14629d82f8499d909f63ef36155"
+        },
+        "OverrideAnimationType": "DollRoomVariantIdle",
+        "Variants": []
+      },
+      {
+        "$type": "413af50bdff935f47b1e347650b051da, EquipmentRestrictionStatMultiple",
+        "name": "$EquipmentRestrictionStatMultiple$1636c055-bd60-4148-bae6-d4712f06eb76",
         "m_Flags": 0,
         "PrototypeLink": {
           "guid": "",
@@ -46,7 +61,11 @@
         "Stat": "WarhammerStrength",
         "MinValue": 60,
         "m_ChangeRestrictionStatIfHasFact": true,
-        "m_Fact": "!bp_26376b596c474d67849613617ced7b04",
+        "m_Fact": [
+          "!bp_26376b596c474d67849613617ced7b04",
+          "!bp_c8ec9ba03016401eb1ecfe91688dd67e",
+          "!bp_fed3bf294e854602b77993da33dda329"
+        ],
         "m_SubtractionValue": 25
       }
     ],
@@ -60,10 +79,10 @@
       "Shared": null
     },
     "m_Description": {
-      "m_Key": "",
-      "m_OwnerString": "",
-      "m_OwnerPropertyPath": "",
-      "m_JsonPath": "",
+      "m_Key": "7ded68bf-d247-48cc-84e5-df1b532fb530",
+      "m_OwnerString": "f03a8a4cd37b4b88820784419b5ecdfc",
+      "m_OwnerPropertyPath": "m_Description",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\PowerFist\\PowerFist_Item_AotE_m_Description.json",
       "Shared": null
     },
     "m_Icon": {
@@ -98,7 +117,7 @@
     "m_Tag": "None",
     "m_IsNotable": false,
     "m_ProfitFactorCost": 0.0,
-    "m_CargoVolumePercent": 10,
+    "m_CargoVolumePercent": 20,
     "m_InventoryPutSound": "UI_INV_Power_Put_Play",
     "m_InventoryTakeSound": "UI_INV_Power_Take_Play",
     "ToCargoAutomatically": false,
@@ -152,16 +171,16 @@
         "m_FXSettings": "!bp_c4ebb100b9e44bb5a82f1403726b0158",
         "OnHitOverrideType": "None",
         "m_OnHitActions": null,
-        "AP": 0
+        "AP": 1
       },
       "Ability2": {
         "Type": "AOE",
         "Mode": "Default",
-        "m_Ability": "!bp_fc9fcd12873c4be9bdcf9659a9b28c27",
-        "m_FXSettings": "!bp_850188dd808741928ba92e6e3b3c5285",
+        "m_Ability": "!bp_1dedba3d136b4d7794bbf503adb2d52e",
+        "m_FXSettings": "!bp_c4ebb100b9e44bb5a82f1403726b0158",
         "OnHitOverrideType": "None",
         "m_OnHitActions": null,
-        "AP": 0
+        "AP": 2
       },
       "Ability3": {
         "Type": "SingleShot",
@@ -170,16 +189,16 @@
         "m_FXSettings": "!bp_6256056e200842b2af3a637fb37d6331",
         "OnHitOverrideType": "None",
         "m_OnHitActions": null,
-        "AP": 0
+        "AP": 2
       },
       "Ability4": {
-        "Type": "None",
+        "Type": "AOE",
         "Mode": "Default",
-        "m_Ability": null,
-        "m_FXSettings": null,
+        "m_Ability": "!bp_003cbd9bfaf2498a81c9d614a0ab5f47",
+        "m_FXSettings": "!bp_999087712fd84fa3bf43ae09d48e9da1",
         "OnHitOverrideType": "None",
         "m_OnHitActions": null,
-        "AP": 0
+        "AP": 2
       },
       "Ability5": {
         "Type": "None",
@@ -222,10 +241,10 @@
       "Shared": null
     },
     "IsTwoHanded": false,
-    "WarhammerDamage": 10,
-    "WarhammerMaxDamage": 15,
+    "WarhammerDamage": 15,
+    "WarhammerMaxDamage": 25,
     "WarhammerPenetration": 40,
-    "DodgePenetration": 45,
+    "DodgePenetration": 0,
     "AdditionalHitChance": 0,
     "WarhammerRecoil": 0,
     "WarhammerMaxDistance": 1,

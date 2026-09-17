@@ -5,6 +5,7 @@ using Kingmaker.Items.Slots;
 using Kingmaker.Visual.CharacterSystem;
 using Owlcat.Runtime.UI.MVVM;
 using System;
+using System.Reflection;
 using UniRx;
 using UnityEngine;
 using static StbDxtSharp.Error;
@@ -56,62 +57,68 @@ namespace ArmouryOfTheExpanse
             }
         }
 
+        #region Patch that lock both sets slots for Power Fist, like vanilla Shields
+        ////Patch that lock both sets slots for Power Fist, like vanilla Shields
+        //[HarmonyPatch(typeof(EquipSlotVM), nameof(EquipSlotVM.InitializeSecondSetSecondaryFakeItem))]
+        //public static class EquipSlotVM_InitializeSecondSetSecondaryFakeItem_Patch_Armoury
+        //{
+        //    [HarmonyPostfix]
+        //    static void AdditionalCheck(EquipSlotVM __instance, EquipSlotVM secondSetSecondarySlot)
+        //    {
+        //        try
+        //        {
+        //            if (secondSetSecondarySlot.HasItem && //if powerfist
+        //                (secondSetSecondarySlot.Item.Value.Blueprint?.AssetGuid == "f03a8a4cd37b4b88820784419b5ecdfc"|| secondSetSecondarySlot.Item.Value.OriginalBlueprint?.AssetGuid == "f03a8a4cd37b4b88820784419b5ecdfc"))
+        //            {
+        //                __instance.SecondSetSecondarySlot = secondSetSecondarySlot;
 
-        //Patch that lock both sets slots for Power Fist, like vanilla Shields
-        [HarmonyPatch(typeof(EquipSlotVM), nameof(EquipSlotVM.InitializeSecondSetSecondaryFakeItem))]
-        public static class EquipSlotVM_InitializeSecondSetSecondaryFakeItem_Patch_Armoury
-        {
-            [HarmonyPostfix]
-            static void AdditionalCheck(EquipSlotVM __instance, EquipSlotVM secondSetSecondarySlot)
-            {
-                try
-                {
-                    Main.log.Log($"Enter");
-                    if (secondSetSecondarySlot.HasItem && //if powerfist
-                        (secondSetSecondarySlot.Item.Value.Blueprint?.AssetGuid == "f03a8a4cd37b4b88820784419b5ecdfc"|| secondSetSecondarySlot.Item.Value.OriginalBlueprint?.AssetGuid == "f03a8a4cd37b4b88820784419b5ecdfc"))
-                    {
-                        __instance.SecondSetSecondarySlot = secondSetSecondarySlot;
-                        Main.log.Log($"A");
-                        var FakeItem = AccessTools.FieldRefAccess<EquipSlotVM, ReactiveProperty<ItemEntity>>("m_FakeItem");
-                        FakeItem(__instance) = secondSetSecondarySlot.Item;
-                        Main.log.Log($"B");
+        //                var FakeItem = AccessTools.FieldRefAccess<EquipSlotVM, ReactiveProperty<ItemEntity>>("m_FakeItem");
+        //                FakeItem(__instance) = secondSetSecondarySlot.Item;
 
-                        var addDisposable = AccessTools.Method(typeof(BaseDisposable), "AddDisposable");
-                        var getIcon = AccessTools.Method(typeof(EquipSlotVM), "GetIcon");
-                        Main.log.Log($"C");
+        //                Main.log.Log($"Get AddDisposable");
+        //                //var addDisposable = AccessTools.Method(typeof(BaseDisposable), "AddDisposable");
 
+        //                var addDisposable = typeof(BaseDisposable).GetMethod(
+        //                "AddDisposable",
+        //                BindingFlags.Instance | BindingFlags.NonPublic,
+        //                null,
+        //                new[] { typeof(IDisposable) },
+        //                null);
 
-                        //reflection fuckery that I refuse to aknowledge
-                        addDisposable.Invoke(__instance,
-                            new object[]
-                            {
-                                FakeItem(__instance).Subscribe(delegate
-                                {
-                                    __instance.Icon.Value = (Sprite)getIcon.Invoke(__instance, null);
-                                })
-                            }
-                        );
-                        Main.log.Log($"D");
+        //                //reflection fuckery that I refuse to aknowledge
+        //                addDisposable.Invoke(__instance,
+        //                    new object[]
+        //                    {
+        //                        FakeItem(__instance).Subscribe(delegate
+        //                        {
+        //                            __instance.Icon.Value = FakeItem(__instance).Value.Icon;
+        //                        })
+        //                    }
+        //                );
 
-                        addDisposable.Invoke(__instance,
-                        new object[]
-                        {
-                            FakeItem(__instance).CombineLatest(__instance.Item, (ItemEntity fake, ItemEntity item) => new { fake, item })
-                            .Subscribe(value =>
-                            {
-                                __instance.CanBeFakeItem.Value =
-                                    value.fake != null && value.item == null;
-                            })});
-                    }
-                }
-                catch (Exception)
-                {
-                    Main.log.Log($"[ArmouryOfTheExpanse][ERROR] bug duplicating {secondSetSecondarySlot.Item.Value.Name ?? " powerfist"} for second weapon slot");
-                }
+        //                addDisposable.Invoke(__instance,
+        //                new object[]
+        //                {
+        //                    FakeItem(__instance).CombineLatest(__instance.Item, (ItemEntity fake, ItemEntity item) => new { fake, item })
+        //                    .Subscribe(value =>
+        //                    {
+        //                        __instance.CanBeFakeItem.Value =
+        //                            //value.fake != null && value.item == null;
+        //                            true;
+        //                        Main.log.Log($"yay2");
+        //                    })});
+        //                Main.log.Log($"yay2");
 
-            }
-        }
+        //            }
+        //        }
+        //        catch (Exception)
+        //        {
+        //            Main.log.Log($"[ArmouryOfTheExpanse][ERROR] bug duplicating {secondSetSecondarySlot.Item.Value.Name ?? " powerfist"} for second weapon slot");                  
+        //        }
 
+        //    }
+        //}
+        #endregion
 
 
         //ADDB's "don't cut my PowerFist if the character have an Augment"

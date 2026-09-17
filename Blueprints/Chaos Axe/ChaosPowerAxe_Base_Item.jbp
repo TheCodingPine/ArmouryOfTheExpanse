@@ -1,0 +1,266 @@
+{
+  "AssetId": "543fb4a0ef1e4d3eaef77ab4417d840f",
+  "Data": {
+    "$type": "c00f723cccf2d314198c42a572c631fd, BlueprintItemWeapon",
+    "PrototypeLink": "2f350815a9444887bc05d3b2f170b970",
+    "m_Overrides": [
+      "m_Description",
+      "$AddFactToEquipmentWielder$0f2a649f-3ff7-434d-a2a4-c45720d11364",
+      "m_DisplayName",
+      "m_Rarity",
+      "WarhammerDamage",
+      "WarhammerMaxDamage",
+      "m_CargoVolumePercent"
+    ],
+    "Components": [
+      {
+        "$type": "d7b23547716f4a949471625ff6c66fb2, EquipmentRestrictionHasFacts",
+        "name": "$EquipmentRestrictionHasFacts$b94936b1-576f-4dd1-8b0f-1d202780ead5",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "2f350815a9444887bc05d3b2f170b970",
+          "name": "$EquipmentRestrictionHasFacts$b94936b1-576f-4dd1-8b0f-1d202780ead5"
+        },
+        "m_Overrides": [],
+        "m_Facts": [
+          "!bp_950565a69d144391897cdc0024747755",
+          "!bp_c7a53b43ac5f4f11a1aef612dd3f4f71",
+          "!bp_590cb5c394ee4b5eb213121c96063dec"
+        ],
+        "m_Inverted": true,
+        "All": false
+      },
+      {
+        "$type": "65221a9a6133bd0408b019b86642d97e, AddFactToEquipmentWielder",
+        "name": "$AddFactToEquipmentWielder$e40b08f5-42e6-49f5-9000-e3398907bb94",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "2f350815a9444887bc05d3b2f170b970",
+          "name": "$AddFactToEquipmentWielder$e40b08f5-42e6-49f5-9000-e3398907bb94"
+        },
+        "m_Overrides": [],
+        "m_Fact": "!bp_af6e5892f9a742a8a1c4aa3cd67ebd4e"
+      },
+      {
+        "$type": "ee483046b4df4eda8e96cd762bbdf594, ReapplyFactsFromItem",
+        "name": "$ReapplyFactsFromItem$ef36e098-a826-463f-9408-180df4ff8ee1",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "2f350815a9444887bc05d3b2f170b970",
+          "name": "$ReapplyFactsFromItem$ef36e098-a826-463f-9408-180df4ff8ee1"
+        },
+        "m_Overrides": [],
+        "Version": 1
+      },
+      {
+        "$type": "d7b23547716f4a949471625ff6c66fb2, EquipmentRestrictionHasFacts",
+        "name": "$EquipmentRestrictionHasFacts$21bc5798-43d2-4cdc-848e-af8cf51e804d",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "2f350815a9444887bc05d3b2f170b970",
+          "name": "$EquipmentRestrictionHasFacts$21bc5798-43d2-4cdc-848e-af8cf51e804d"
+        },
+        "m_Overrides": [
+          "m_Facts"
+        ],
+        "m_Facts": [
+          "!bp_fb7efcba2dcc427da2324d4066daf2d5"
+        ],
+        "m_Inverted": false,
+        "All": false
+      }
+    ],
+    "Author": "Unknown",
+    "Comment": "",
+    "m_DisplayName": {
+      "m_Key": "3c0c00cc-1114-45cb-a998-092e9fbcfbfa",
+      "m_OwnerString": "543fb4a0ef1e4d3eaef77ab4417d840f",
+      "m_OwnerPropertyPath": "m_DisplayName",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\Chaos Axe\\ChaosPowerAxe_Base_Item_m_DisplayName.json",
+      "Shared": null
+    },
+    "m_Description": {
+      "m_Key": "e5e6ad3c-042c-41d2-97f3-630ed12b2755",
+      "m_OwnerString": "543fb4a0ef1e4d3eaef77ab4417d840f",
+      "m_OwnerPropertyPath": "m_Description",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\Chaos Axe\\ChaosPowerAxe_Base_Item_m_Description.json",
+      "Shared": null
+    },
+    "m_Icon": {
+      "guid": "64e235fe30381344098a3d7db39bec0a",
+      "fileid": 21300000
+    },
+    "m_FlavorText": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "m_NonIdentifiedNameText": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "m_NonIdentifiedDescriptionText": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "m_NotStackable": false,
+    "m_Weight": 0.0,
+    "m_Origin": "Chaos",
+    "m_Rarity": "Pattern",
+    "m_Tag": "None",
+    "m_IsNotable": false,
+    "m_ProfitFactorCost": 0.0,
+    "m_CargoVolumePercent": 15,
+    "m_InventoryPutSound": "UI_INV_Power_Put_Play",
+    "m_InventoryTakeSound": "UI_INV_Power_Take_Play",
+    "ToCargoAutomatically": false,
+    "ItemLevel": 0,
+    "SpendCharges": false,
+    "Charges": 1,
+    "RestoreChargesAfterCombat": false,
+    "IsNonRemovable": false,
+    "IsUnlootable": false,
+    "m_EquipmentEntity": null,
+    "m_EquipmentEntityAlternatives": [],
+    "m_ForcedRampColorPresetIndex": -1,
+    "m_VisualParameters": {
+      "m_WeaponAnimationStyle": "BrutalOneHanded",
+      "m_SpecialAnimation": "None",
+      "m_BurstAnimationDelay": 0.0,
+      "m_WeaponModel": {
+        "guid": "4cdea1cb8c6af9443a7798200135dbbc",
+        "fileid": 1320795167239849111
+      },
+      "m_WeaponBeltModelOverride": null,
+      "m_WeaponSheathModelOverride": null,
+      "m_SoundSize": "None",
+      "m_SoundType": "None",
+      "m_SoundSizeSwitch": {
+        "Value": "",
+        "Group": ""
+      },
+      "m_SoundTypeSwitch": {
+        "Value": "Power",
+        "Group": "ProjectileType"
+      },
+      "m_MuffledTypeSwitch": {
+        "Value": "",
+        "Group": ""
+      },
+      "m_MissSoundType": "None",
+      "m_EquipSound": "Foley_WP_M_PowerAxe_Equip_Play",
+      "m_UnequipSound": "Foley_WP_M_PowerAxe_Remove_Play",
+      "m_OutOfAmmoSound": "",
+      "m_InventoryEquipSound": "UI_INV_Power_Equip_Play",
+      "m_InventoryPutSound": "UI_INV_Power_Put_Play",
+      "m_InventoryTakeSound": "UI_INV_Power_Take_Play"
+    },
+    "m_OnHitActions": null,
+    "AbilityContainer": {
+      "Ability1": {
+        "Type": "SingleShot",
+        "Mode": "Default",
+        "m_Ability": "!bp_be721a48e3614ddbb86bf18503511c2c",
+        "m_FXSettings": "!bp_5a72a93ee3bd4a049aa4ddef1e4c7f84",
+        "OnHitOverrideType": "None",
+        "m_OnHitActions": null,
+        "AP": 1
+      },
+      "Ability2": {
+        "Type": "AOE",
+        "Mode": "Default",
+        "m_Ability": "!bp_a4e6fe4661514cddb05ec43db1b7c296",
+        "m_FXSettings": "!bp_5a72a93ee3bd4a049aa4ddef1e4c7f84",
+        "OnHitOverrideType": "None",
+        "m_OnHitActions": null,
+        "AP": 2
+      },
+      "Ability3": {
+        "Type": "SingleShot",
+        "Mode": "Default",
+        "m_Ability": "!bp_a270dbb75ea44128b951b5d18d0b6bed",
+        "m_FXSettings": "!bp_5a72a93ee3bd4a049aa4ddef1e4c7f84",
+        "OnHitOverrideType": "Add",
+        "m_OnHitActions": "!bp_33bf9dffa6fd42c2af0edd0e045ea5c6",
+        "AP": 2
+      },
+      "Ability4": {
+        "Type": "None",
+        "Mode": "Default",
+        "m_Ability": null,
+        "m_FXSettings": null,
+        "OnHitOverrideType": "None",
+        "m_OnHitActions": null,
+        "AP": 0
+      },
+      "Ability5": {
+        "Type": "None",
+        "Mode": "Default",
+        "m_Ability": null,
+        "m_FXSettings": null,
+        "OnHitOverrideType": "None",
+        "m_OnHitActions": null,
+        "AP": 0
+      }
+    },
+    "m_AttackOfOpportunityAbility": "!bp_be721a48e3614ddbb86bf18503511c2c",
+    "m_AttackOfOpportunityAbilityFXSettings": "!bp_5a72a93ee3bd4a049aa4ddef1e4c7f84",
+    "Category": "Melee",
+    "Family": "Power",
+    "Classification": "None",
+    "m_HoldingType": "OneHanded",
+    "m_Range": "Melee",
+    "m_Heaviness": "NotHeavy",
+    "CanBeUsedInGame": true,
+    "m_TypeNameText": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "m_DefaultNameText": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "m_DescriptionText": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "IsTwoHanded": false,
+    "WarhammerDamage": 12,
+    "WarhammerMaxDamage": 19,
+    "WarhammerPenetration": 40,
+    "DodgePenetration": 0,
+    "AdditionalHitChance": 0,
+    "WarhammerRecoil": 0,
+    "WarhammerMaxDistance": 1,
+    "WarhammerMaxAmmo": -1,
+    "RateOfFire": 0,
+    "m_Enchantments": [
+      "!bp_800d7bc0c93b46cea5716353cea78748"
+    ],
+    "m_DamageType": {
+      "Type": "Power"
+    },
+    "m_IsNatural": false,
+    "m_DamageStatBonusFactor": "One"
+  },
+  "Meta": {
+    "ShadowDeleted": false
+  }
+}

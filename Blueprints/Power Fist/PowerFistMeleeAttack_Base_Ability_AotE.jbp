@@ -95,21 +95,6 @@
         "m_DisableOverpenetration": false,
         "m_AutoHit": false,
         "m_IsLosDefinedByPattern": false
-      },
-      {
-        "$type": "d19abe965ccc4bd2891e68c149a9ab56, AbilityCustomAnimationByBuff",
-        "name": "$AbilityCustomAnimationByBuff$b90b44bb-db69-4e05-bbf4-e268d902d879",
-        "m_Flags": 0,
-        "PrototypeLink": {
-          "guid": "",
-          "name": ""
-        },
-        "m_Overrides": [],
-        "DefaultAnimationLink": {
-          "AssetId": "3b1c163057cd0714fb646013774081e3"
-        },
-        "OverrideAnimationType": "Unused",
-        "Variants": []
       }
     ],
     "Author": "Unknown",

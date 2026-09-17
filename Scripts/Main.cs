@@ -105,34 +105,37 @@ namespace ArmouryOfTheExpanse
 
         public static void ApplyPatches()
         {
-            if (ModsDependanciesManager.modList?.Where(x => x.Name == "PsykersOfTheExpanse"
-                && x.isLoaded == true).Any() ?? false) 
+            if (ModsDependanciesManager.IsModActive("PsykersOfTheExpanse")) 
             {
                 log.Log("Applying conditional patches for PsykersOfTheExpanse");
                 log.Log("Patching for PsykersOfTheExpanse complete");
             }
 
-            if (ModsDependanciesManager.modList?.Where(x => x.Name == "OriginsOfTheExpanse"
-                && x.isLoaded == true).Any() ?? false)
+            if (ModsDependanciesManager.IsModActive("OriginsOfTheExpanse"))
             {
                 log.Log("Applying conditional patches for OriginsOfTheExpanse");
                 log.Log("Patching for OriginsOfTheExpanse complete");
             }
 
-            if (ModsDependanciesManager.modList?.Where(x => x.Name == "DPWeaponAssetPack"
-                && x.isLoaded == true).Any() ?? false)
+            if (ModsDependanciesManager.IsModActive("DPWeaponAssetPack"))
             {
                 log.Log("Applying conditional patches for DPWeaponAssetPack");
                 DPAssetsManager.Apply();
                 log.Log("Patching for DPWeaponAssetPack complete");
             }
 
-
+            if (ModsDependanciesManager.IsModActive("ArmourySisterOfSilence"))
+            {
+                //log.Log("Applying conditional patches for ArmourySisterOfSilence");
+                //log.Log("Patching for ArmourySisterOfSilence complete");
+            }
 
             PlaceWeaponsByHand();
 
             ApplyPatchesFromSettings();
         }
+
+
 
         public static void ApplyPatchesFromSettings()
         {

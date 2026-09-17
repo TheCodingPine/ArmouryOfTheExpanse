@@ -1,16 +1,4 @@
-using HarmonyLib;
-using Kingmaker.Blueprints;
-using Kingmaker.Blueprints.JsonSystem;
-using Kingmaker.Items;
-using Kingmaker.Items.Slots;
-using Kingmaker.Modding;
-using Kingmaker.Visual.CharacterSystem;
-using Owlcat.Runtime.Core.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
-using UnityModManagerNet;
 
 namespace ArmouryOfTheExpanse
 {

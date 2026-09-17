@@ -16,7 +16,8 @@
       "$EquipmentRestrictionHasFacts$eda6d7dc-a9a2-4957-b762-761bf05b0303",
       "$EquipmentRestrictionHasFacts$ab6c4c8f-2a56-4790-9b07-941836891256",
       "m_DisplayName",
-      "m_Icon"
+      "m_Icon",
+      "m_DamageStatBonusFactor"
     ],
     "Components": [
       {
@@ -280,7 +281,7 @@
       "Type": "Energy"
     },
     "m_IsNatural": false,
-    "m_DamageStatBonusFactor": "One"
+    "m_DamageStatBonusFactor": "Two"
   },
   "Meta": {
     "ShadowDeleted": false

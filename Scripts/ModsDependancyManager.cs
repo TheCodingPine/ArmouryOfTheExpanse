@@ -19,6 +19,7 @@ namespace ArmouryOfTheExpanse
             modList.Add(new SupportedMod("PsykersOfTheExpanse", ModType.OwlMod));
             modList.Add(new SupportedMod("OriginsOfTheExpanse", ModType.OwlMod));
             modList.Add(new SupportedMod("DPWeaponAssetPack", ModType.OwlMod));
+            modList.Add(new SupportedMod("ArmourySisterOfSilence", ModType.OwlMod));
             modList.Add(new SupportedMod("TestNotThereFakeMod", ModType.OwlMod));
 
 
@@ -26,6 +27,12 @@ namespace ArmouryOfTheExpanse
             {
                 mod.isLoaded = IsModEnabled(mod.Name, mod.type);
             }
+        }
+
+        internal static bool IsModActive(string modName)
+        {
+            return ModsDependanciesManager.modList?.Where(x => x.Name == modName
+                && x.isLoaded == true).Any() ?? false;
         }
 
         #region CascadingDragon's dependency finder 

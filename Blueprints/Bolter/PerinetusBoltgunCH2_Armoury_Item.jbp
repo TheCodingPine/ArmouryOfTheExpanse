@@ -52,27 +52,6 @@
         ],
         "m_Inverted": true,
         "All": false
-      },
-      {
-        "$type": "c8cf2b4638d44ca29565527b0d0b90c2, AddStringToFactName",
-        "name": "$AddStringToFactName$c5bc1ce9-9929-4d73-a2f7-da54a0e36571",
-        "m_Flags": "Disabled",
-        "PrototypeLink": {
-          "guid": "",
-          "name": ""
-        },
-        "m_Overrides": [],
-        "m_AdditionalString": {
-          "m_Key": "",
-          "m_OwnerString": "",
-          "m_OwnerPropertyPath": "",
-          "m_JsonPath": "",
-          "Shared": {
-            "assetguid": "934c56b8baabd7542923ca81ddf127f6",
-            "stringkey": "4647d8ed-a158-4cfc-b1e7-b271a3b3e52c"
-          }
-        },
-        "JunctionType": "BeforeFirstSquareBrackets"
       }
     ],
     "Author": "ElenaMironova",

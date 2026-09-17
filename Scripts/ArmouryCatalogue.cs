@@ -30,6 +30,8 @@ namespace ArmouryOfTheExpanse
  
                             //Power 2Handed
                                 //eldar 2handed
+                        new ArmouryElement("c73134e3679741afb6e898734c4eded6", DPAsset.Ghostglaive2H), //eldar 2handed power sword ch2 archmilitant
+                        new ArmouryElement("0307f71cd16d4148937cdc08e599155e", DPAsset.Ghostglaive2H), //eldar 2handed power sword ch4 archmilitant
                             //Power 1Handed
                         new ArmouryElement("3b1cdbdec35f4d249c5d0eaf57778046", DPAsset.DarktideA), //new asset [Kiava Gamma Pattern] Power Sword
                         new ArmouryElement("5f54e5c81b25449eaf410483c709d343", DPAsset.DarktideA, AuraColor.PowerRedAura), //Beastflayer
@@ -94,14 +96,18 @@ namespace ArmouryOfTheExpanse
                         //new WeaponLocation("e11922e693164c0895e415b76a7ba809", ""), //act1 base alternative
  
                         //    //Power 2Handed
-                        //        //eldar 2handed
+                        new WeaponLocation("c73134e3679741afb6e898734c4eded6", "5860ea12e71942a4a2db7e7f5af01888"), //Eldar Power Sword Act2                      
+                        new WeaponLocation("0307f71cd16d4148937cdc08e599155e", "42384b430d9b49ce91ed2edc76e73b6f"), //Eldar Power Sword Act4                      
+                        
                         //    //Power 1Handed
                         //new WeaponLocation("3b1cdbdec35f4d249c5d0eaf57778046", ""), //new asset [Kiava Gamma Pattern] Power Sword
                         //new WeaponLocation("5f54e5c81b25449eaf410483c709d343", ""), //Beastflayer
                         //new WeaponLocation("ae22ac5586ac44f4bb2b2bda8667bdb3", ""), //Savant's Razor
                         //new WeaponLocation("e9f3637e43ad4d7cabb73ea11c9bf365", ""), //Savant's Talon
-                        
-                                                                                                  
+                        new WeaponLocation("f4761faf303d4c20994656e441088dd3", "f3d3801b5e0e4c3dae5bdc30db3b7503"), //Chaos Axe ch3                      
+                        new WeaponLocation("543fb4a0ef1e4d3eaef77ab4417d840f", "496fc822948545969cbf8e4ab471d3f4"), //Chaos Axe ch1                     
+                        new WeaponLocation("b37b43bb34a741bba8aae822d7df56ae", "db3fc9f8d0e24d71a2dd7b599021fb31"), //Chaos Axe ch4                    
+                                                       
                         ////Ranged
                         //    //Plasma Cannon
                         //new WeaponLocation("e4570c06ba5c4dd9bb0734d85ad81ce4", ""), //Act1 plasma cannon
@@ -124,7 +130,10 @@ namespace ArmouryOfTheExpanse
                         //    //Perinetus
                         //new WeaponLocation("9d6c7ba68b6a49b598948b52b2c20bb2", ""), //act1
                         //new WeaponLocation("1b000bf9569146deb33e94d1cff3f615", "") //act2
+                        new WeaponLocation("f03a8a4cd37b4b88820784419b5ecdfc", "862fd1977fe24b4681653c24be852437"), //PowerFist
+
                         
+
                     };
                 }
                 int? count = _locations.Count;
@@ -157,6 +166,9 @@ namespace ArmouryOfTheExpanse
     {
         public string guidWeapon { get; }
         public string guidContainer { get; }
+        /// <summary>Weapon location holder </summary>
+        /// <param name="guidWeapon">weapon guid</param>
+        /// <param name="guidContainer">container guid</param>
         public WeaponLocation(string guidWeapon, string guidContainer)
         {
             this.guidWeapon = guidWeapon;

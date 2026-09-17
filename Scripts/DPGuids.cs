@@ -98,7 +98,6 @@ public static class DPAssetsManager
                 {
                     Main.log.Log($"[ERROR] jbp {catalogueItem.Guid} not found, can't switch to {catalogueItem.NewVisual}");
                 }
-
             }
             catch (System.Exception)
             {
@@ -225,7 +224,6 @@ public enum DPAsset
     //2Handed
     Runeblade,
     Runeblade_On,
-
     //Ranged
     //Sniper
     BoltSniper_SM,
@@ -245,7 +243,9 @@ public enum DPAsset
     Autocannon_Black,
     Autocannon_Blue,
     Autocannon_Red,
+    //Eldari 2handed
     Ghostglaive2H,
+    //Bolter
     Perinetus_Black,
     Perinetus_Green,
     AngelusCarabine
@@ -402,6 +402,7 @@ public class DPGuids
         {
             //failed to fetch DP's blueprint - update Assetpack?
             Main.log.Log($"[ERROR] jbp {guid} icon not found, applying a fallback");
+            ///TODO this is probably wrong? I want to keep the original or a dummy
             var runeblade = ResourcesLibrary.TryGetBlueprint<BlueprintItemWeapon>("4d4a35e52d564c7ea5462c1c70237aa9"); //swordbasetemplate
             var sprite = AccessTools.FieldRefAccess<BlueprintItemWeapon, UnityEngine.Sprite>("m_Icon");
             return sprite(runeblade);

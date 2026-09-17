@@ -18,7 +18,9 @@
       "WarhammerPenetration",
       "IsTwoHanded",
       "Author",
-      "WeaponAbilities.Ability3.m_Ability"
+      "WeaponAbilities.Ability3.m_Ability",
+      "m_Enchantments",
+      "m_DamageStatBonusFactor"
     ],
     "Components": [
       {
@@ -109,6 +111,17 @@
         },
         "m_Overrides": [],
         "m_Fact": "!bp_304fa8a6ec804d14962ade90caab0615"
+      },
+      {
+        "$type": "65221a9a6133bd0408b019b86642d97e, AddFactToEquipmentWielder",
+        "name": "$AddFactToEquipmentWielder$ad9ad9df-a6f4-4f20-b1be-2d7c277fa363",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "m_Fact": "!bp_b6444939f07e458886eb4f5eb62667e7"
       }
     ],
     "Author": "Unknown",
@@ -293,13 +306,13 @@
     "WarhammerMaxAmmo": -1,
     "RateOfFire": 0,
     "m_Enchantments": [
-      "!bp_be03a9726a8a4b6991c0e76eba1301d7"
+      "!bp_c11c5367d526416ebbf93f02f1d3a506"
     ],
     "m_DamageType": {
       "Type": "Energy"
     },
     "m_IsNatural": false,
-    "m_DamageStatBonusFactor": "One"
+    "m_DamageStatBonusFactor": "Two"
   },
   "Meta": {
     "ShadowDeleted": false

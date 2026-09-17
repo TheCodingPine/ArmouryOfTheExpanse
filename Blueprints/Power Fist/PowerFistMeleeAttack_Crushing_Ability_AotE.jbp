@@ -41,7 +41,7 @@
             "m_Type": "Circle",
             "m_Blueprint": null,
             "m_Radius": 0,
-            "m_Angle": 0
+            "m_Angle": 30
           },
           "Targets": "Enemy",
           "CastOnSameLevel": false,
@@ -104,6 +104,58 @@
           "Conditions": []
         },
         "m_BuffToCaster": null
+      },
+      {
+        "$type": "66e032e5cf38801428940a1a0d14b946, AbilityEffectRunAction",
+        "name": "$AbilityEffectRunAction$9c754caf-d71f-4796-9cdc-ee2a40834864",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "SavingThrowType": "Unknown",
+        "Actions": {
+          "Actions": [
+            {
+              "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
+              "name": "$ContextActionApplyBuff$8193edf1-940f-4079-aa90-58df33899b02",
+              "m_Buff": "!bp_b167cf3d1a7640e28dcfe12c29232017",
+              "BuffEndCondition": "CombatEnd",
+              "Permanent": false,
+              "DurationValue": {
+                "RoundsValue": {
+                  "ValueType": "Simple",
+                  "Value": 1,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null,
+                  "PropertyName": "Value1"
+                }
+              },
+              "ToCaster": false,
+              "AsChild": false,
+              "SameDuration": false,
+              "Ranks": {
+                "ValueType": "Simple",
+                "Value": 1,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "None",
+                "m_CustomProperty": null,
+                "PropertyName": "Value1"
+              },
+              "ActionsOnApply": {
+                "Actions": []
+              },
+              "ActionsOnImmune": {
+                "Actions": []
+              },
+              "AddFactSource": false
+            }
+          ]
+        }
       }
     ],
     "Author": "Unknown",
@@ -122,7 +174,10 @@
       "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\PowerFist\\PowerFistMeleeAttack_Crushing_Ability_AotE_m_Description.json",
       "Shared": null
     },
-    "m_Icon": null,
+    "m_Icon": {
+      "guid": "d66b5b404d0f59041bbad804cbac1b20",
+      "fileid": 21300000
+    },
     "m_AllowNonContextActions": false,
     "Type": "Weapon",
     "Range": "Weapon",
@@ -163,7 +218,9 @@
     "UsingInThreateningArea": "CanUseWithoutAOO",
     "UsingInOverwatchArea": "WillCauseAttack",
     "CombatStateRestriction": "NoRestriction",
-    "m_AbilityGroups": [],
+    "m_AbilityGroups": [
+      "!bp_1cf206b13141425491c379bc75ef0699"
+    ],
     "MaterialComponent": {
       "m_Item": null,
       "Count": 1

@@ -1,0 +1,318 @@
+{
+  "AssetId": "0ac65d7bd0094985ba54b02e0d8fbc7b",
+  "Data": {
+    "$type": "c00f723cccf2d314198c42a572c631fd, BlueprintItemWeapon",
+    "PrototypeLink": "537ccdd66a134173a47f3e8c64553fd9",
+    "m_Overrides": [
+      "m_Description",
+      "m_Icon",
+      "m_Origin",
+      "m_CargoVolumePercent",
+      "m_VisualParameters.m_WeaponModel",
+      "m_VisualParameters.m_SoundTypeSwitch",
+      "m_VisualParameters.m_EquipSound",
+      "m_VisualParameters.m_UnequipSound",
+      "m_VisualParameters.m_InventoryEquipSound",
+      "m_VisualParameters.m_InventoryPutSound",
+      "m_VisualParameters.m_InventoryTakeSound",
+      "WeaponAbilities.Ability1.m_FXSettings",
+      "WeaponAbilities.Ability2.m_FXSettings",
+      "WarhammerDamage",
+      "WarhammerMaxDamage",
+      "WarhammerPenetration",
+      "WarhammerMinimalStrength",
+      "m_Enchantments",
+      "m_DamageType.Type",
+      "CanBeUsedInGame",
+      "WeaponAbilities.Ability3.m_FXSettings",
+      "m_AttackOfOpportunityAbilityFXSettings",
+      "$StackingUnitProperty$ef29d6aa-5a38-4575-bf44-bd438e635e33",
+      "$StackingUnitProperty$361fb980-a794-44db-9726-b0f1dfa33206",
+      "$EquipmentRestrictionHasFacts$b94936b1-576f-4dd1-8b0f-1d202780ead5",
+      "WeaponAbilities.Ability3.m_OnHitActions",
+      "$AddFactToEquipmentWielder$e40b08f5-42e6-49f5-9000-e3398907bb94",
+      "$ReapplyFactsFromItem$ef36e098-a826-463f-9408-180df4ff8ee1",
+      "Author",
+      "m_InventoryPutSound",
+      "m_InventoryTakeSound",
+      "m_DisplayName",
+      "$AdditionalDescriptionComponent$579cbe57-5cd4-4343-869c-c2ab4714c2f5",
+      "$AdditionalDescriptionComponent$ebe56aab-7c86-4a57-b834-10b1b7534677",
+      "$AddFactToEquipmentWielder$0f2a649f-3ff7-434d-a2a4-c45720d11364",
+      "Classification",
+      "$UIPropertiesComponent$0b159586-0181-47bc-b06d-05b38bb299b7",
+      "Family",
+      "m_Rarity"
+    ],
+    "Components": [
+      {
+        "$type": "d7b23547716f4a949471625ff6c66fb2, EquipmentRestrictionHasFacts",
+        "name": "$EquipmentRestrictionHasFacts$b94936b1-576f-4dd1-8b0f-1d202780ead5",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "m_Facts": [
+          "!bp_950565a69d144391897cdc0024747755",
+          "!bp_c7a53b43ac5f4f11a1aef612dd3f4f71",
+          "!bp_590cb5c394ee4b5eb213121c96063dec"
+        ],
+        "m_Inverted": true,
+        "All": false
+      },
+      {
+        "$type": "65221a9a6133bd0408b019b86642d97e, AddFactToEquipmentWielder",
+        "name": "$AddFactToEquipmentWielder$e40b08f5-42e6-49f5-9000-e3398907bb94",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "m_Fact": "!bp_af6e5892f9a742a8a1c4aa3cd67ebd4e"
+      },
+      {
+        "$type": "65221a9a6133bd0408b019b86642d97e, AddFactToEquipmentWielder",
+        "name": "$AddFactToEquipmentWielder$e3329f9f-f7cd-40ef-baa6-7f4825e8e221",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "m_Fact": "!bp_1d7c95d70c0f45d48363b042fa77319e"
+      },
+      {
+        "$type": "65221a9a6133bd0408b019b86642d97e, AddFactToEquipmentWielder",
+        "name": "$AddFactToEquipmentWielder$c41c9d27-2a83-4f93-92b2-d07c3477d2a4",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "m_Fact": "!bp_bb6522cabb1d4604be666b65b273185c"
+      },
+      {
+        "$type": "d7b23547716f4a949471625ff6c66fb2, EquipmentRestrictionHasFacts",
+        "name": "$EquipmentRestrictionHasFacts$21bc5798-43d2-4cdc-848e-af8cf51e804d",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "m_Facts": [
+          "!bp_9eeb3cc7064e407ba025c8adf2b4d5e9"
+        ],
+        "m_Inverted": false,
+        "All": false
+      },
+      {
+        "$type": "ee483046b4df4eda8e96cd762bbdf594, ReapplyFactsFromItem",
+        "name": "$ReapplyFactsFromItem$ef36e098-a826-463f-9408-180df4ff8ee1",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Version": 1
+      }
+    ],
+    "Author": "Unknown",
+    "Comment": "",
+    "m_DisplayName": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "m_Description": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "m_Icon": {
+      "guid": "64e235fe30381344098a3d7db39bec0a",
+      "fileid": 21300000
+    },
+    "m_FlavorText": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "m_NonIdentifiedNameText": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "m_NonIdentifiedDescriptionText": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "m_NotStackable": false,
+    "m_Weight": 0.0,
+    "m_Origin": "Chaos",
+    "m_Rarity": "Unique",
+    "m_Tag": "None",
+    "m_IsNotable": false,
+    "m_ProfitFactorCost": 0.0,
+    "m_CargoVolumePercent": 25,
+    "m_InventoryPutSound": "UI_INV_Power_Put_Play",
+    "m_InventoryTakeSound": "UI_INV_Power_Take_Play",
+    "ToCargoAutomatically": false,
+    "ItemLevel": 0,
+    "SpendCharges": false,
+    "Charges": 1,
+    "RestoreChargesAfterCombat": false,
+    "IsNonRemovable": false,
+    "IsUnlootable": false,
+    "m_EquipmentEntity": null,
+    "m_EquipmentEntityAlternatives": [],
+    "m_ForcedRampColorPresetIndex": -1,
+    "m_VisualParameters": {
+      "m_WeaponAnimationStyle": "BrutalOneHanded",
+      "m_SpecialAnimation": "None",
+      "m_BurstAnimationDelay": 0.0,
+      "m_WeaponModel": {
+        "guid": "4cdea1cb8c6af9443a7798200135dbbc",
+        "fileid": 1320795167239849111
+      },
+      "m_WeaponBeltModelOverride": null,
+      "m_WeaponSheathModelOverride": null,
+      "m_SoundSize": "None",
+      "m_SoundType": "None",
+      "m_SoundSizeSwitch": {
+        "Value": "",
+        "Group": ""
+      },
+      "m_SoundTypeSwitch": {
+        "Value": "Power",
+        "Group": "ProjectileType"
+      },
+      "m_MuffledTypeSwitch": {
+        "Value": "",
+        "Group": ""
+      },
+      "m_MissSoundType": "None",
+      "m_EquipSound": "Foley_WP_M_PowerAxe_Equip_Play",
+      "m_UnequipSound": "Foley_WP_M_PowerAxe_Remove_Play",
+      "m_OutOfAmmoSound": "",
+      "m_InventoryEquipSound": "UI_INV_Power_Equip_Play",
+      "m_InventoryPutSound": "UI_INV_Power_Put_Play",
+      "m_InventoryTakeSound": "UI_INV_Power_Take_Play"
+    },
+    "m_OnHitActions": null,
+    "AbilityContainer": {
+      "Ability1": {
+        "Type": "SingleShot",
+        "Mode": "Default",
+        "m_Ability": "!bp_be721a48e3614ddbb86bf18503511c2c",
+        "m_FXSettings": "!bp_5a72a93ee3bd4a049aa4ddef1e4c7f84",
+        "OnHitOverrideType": "None",
+        "m_OnHitActions": null,
+        "AP": 1
+      },
+      "Ability2": {
+        "Type": "AOE",
+        "Mode": "Default",
+        "m_Ability": "!bp_a4e6fe4661514cddb05ec43db1b7c296",
+        "m_FXSettings": "!bp_5a72a93ee3bd4a049aa4ddef1e4c7f84",
+        "OnHitOverrideType": "None",
+        "m_OnHitActions": null,
+        "AP": 2
+      },
+      "Ability3": {
+        "Type": "SingleShot",
+        "Mode": "Default",
+        "m_Ability": "!bp_a270dbb75ea44128b951b5d18d0b6bed",
+        "m_FXSettings": "!bp_5a72a93ee3bd4a049aa4ddef1e4c7f84",
+        "OnHitOverrideType": "Add",
+        "m_OnHitActions": "!bp_33bf9dffa6fd42c2af0edd0e045ea5c6",
+        "AP": 2
+      },
+      "Ability4": {
+        "Type": "None",
+        "Mode": "Default",
+        "m_Ability": null,
+        "m_FXSettings": null,
+        "OnHitOverrideType": "None",
+        "m_OnHitActions": null,
+        "AP": 0
+      },
+      "Ability5": {
+        "Type": "None",
+        "Mode": "Default",
+        "m_Ability": null,
+        "m_FXSettings": null,
+        "OnHitOverrideType": "None",
+        "m_OnHitActions": null,
+        "AP": 0
+      }
+    },
+    "m_AttackOfOpportunityAbility": "!bp_be721a48e3614ddbb86bf18503511c2c",
+    "m_AttackOfOpportunityAbilityFXSettings": "!bp_5a72a93ee3bd4a049aa4ddef1e4c7f84",
+    "Category": "Melee",
+    "Family": "Power",
+    "Classification": "None",
+    "m_HoldingType": "OneHanded",
+    "m_Range": "Melee",
+    "m_Heaviness": "NotHeavy",
+    "CanBeUsedInGame": true,
+    "m_TypeNameText": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "m_DefaultNameText": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "m_DescriptionText": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "IsTwoHanded": false,
+    "WarhammerDamage": 30,
+    "WarhammerMaxDamage": 45,
+    "WarhammerPenetration": 40,
+    "DodgePenetration": 0,
+    "AdditionalHitChance": 0,
+    "WarhammerRecoil": 0,
+    "WarhammerMaxDistance": 1,
+    "WarhammerMaxAmmo": -1,
+    "RateOfFire": 0,
+    "m_Enchantments": [
+      "!bp_800d7bc0c93b46cea5716353cea78748"
+    ],
+    "m_DamageType": {
+      "Type": "Power"
+    },
+    "m_IsNatural": false,
+    "m_DamageStatBonusFactor": "One"
+  },
+  "Meta": {
+    "ShadowDeleted": false
+  }
+}
