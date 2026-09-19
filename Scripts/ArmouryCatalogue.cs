@@ -132,6 +132,8 @@ namespace ArmouryOfTheExpanse
                         //new WeaponLocation("1b000bf9569146deb33e94d1cff3f615", "") //act2
                         new WeaponLocation("f03a8a4cd37b4b88820784419b5ecdfc", "862fd1977fe24b4681653c24be852437"), //PowerFist
 
+                        //    //Headgers
+                        new WeaponLocation("3c98a8255c0d45149e568fe9aaa2f499", "0587258c80bc42a5a98df1a2be4dcc0f"), //Nurgle Hood, Blackship
                         
 
                     };

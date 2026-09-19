@@ -1,0 +1,323 @@
+{
+  "AssetId": "abe24a2000cc4cecacbb858cc3189374",
+  "Data": {
+    "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "9cb8cadd214341dbbc558d4097cdf57c, AbilityRuleTriggerInitiator",
+        "name": "$AbilityRuleTriggerInitiator$6e005981-d2d1-4372-92af-1329c6eee914",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "BoolAnd",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": [
+              {
+                "$type": "6a45c42d96204b7d930bd97fa922b35d, CheckAbilityGroupGetter",
+                "name": "$CheckAbilityGroupGetter$b1c6ea47-f4d0-42fc-8b0c-30de1b530a9e",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": false,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                },
+                "m_Groups": [
+                  "!bp_36fdf1bc96884a9e803dcbcc8e447785"
+                ]
+              },
+              {
+                "$type": "d04a8b4d1fec4545b9e4d90b81ce2498, HasFactGetter",
+                "name": "$HasFactGetter$e3e6d95f7c0042a9b74be7f1fbd45496",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": true,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                },
+                "m_Fact": "!bp_39caa5ad1d0c4940b3f445ee4097fc89",
+                "Target": "CurrentEntity"
+              }
+            ]
+          }
+        },
+        "Action": {
+          "Actions": [
+            {
+              "$type": "2dcc60a5b076f0047b982e9d4c04b226, ContextActionOnRandomTargetsAround",
+              "name": "$ContextActionOnRandomTargetsAround$dcfdd28d-bd7d-4b6c-970b-f8f92889f5f4",
+              "OnEnemies": true,
+              "OnlyAllies": false,
+              "Actions": {
+                "Actions": [
+                  {
+                    "$type": "201fdfba40fb4b01878e7c56cf37d3cc, ContextActionDealDoTDamage",
+                    "name": "$ContextActionDealDoTDamage$d2d88da3-4604-439c-901b-d30136bff46f",
+                    "AllTypes": false,
+                    "Type": "Toxic"
+                  },
+                  {
+                    "$type": "201fdfba40fb4b01878e7c56cf37d3cc, ContextActionDealDoTDamage",
+                    "name": "$ContextActionDealDoTDamage$6860ee39-f442-4b0b-b3c0-309957fb8233",
+                    "AllTypes": false,
+                    "Type": "PsykerToxin"
+                  }
+                ]
+              },
+              "NumberOfTargets": 99,
+              "TilesRadius": 6,
+              "LowestWounds": false,
+              "HighestWounds": false,
+              "AffectDead": false,
+              "AffectUnconscious": false,
+              "m_FilterNoFact": null,
+              "m_FilterHasFact": null
+            },
+            {
+              "$type": "5f950c181b3157a4486fcd36b702b702, ContextActionOnContextCaster",
+              "name": "$ContextActionOnContextCaster$bbd7937a-1d2d-4d59-a8df-1cfd5b7ffa11",
+              "Actions": {
+                "Actions": [
+                  {
+                    "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
+                    "name": "$ContextActionApplyBuff$f25a92cf-6f52-4867-930f-344a197c2f25",
+                    "m_Buff": "!bp_39caa5ad1d0c4940b3f445ee4097fc89",
+                    "BuffEndCondition": "TurnEndOrCombatEnd",
+                    "Permanent": true,
+                    "DurationValue": {
+                      "RoundsValue": {
+                        "ValueType": "Simple",
+                        "Value": 0,
+                        "ValueRank": "Default",
+                        "ValueShared": "Damage",
+                        "Property": "None",
+                        "m_CustomProperty": null,
+                        "PropertyName": "Value1"
+                      }
+                    },
+                    "ToCaster": false,
+                    "AsChild": false,
+                    "SameDuration": false,
+                    "Ranks": {
+                      "ValueType": "Simple",
+                      "Value": 0,
+                      "ValueRank": "Default",
+                      "ValueShared": "Damage",
+                      "Property": "None",
+                      "m_CustomProperty": null,
+                      "PropertyName": "Value1"
+                    },
+                    "ActionsOnApply": {
+                      "Actions": []
+                    },
+                    "ActionsOnImmune": {
+                      "Actions": []
+                    },
+                    "AddFactSource": false
+                  },
+                  {
+                    "$type": "0cdc69d3ddfd42f28045114acc14e069, ContextActionRandomize",
+                    "name": "$ContextActionRandomize$d6e1a9eed1bf4a6ba41949c2578ab7de",
+                    "m_Actions": [
+                      {
+                        "Action": {
+                          "Actions": [
+                            {
+                              "$type": "d1933e412cc64482ae7990aaacdf44a8, WarhammerContextActionRestoreActionPoints",
+                              "name": "$WarhammerContextActionRestoreActionPoints$1c7ce908-cca0-43a5-b395-a5e43694367e",
+                              "ActionPoints": {
+                                "ValueType": "Simple",
+                                "Value": 1,
+                                "ValueRank": "Default",
+                                "ValueShared": "Damage",
+                                "Property": "None",
+                                "m_CustomProperty": null,
+                                "PropertyName": "Value1"
+                              },
+                              "MovePoints": {
+                                "ValueType": "Simple",
+                                "Value": 0,
+                                "ValueRank": "Default",
+                                "ValueShared": "Damage",
+                                "Property": "None",
+                                "m_CustomProperty": null,
+                                "PropertyName": "Value1"
+                              },
+                              "ActionPointsToMax": false,
+                              "MovePointsToMax": false,
+                              "IgnoreMovePointsMaximum": false,
+                              "IgnoreActionPointsMaximum": true
+                            }
+                          ]
+                        },
+                        "Weight": 50,
+                        "UseContextValue": false,
+                        "ValueName": "Value1"
+                      },
+                      {
+                        "Action": {
+                          "Actions": []
+                        },
+                        "Weight": 50,
+                        "UseContextValue": false,
+                        "ValueName": "Value1"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "ForOneAbility": false,
+        "m_Ability": null,
+        "ForMultipleAbilities": false,
+        "Abilities": [],
+        "ForAbilityGroup": false,
+        "m_AbilityGroup": null,
+        "m_OtherAbilityGroupList": [],
+        "ForUltimateAbilities": false,
+        "AssignOwnerAsTarget": false,
+        "AssignContextFromAbility": false
+      },
+      {
+        "$type": "f9bf4ae9ccd847689d5cdf2e86bc51ca, PropertyCalculatorComponent",
+        "name": "$PropertyCalculatorComponent$66730f8b-3042-4c88-b4ff-66d312c9fe1d",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Name": "Duration1",
+        "SaveToContext": "No",
+        "Value": {
+          "Operation": "Sum",
+          "TargetType": "CurrentEntity",
+          "TargetEvaluator": null,
+          "FailSilentlyIfNoTarget": false,
+          "Getters": [
+            {
+              "$type": "fb77900c7ec1461dadb27600db6e67cb, FactListGetter",
+              "name": "$FactListGetter$b8c73c5c-ad61-4a4a-ab5a-646d92765fd0",
+              "Settings": {
+                "Progression": "BonusValue",
+                "m_CustomProgression": [],
+                "m_StartLevel": 0,
+                "m_StepLevel": 5,
+                "Negate": false,
+                "Limit": "None",
+                "Min": 0,
+                "Max": 0
+              },
+              "m_Facts": [
+                "!bp_fb7efcba2dcc427da2324d4066daf2d5",
+                "!bp_3e429e5fe7bb4dc7895a9e3ad9b804a8",
+                "!bp_9eeb3cc7064e407ba025c8adf2b4d5e9",
+                "!bp_cbcf86f7262b4445958da0e2541b8c64",
+                "!bp_63c9dd53e5344e4bab52d8f15787f89a"
+              ],
+              "OnlyFromCaster": false,
+              "Caster": "CurrentEntity",
+              "MultiplyByRanks": false
+            }
+          ]
+        }
+      },
+      {
+        "$type": "95e248f24866439681c312b1bff0693c, UIPropertiesComponent",
+        "name": "$UIPropertiesComponent$fd915fd6-19bf-4041-b7eb-b79792f490e3",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Properties": [
+          {
+            "NameType": "Damage",
+            "m_Name": {
+              "m_Key": "",
+              "m_OwnerString": "",
+              "m_OwnerPropertyPath": "",
+              "m_JsonPath": "",
+              "Shared": null
+            },
+            "Description": {
+              "m_Key": "5666bd22-907f-47c7-8190-8d195902b179",
+              "m_OwnerString": "abe24a2000cc4cecacbb858cc3189374",
+              "m_OwnerPropertyPath": "Properties.Array.data[0].Description",
+              "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\Equipments\\Headgear\\NurgleHood_Feature_Properties.Array.data[0].Description.json",
+              "Shared": null
+            },
+            "m_DescriptionFact": "!bp_abe24a2000cc4cecacbb858cc3189374",
+            "m_LinkProperty": true,
+            "m_PropertyName": "Duration1",
+            "m_PropertySource": "!bp_abe24a2000cc4cecacbb858cc3189374",
+            "m_LinkKey": "tox",
+            "Main": false
+          }
+        ]
+      }
+    ],
+    "Author": "Unknown",
+    "Comment": "",
+    "m_DisplayName": {
+      "m_Key": "58305c2d-8072-4f61-8458-bed4f3c21bbd",
+      "m_OwnerString": "abe24a2000cc4cecacbb858cc3189374",
+      "m_OwnerPropertyPath": "m_DisplayName",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\000_Mods\\Armory\\Equipments\\Headgear\\NurgleHood_Feature_m_DisplayName_1.json",
+      "Shared": null
+    },
+    "m_Description": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "m_Icon": null,
+    "m_AllowNonContextActions": false,
+    "HideInUI": true,
+    "HideInCharacterSheetAndLevelUp": true,
+    "HideNotAvailibleInUI": false,
+    "Ranks": 1,
+    "Prerequisites": {
+      "Composition": "And",
+      "List": []
+    },
+    "FeatureTypes": [],
+    "TalentIconInfo": {
+      "AllGroups": 0,
+      "MainGroup": 0
+    },
+    "m_Acronym": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "ShowInDialogue": false,
+    "IsStarshipFeature": false
+  },
+  "Meta": {
+    "ShadowDeleted": false
+  }
+}

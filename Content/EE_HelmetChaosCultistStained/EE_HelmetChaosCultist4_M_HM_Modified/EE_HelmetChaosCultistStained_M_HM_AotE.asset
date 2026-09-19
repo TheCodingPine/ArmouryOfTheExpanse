@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2086151842, guid: bdcc9caea55324446b4d2ab38a611554, type: 3}
+  m_Name: EE_HelmetChaosCultistStained_M_HM_AotE
+  m_EditorClassIdentifier: 
+  IsExportEnabled: 0
+  CantBeHiddenByDollRoom: 0
+  ShowAboveAllIgnoreLayer: 0
+  m_RequiresDlc:
+    guid: 
+  Layer: 200
+  m_HideBodyParts: 0
+  ShowLowerMaterials: 1
+  isOnlyRightBP: 0
+  IsAugmentation: 0
+  AugmentationArmSide: 0
+  SkeletonModifiers: []
+  PrimaryColorsProfile: {fileID: 0}
+  SecondaryColorsProfile: {fileID: 11400000, guid: 7efd8d846d4afb4419c2b4ba49041998,
+    type: 2}
+  BakedTextures: {fileID: 0}
+  PreviewTexture: {fileID: 0}
+  ColorPresets: {fileID: 11400000, guid: 1403b7a48c060f8459139285c1ac675a, type: 2}
+  m_PrimaryRamps: []
+  m_SecondaryRamps: []
+  BodyParts:
+  - m_Type: 256
+    RendererPrefab: {fileID: 2194755262074767074, guid: f0957d8a74176b546a1b9007ca908c6e,
+      type: 3}
+    Material: {fileID: 2100000, guid: 14b4d343dbbc5d44f9844f92da3fb22e, type: 2}
+    Textures:
+    - ActiveTexture: {fileID: 2800000, guid: a1b79726efc0e494da2ec92dc9054ec4, type: 3}
+      DiffuseTexture: {fileID: 2800000, guid: a1b79726efc0e494da2ec92dc9054ec4, type: 3}
+      NormalTexture: {fileID: 2800000, guid: f3ad63a70e33c984b97e654ad31508da, type: 2}
+      MaskTexture: {fileID: 2800000, guid: ae871cecf0fda574b8b32eee7bcc9665, type: 2}
+      RampShadowTexture: {fileID: 2800000, guid: 7071f95da29755d4c804e37cbf22cd00,
+        type: 2}
+      DefaultMask1: {fileID: 0}
+      DefaultMask2: {fileID: 0}
+      DiffuseActive: 1
+      NormalActive: 1
+      MaskActive: 1
+      RampShadowActive: 1
+      UseRamp1Mask: 0
+      UseRamp2Mask: 0
+      UseDefaultMask1: 0
+      UseDefaultMask2: 0
+      UseShadowMask: 0
+      Ramps:
+        PrimaryMask: {fileID: 0}
+        PrimaryRamp: {fileID: 0}
+        SecondaryMask: {fileID: 0}
+        SecondaryRamp: {fileID: 0}
+      Channel: 0
+  OutfitParts: []
+  ForcedPrimaryIndex: -1
+  ForcedSecondaryIndex: -1
